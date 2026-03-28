@@ -1,0 +1,4 @@
+# Force HTTPS and redirect www to non-www
+https://www.getbloomfield.com/* https://getbloomfield.com/:splat 301!
+http://www.getbloomfield.com/* https://getbloomfield.com/:splat 301!
+http://getbloomfield.com/* https://getbloomfield.com/:splat 301!
