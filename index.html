@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloomfield — Manufacturing Intelligence</title>
+<meta name="description" content="Bloomfield builds custom AI-native software for manufacturers. We connect your operational data to an intelligence layer to make quoting faster, delivery more reliable, and resources easier to manage.">
+<meta name="author" content="Vincenzo Landino">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Bloomfield — Manufacturing Intelligence">
+<meta property="og:description" content="Bloomfield builds custom AI-native software for manufacturers. We connect your operational data to an intelligence layer to make quoting faster, delivery more reliable, and resources easier to manage.">
+<meta property="og:url" content="https://getbloomfield.netlify.app/">
+<meta property="og:image" content="https://getbloomfield.netlify.app/logo-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloomfield">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bloomfield — Manufacturing Intelligence">
+<meta name="twitter:description" content="Bloomfield builds custom AI-native software for manufacturers. We connect your operational data to an intelligence layer to make quoting faster, delivery more reliable, and resources easier to manage.">
+<meta name="twitter:image" content="https://getbloomfield.netlify.app/logo-icon.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bloomfield",
+  "url": "https://getbloomfield.com",
+  "logo": "https://getbloomfield.netlify.app/logo-icon.png",
+  "description": "Bloomfield builds custom AI-native software for manufacturers. We connect operational data to an intelligence layer to make quoting faster, delivery more reliable, and resources easier to manage.",
+  "founder": {
+    "@type": "Person",
+    "name": "Vincenzo Landino"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/bloomfield-ai/"
+  ]
+}
+</script>
+
+<!-- Structured Data: WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Bloomfield",
+  "url": "https://getbloomfield.com"
+}
+</script>
+
+<!-- Structured Data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this just about automation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Automation replaces a step. What we build makes the people doing the work faster and better informed. A quoting agent does not replace your estimator. It gives them instant access to every similar job you have ever run, the margins that won, and the specs that caused problems. The estimator still makes the call. They just make it with better information in a fraction of the time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't my ERP system do this already?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your ERP is designed to manage transactions across thousands of different manufacturers. It is good at that job. What it cannot do is understand the specific way your shop runs, the unwritten rules your team follows, or the context behind why a particular job was quoted a certain way three years ago. That requires custom software built around your data and your workflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of data do you need from us?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Whatever you already have. ERP exports, spreadsheets, PDFs, emails, job travelers, setup sheets. Most manufacturers are sitting on years of operational data they have never been able to use together. We do not ask you to change your systems. We pull from what exists and structure it into something useful."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long until we see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An advisory engagement delivers a clear picture of where AI fits in your operation within two to four weeks. A custom build delivers a working tool your team can use within the first phase, typically six to eight weeks. We scope tightly and show progress at every step. No one waits six months wondering what they are paying for."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI Software Development for Manufacturing",
+  "provider": {
+    "@type": "Organization",
+    "name": "Bloomfield"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Manufacturing Intelligence Solutions",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Quoting Tools",
+          "description": "AI-powered quoting software that gives estimators instant access to customer history, material data, similar past jobs, and winning margins to compress the quote cycle from days to hours."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Knowledge Engine",
+          "description": "A plain-English search tool that draws answers from your own setup notes, job records, process specs, and machine history to preserve institutional expertise and reduce knowledge loss from retiring workers."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Production Pulse",
+          "description": "A unified production visibility dashboard that pulls from ERP, scheduling, and floor data to flag slipping jobs before they miss ship dates, eliminating the need to chase status updates across multiple systems."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Equipment Intelligence",
+          "description": "Machine utilization, cycle times, idle hours, and maintenance patterns collected and surfaced in one place to optimize equipment performance without a six-figure MES deployment."
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--navy-950);color:var(--off-white);-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+
+/* ── Typography ── */
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.font-mono{font-family:'IBM Plex Mono',monospace}
+.label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+.text-hero{font-size:clamp(32px,3.5vw,48px);line-height:1.15;letter-spacing:-0.025em}
+
+/* ── Layout ── */
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+.grid-2{display:grid;gap:1.5rem}
+@media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}}
+.grid-3{display:grid;gap:1.5rem}
+@media(min-width:768px){.grid-3{grid-template-columns:1fr 1fr 1fr}}
+
+/* ── Grain ── */
+.grain{position:relative}
+.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}
+.grain-heavy::before{opacity:0.06}
+
+/* ── Hero grid ── */
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(74,144,217,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.05) 1px,transparent 1px);background-size:60px 60px}
+
+/* ── Orbs ── */
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(74,144,217,0.12) 0%,transparent 70%);top:10%;left:15%;animation:float 8s ease-in-out infinite}
+.orb-2{width:400px;height:400px;background:radial-gradient(circle,rgba(74,144,217,0.08) 0%,transparent 70%);top:40%;right:10%;animation:float 10s ease-in-out infinite reverse}
+.orb-3{width:300px;height:300px;background:radial-gradient(circle,rgba(74,144,217,0.06) 0%,transparent 70%);bottom:20%;left:40%;animation:float 12s ease-in-out infinite 2s}
+
+@keyframes float{
+  0%,100%{transform:translateY(0) translateX(0)}
+  33%{transform:translateY(-15px) translateX(10px)}
+  66%{transform:translateY(10px) translateX(-8px)}
+}
+
+/* ── Glow line ── */
+.glow-line{height:1px;background:linear-gradient(90deg,transparent,rgba(74,144,217,0.4),transparent)}
+
+/* ── Buttons ── */
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+/* ── Cards ── */
+.card{border:1px solid rgba(237,234,228,0.1);border-radius:2px;background:rgba(18,18,42,0.8);padding:2rem;transition:all 0.3s ease}
+.card:hover{transform:translateY(-4px);border-color:rgba(74,144,217,0.3);box-shadow:0 8px 32px rgba(74,144,217,0.08)}
+.card-light{border:1px solid rgba(10,10,20,0.07);border-radius:2px;background:#fff;padding:2rem;transition:all 0.3s ease}
+.card-light:hover{transform:translateY(-4px);border-color:rgba(74,144,217,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.06)}
+
+/* ── Nav ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0}
+.nav.scrolled{background:rgba(10,10,20,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(237,234,228,0.05);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.6);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:var(--off-white)}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(237,234,228,0.05)}
+.mobile-menu.open{display:flex}
+
+/* ── Sections ── */
+.section-dark{background:var(--navy-950);position:relative;padding:6rem 0}
+.section-light{background:var(--slate-50);padding:6rem 0}
+@media(min-width:768px){.section-dark,.section-light{padding:8rem 0}}
+
+/* ── Marquee ── */
+.marquee-wrap{overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent);mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 35s linear infinite}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-item{display:inline-block;padding:0 2rem;color:rgba(237,234,228,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.875rem;letter-spacing:0.05em;white-space:nowrap}
+
+/* ── Reveal animations ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease-out,transform 0.7s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}.reveal-d3{transition-delay:0.3s}.reveal-d4{transition-delay:0.4s}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{opacity:0;animation:fadeUp 0.7s ease-out forwards}
+.fade-up-1{opacity:0;animation:fadeUp 0.7s ease-out 0.1s forwards}
+.fade-up-2{opacity:0;animation:fadeUp 0.7s ease-out 0.2s forwards}
+.fade-up-3{opacity:0;animation:fadeUp 0.7s ease-out 0.3s forwards}
+
+/* ── Process interactive ── */
+.step-btn{text-align:left;padding:0.75rem 1rem;border-radius:2px;transition:all 0.3s ease;background:transparent;border:none;cursor:pointer;color:rgba(10,10,20,0.5);width:100%}
+.step-btn:hover{color:rgba(10,10,20,1);background:rgba(10,10,20,0.05)}
+.step-btn.active{background:var(--accent);color:#fff}
+.step-btn .step-num{display:block;font-family:'IBM Plex Mono',monospace;font-size:0.75rem;font-weight:600;margin-bottom:2px}
+.step-btn .step-title{font-size:0.875rem;font-weight:500}
+.step-content{background:#fff;border:1px solid rgba(10,10,20,0.07);border-radius:2px;padding:2rem 2.5rem;min-height:200px;display:flex;flex-direction:column;justify-content:center;transition:opacity 0.3s ease}
+.process-grid{display:grid;gap:2rem}
+@media(min-width:768px){.process-grid{grid-template-columns:220px 1fr;gap:3rem}}
+
+/* ── FAQ ── */
+.faq-item{border-bottom:1px solid rgba(237,234,228,0.1)}
+.faq-btn{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 0;text-align:left;background:none;border:none;cursor:pointer;color:var(--off-white);font-size:17px;font-weight:500;font-family:'Inter',system-ui,sans-serif}
+.faq-btn:hover{color:var(--accent)}
+.faq-icon{color:var(--accent);font-size:1.5rem;flex-shrink:0;transition:transform 0.3s;margin-left:1rem}
+.faq-icon.open{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease-out}
+.faq-answer.open{max-height:400px}
+.faq-answer p{color:rgba(237,234,228,0.6);padding-bottom:1.5rem;line-height:1.7;font-size:15px}
+
+/* ── Form ── */
+.form-label{display:block;margin-bottom:0.5rem}
+.form-input{width:100%;padding:1rem;border-radius:2px;background:#fff;border:1px solid var(--slate-200);color:var(--navy-950);font-size:15px;font-family:'Inter',system-ui,sans-serif}
+.form-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(74,144,217,0.15)}
+textarea.form-input{resize:none}
+
+.radio-group{display:grid;grid-template-columns:repeat(5,1fr);gap:0.5rem}
+.radio-label{display:flex;align-items:center;justify-content:center;padding:0.875rem 0.75rem;border-radius:2px;border:1px solid var(--slate-200);background:#fff;color:rgba(10,10,20,0.7);font-size:0.875rem;cursor:pointer;transition:all 0.2s}
+.radio-label:hover{border-color:var(--accent)}
+.radio-label input{position:absolute;opacity:0;pointer-events:none}
+.radio-label.selected{border-color:var(--accent);background:rgba(74,144,217,0.05)}
+
+/* ── Contact panel ── */
+.contact-grid{display:grid;gap:4rem}
+@media(min-width:1024px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-dark{display:none;flex-direction:column;justify-content:center;background:var(--navy-950);border-radius:2px;padding:2.5rem;position:relative;overflow:hidden}
+@media(min-width:1024px){.contact-dark{display:flex}}
+
+/* ── Industry tags ── */
+.tag{padding:0.375rem 0.75rem;border:1px solid rgba(237,234,228,0.1);border-radius:2px;color:rgba(237,234,228,0.5);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em}
+
+/* ── Footer ── */
+footer a{color:rgba(237,234,228,0.3);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:var(--off-white)}
+
+/* ── Utility ── */
+.relative{position:relative}.z-10{position:relative;z-index:10}.overflow-hidden{overflow:hidden}
+.text-center{text-align:center}
+.mt-12{margin-top:3rem}
+.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-10{margin-bottom:2.5rem}.mb-16{margin-bottom:4rem}
+.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--navy-950)}
+::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+/* ── Visually hidden (accessible to crawlers and screen readers) ── */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<!-- About Bloomfield (visually hidden, crawlable for AI citability) -->
+<article class="sr-only" aria-label="About Bloomfield">
+  <h2>About Bloomfield</h2>
+  <p>Bloomfield is an AI consulting and custom software development company that builds manufacturing intelligence tools. We help manufacturers reduce quoting errors, eliminate knowledge loss from retiring workers, and improve on-time delivery with custom AI-powered software. Founded by Vincenzo Landino, Bloomfield serves precision machining, aerospace, hydraulics, metal fabrication, and medical device manufacturers across the United States. Our core products include Quoting Tools, Knowledge Engine, Production Pulse, and Equipment Intelligence.</p>
+</article>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="#solutions" class="nav-link label">Solutions</a>
+      <a href="#process" class="nav-link label">Process</a>
+      <a href="#about" class="nav-link label">About</a>
+      <a href="#contact" class="btn-accent">Book a Call <span>→</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:var(--off-white)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
+    <a href="#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
+    <a href="#about" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call →</a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="grain overflow-hidden" style="min-height:100vh;display:flex;align-items:center;position:relative">
+  <div class="hero-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="container z-10" style="padding-top:8rem;padding-bottom:6rem">
+    <p class="label fade-up" style="color:var(--accent);margin-bottom:1.5rem">Operational Intelligence for Manufacturers</p>
+    <h1 class="font-head text-hero fade-up-1" style="max-width:48rem;margin-bottom:1.5rem">
+      The knowledge your shop floor already has. <span style="color:var(--accent)">Finally put to work.</span>
+    </h1>
+    <p class="fade-up-2" style="color:rgba(237,234,228,0.7);font-size:1.125rem;max-width:42rem;line-height:1.7;margin-bottom:2.5rem">
+      We help manufacturers reduce quoting errors, late deliveries, and knowledge loss with custom AI tools.
+    </p>
+    <a href="#contact" class="btn-accent fade-up-3">Talk to Our Team <span>→</span></a>
+  </div>
+</section>
+
+<!-- ═══════════════ GLOW LINE ═══════════════ -->
+<div class="glow-line"></div>
+
+<!-- ═══════════════ MARQUEE ═══════════════ -->
+<section style="background:var(--navy-950);padding:2.5rem 0;overflow:hidden">
+  <div class="container" style="margin-bottom:1.5rem">
+    <p class="label reveal" style="color:rgba(237,234,228,0.4)">Built for</p>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">Precision Machining</span>
+      <span class="marquee-item">Hydraulics</span>
+      <span class="marquee-item">Aerospace</span>
+      <span class="marquee-item">Metal Fabrication</span>
+      <span class="marquee-item">CNC Manufacturing</span>
+      <span class="marquee-item">Fluid Power</span>
+      <span class="marquee-item">Defense</span>
+      <span class="marquee-item">Medical Devices</span>
+      <span class="marquee-item">Industrial Components</span>
+      <span class="marquee-item">Injection Molding</span>
+      <span class="marquee-item">Precision Machining</span>
+      <span class="marquee-item">Hydraulics</span>
+      <span class="marquee-item">Aerospace</span>
+      <span class="marquee-item">Metal Fabrication</span>
+      <span class="marquee-item">CNC Manufacturing</span>
+      <span class="marquee-item">Fluid Power</span>
+      <span class="marquee-item">Defense</span>
+      <span class="marquee-item">Medical Devices</span>
+      <span class="marquee-item">Industrial Components</span>
+      <span class="marquee-item">Injection Molding</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ THREE VALUE CARDS ═══════════════ -->
+<section class="section-dark grain">
+  <div class="container z-10">
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3 class="font-head" style="font-size:1.25rem;margin-bottom:0.75rem">Compress Your Quote Cycle</h3>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">RFQs pile up. Estimators dig through old jobs, chase down specs, and rebuild pricing from scratch every time. We turn that five-day process into something your team finishes before lunch.</p>
+      </div>
+      <div class="card reveal reveal-d1">
+        <h3 class="font-head" style="font-size:1.25rem;margin-bottom:0.75rem">Keep What Your People Know</h3>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">Your best setup specialist retires next year. Everything they know about running that machine lives in their head. We build systems that make sure it lives in yours.</p>
+      </div>
+      <div class="card reveal reveal-d2">
+        <h3 class="font-head" style="font-size:1.25rem;margin-bottom:0.75rem">See Problems Before Customers Do</h3>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">Late shipments rarely surprise the shop floor. They surprise the front office. We connect the data that shows where a job is falling behind while there is still time to fix it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ORIGIN STORY ═══════════════ -->
+<section id="about" class="section-light">
+  <div class="container max-w-4xl">
+    <div class="reveal mb-16">
+      <p class="label" style="color:rgba(10,10,20,0.4);margin-bottom:1rem"><time datetime="1943">1943</time></p>
+      <p style="color:rgba(10,10,20,0.8);font-size:1.125rem;line-height:1.7">
+        The U.S. needs 300,000 aircraft to win a war. American manufacturers retool entire factories in months. Production schedules are handwritten on chalkboards. Tooling specs live in the memories of machinists who learned their trade as apprentices. The planes get built because the people on the floor know what they are doing.
+      </p>
+    </div>
+    <div class="reveal reveal-d1 mb-16">
+      <p class="label" style="color:rgba(10,10,20,0.4);margin-bottom:1rem"><time datetime="2026">2026</time></p>
+      <p style="color:rgba(10,10,20,0.8);font-size:1.125rem;line-height:1.7">
+        The parts are more precise. Five-axis machines cut tolerances that were impossible 20 years ago. But the quoting process still runs on tribal knowledge and spreadsheets. Critical specs still live in the heads of senior engineers. And 10,000 skilled machinists are retiring every year.
+      </p>
+    </div>
+    <div class="reveal reveal-d2" style="border-left:2px solid var(--accent);padding-left:2rem">
+      <p class="font-head" style="color:var(--navy-950);font-size:clamp(1.25rem,2vw,1.5rem);line-height:1.4">
+        The manufacturers who built this country did it with expertise, precision, and an unwillingness to accept how things had always been done. That mindset is the reason AI matters now. The tooling has changed. The instinct is the same.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CORE PROBLEMS ═══════════════ -->
+<section class="section-dark grain">
+  <div class="container z-10">
+    <h2 class="reveal font-head text-hero max-w-3xl mb-16">The data exists. The expertise exists. The systems to connect them do not.</h2>
+
+    <div class="grid-2">
+      <!-- Stat card — spans full width -->
+      <div class="card reveal reveal-d1" style="grid-column:1/-1;display:flex;flex-wrap:wrap;gap:3rem;align-items:center">
+        <div style="flex:1;min-width:250px">
+          <p class="label" style="color:rgba(74,144,217,0.7);margin-bottom:0.75rem">Slow Quote Turnaround</p>
+          <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">
+            Every quote your team builds from scratch is time spent re-learning what the business already knows. Bloomfield ties historical jobs, pricing, and process data into one system so your estimators work from a foundation instead of a blank page.
+          </p>
+        </div>
+        <div style="flex-shrink:0;width:280px;border-left:1px solid rgba(237,234,228,0.1);padding-left:2.5rem">
+          <p class="font-head" style="color:var(--accent);font-size:clamp(2.5rem,4vw,3rem);margin-bottom:0.5rem" id="stat-counter">-23%</p>
+          <p style="color:rgba(237,234,228,0.5);font-size:0.875rem;line-height:1.6">
+            lower win rate at 5+ day response. Manufacturers that respond in two days win 35% of bids. At five days, that drops to 12%.
+          </p>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-d2">
+        <p class="label" style="color:rgba(74,144,217,0.7);margin-bottom:0.75rem">Institutional Knowledge at Risk</p>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">
+          The average age of a skilled machinist in the U.S. is 52. Senior engineers and setup specialists are retiring. Decades of undocumented process knowledge leaves with them. The cost shows up in scrap, rework, and lost customers.
+        </p>
+      </div>
+
+      <div class="card reveal reveal-d3">
+        <p class="label" style="color:rgba(74,144,217,0.7);margin-bottom:0.75rem">Poor OTD Visibility</p>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">
+          On-time delivery depends on information that is scattered across systems, people, and whiteboards. By the time a delay surfaces, the customer already knows.
+        </p>
+      </div>
+
+      <div class="card reveal reveal-d4" style="grid-column:1/-1">
+        <p class="label" style="color:rgba(74,144,217,0.7);margin-bottom:0.75rem">Disconnected Equipment, Blind Optimization</p>
+        <p style="color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7">
+          Machine data, job data, and production data live in different systems. Idle time, utilization, and slowdowns stay invisible without putting together exports by hand.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d4 text-center mt-12">
+      <a href="#contact" class="btn-accent">Book a Call <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ SOLUTIONS ═══════════════ -->
+<section id="solutions" class="section-light">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:4rem" class="reveal">
+      <span style="display:block;width:40px;height:1px;background:var(--accent)"></span>
+      <p class="label" style="color:var(--accent);margin:0">Our Solutions</p>
+    </div>
+
+    <div style="display:grid;gap:1.5rem;grid-template-columns:1fr" class="reveal reveal-d1">
+      <style>@media(min-width:768px){.solutions-grid{grid-template-columns:repeat(4,1fr) !important}}</style>
+      <div class="solutions-grid" style="display:grid;gap:1.5rem;grid-template-columns:1fr">
+
+        <div class="card-light" style="display:flex;flex-direction:column;gap:0.75rem">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-bottom:0.5rem"><rect x="4" y="4" width="14" height="14" rx="2" stroke="#4A90D9" stroke-width="1.5" fill="none"/><rect x="22" y="4" width="14" height="14" rx="2" stroke="#4A90D9" stroke-width="1.5" fill="none"/><rect x="4" y="22" width="14" height="14" rx="2" stroke="#4A90D9" stroke-width="1.5" fill="none"/><path d="M29 22v14M22 29h14" stroke="#4A90D9" stroke-width="1.5"/></svg>
+          <p class="font-head" style="color:var(--accent-dim);font-size:0.8rem;font-style:italic">To Win More Bids</p>
+          <h3 class="font-head" style="font-size:1.35rem;color:var(--navy-950)">Quoting Tools</h3>
+          <p style="color:rgba(10,10,20,0.6);font-size:15px;line-height:1.7">Your estimator opens an RFQ. The system already knows the customer, the material history, the last three times you quoted a similar part, and the margins that won. What used to take days takes a focused hour.</p>
+        </div>
+
+        <div class="card-light" style="display:flex;flex-direction:column;gap:0.75rem">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-bottom:0.5rem"><circle cx="20" cy="14" r="6" stroke="#4A90D9" stroke-width="1.5" fill="none"/><path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#4A90D9" stroke-width="1.5" fill="none"/></svg>
+          <p class="font-head" style="color:var(--accent-dim);font-size:0.8rem;font-style:italic">To Preserve Expertise</p>
+          <h3 class="font-head" style="font-size:1.35rem;color:var(--navy-950)">Knowledge Engine</h3>
+          <p style="color:rgba(10,10,20,0.6);font-size:15px;line-height:1.7">Ask a question in plain English and get an answer drawn from your own setup notes, job records, process specs, and machine history. The kind of answer that used to require walking over to the one person who remembered.</p>
+        </div>
+
+        <div class="card-light" style="display:flex;flex-direction:column;gap:0.75rem">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-bottom:0.5rem"><rect x="4" y="8" width="32" height="24" rx="3" stroke="#4A90D9" stroke-width="1.5" fill="none"/><path d="M4 16h32M12 16v16M28 16v16" stroke="#4A90D9" stroke-width="1.5"/></svg>
+          <p class="font-head" style="color:var(--accent-dim);font-size:0.8rem;font-style:italic">To Ship On Time</p>
+          <h3 class="font-head" style="font-size:1.35rem;color:var(--navy-950)">Production Pulse</h3>
+          <p style="color:rgba(10,10,20,0.6);font-size:15px;line-height:1.7">A single view that pulls from your ERP, your scheduling board, and your floor data. Jobs that are slipping get flagged before they miss the ship date. No more chasing status updates across three systems.</p>
+        </div>
+
+        <div class="card-light" style="display:flex;flex-direction:column;gap:0.75rem">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-bottom:0.5rem"><path d="M8 28l6-8 5 4 7-10 6 6" stroke="#4A90D9" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="32" height="32" rx="3" stroke="#4A90D9" stroke-width="1.5" fill="none"/></svg>
+          <p class="font-head" style="color:var(--accent-dim);font-size:0.8rem;font-style:italic">To Optimize Utilization</p>
+          <h3 class="font-head" style="font-size:1.35rem;color:var(--navy-950)">Equipment Intelligence</h3>
+          <p style="color:rgba(10,10,20,0.6);font-size:15px;line-height:1.7">Machine utilization, cycle times, idle hours, and maintenance patterns collected and surfaced in one place. The kind of visibility that usually requires a six-figure MES deployment, built around what you actually need to see.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOUNDER QUOTE ═══════════════ -->
+<section class="section-dark grain-heavy overflow-hidden" style="position:relative">
+  <div class="orb orb-2" style="top:20%;right:20%"></div>
+  <div class="container z-10 text-center max-w-4xl">
+    <div class="reveal">
+      <span class="font-head" style="color:rgba(74,144,217,0.4);font-size:3.5rem;line-height:1">&ldquo;</span>
+      <blockquote class="font-head" style="font-size:clamp(1.5rem,2.5vw,1.875rem);line-height:1.4;letter-spacing:-0.025em;margin-top:0.5rem;margin-bottom:2rem">
+        Every manufacturer I talk to has the same raw material sitting untouched: years of job data, process knowledge, and hard-won expertise spread across a dozen systems and a handful of people. The software to make that usable finally exists.
+      </blockquote>
+      <p class="label" style="color:rgba(237,234,228,0.5)">Vincenzo Landino, Founder</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROCESS ═══════════════ -->
+<section id="process" class="section-light">
+  <div class="container max-w-5xl">
+    <p class="label reveal" style="color:rgba(10,10,20,0.4);margin-bottom:1rem">How We Work</p>
+    <h2 class="font-head text-hero reveal reveal-d1 max-w-3xl mb-16" style="color:var(--navy-950)">How an engagement works, start to finish.</h2>
+
+    <div class="reveal reveal-d2 process-grid">
+      <div style="display:flex;flex-direction:column;gap:0.5rem" id="step-buttons">
+        <button class="step-btn active" onclick="setStep(0)"><span class="step-num font-mono">01</span><span class="step-title">Listen</span></button>
+        <button class="step-btn" onclick="setStep(1)"><span class="step-num font-mono">02</span><span class="step-title">Diagnose</span></button>
+        <button class="step-btn" onclick="setStep(2)"><span class="step-num font-mono">03</span><span class="step-title">Structure</span></button>
+        <button class="step-btn" onclick="setStep(3)"><span class="step-num font-mono">04</span><span class="step-title">Build</span></button>
+        <button class="step-btn" onclick="setStep(4)"><span class="step-num font-mono">05</span><span class="step-title">Refine</span></button>
+      </div>
+      <div class="step-content" id="step-content">
+        <p class="font-mono" style="color:var(--accent-dim);font-size:0.75rem;font-weight:600;margin-bottom:0.5rem" id="step-content-num">01</p>
+        <h3 class="font-head" style="font-size:1.5rem;color:var(--navy-950);margin-bottom:1rem" id="step-content-title">Listen</h3>
+        <p style="color:rgba(10,10,20,0.6);line-height:1.7;font-size:1rem" id="step-content-body">We spend time with the people who do the work. Estimators, engineers, production managers, floor supervisors. We ask where their time goes, what slows them down, and what information they wish they had at their fingertips. The bottleneck is usually obvious to the team living with it every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TWO SERVICE TRACKS ═══════════════ -->
+<section class="section-dark grain">
+  <div class="container z-10">
+    <p class="label reveal" style="color:rgba(237,234,228,0.4);margin-bottom:1rem">How We Engage</p>
+    <h2 class="font-head text-hero reveal reveal-d1 max-w-3xl mb-16">Two ways to work with Bloomfield.</h2>
+
+    <div class="grid-2">
+      <div class="card reveal reveal-d1">
+        <p class="label" style="color:var(--accent);margin-bottom:1.5rem">Advisory &amp; Strategy</p>
+        <p style="color:rgba(237,234,228,0.5);font-size:15px;line-height:1.7;margin-bottom:1.5rem">For operations that need to understand where AI fits before they build anything.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem">
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>AI readiness assessment for your operation</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Workflow audits that identify the highest-impact opportunities</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Technology roadmapping and vendor-neutral guidance</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Team training and change management</li>
+        </ul>
+      </div>
+      <div class="card reveal reveal-d2" style="border-color:rgba(74,144,217,0.3)">
+        <p class="label" style="color:var(--accent);margin-bottom:1.5rem">Custom Build</p>
+        <p style="color:rgba(237,234,228,0.5);font-size:15px;line-height:1.7;margin-bottom:1.5rem">For operations ready to put custom tools in the hands of their team.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem">
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>End-to-end development of custom AI software</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Integration with existing ERP, data sources, and systems</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Phased delivery with working tools at every milestone</li>
+          <li style="display:flex;gap:0.75rem;color:rgba(237,234,228,0.6);font-size:15px;line-height:1.7"><span style="color:var(--accent);flex-shrink:0">—</span>Ongoing iteration, support, and refinement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA ═══════════════ -->
+<section class="section-light text-center">
+  <div class="container max-w-4xl">
+    <h2 class="font-head text-hero reveal mb-6" style="color:var(--navy-950)">Ready to see what's possible?</h2>
+    <p class="reveal reveal-d1" style="color:rgba(10,10,20,0.6);font-size:1.125rem;margin-bottom:2.5rem;max-width:36rem;margin-left:auto;margin-right:auto;line-height:1.7">Let's talk about your operation.</p>
+    <div class="reveal reveal-d2"><a href="#contact" class="btn-accent">Book a Call <span>→</span></a></div>
+  </div>
+</section>
+
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section class="section-dark grain">
+  <div class="container z-10 max-w-3xl">
+    <h2 class="font-head reveal" style="font-size:1.875rem;letter-spacing:-0.025em;margin-bottom:3rem">Frequently asked questions</h2>
+
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">Is this just about automation?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>No. Automation replaces a step. What we build makes the people doing the work faster and better informed. A quoting agent does not replace your estimator. It gives them instant access to every similar job you have ever run, the margins that won, and the specs that caused problems. The estimator still makes the call. They just make it with better information in a fraction of the time.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-d1">
+      <button class="faq-btn" onclick="toggleFaq(this)">Why can't my ERP system do this already?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Your ERP is designed to manage transactions across thousands of different manufacturers. It is good at that job. What it cannot do is understand the specific way your shop runs, the unwritten rules your team follows, or the context behind why a particular job was quoted a certain way three years ago. That requires custom software built around your data and your workflows.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-d2">
+      <button class="faq-btn" onclick="toggleFaq(this)">What kind of data do you need from us?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Whatever you already have. ERP exports, spreadsheets, PDFs, emails, job travelers, setup sheets. Most manufacturers are sitting on years of operational data they have never been able to use together. We do not ask you to change your systems. We pull from what exists and structure it into something useful.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-d3">
+      <button class="faq-btn" onclick="toggleFaq(this)">How long until we see results?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>An advisory engagement delivers a clear picture of where AI fits in your operation within two to four weeks. A custom build delivers a working tool your team can use within the first phase, typically six to eight weeks. We scope tightly and show progress at every step. No one waits six months wondering what they are paying for.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="section-light">
+  <div class="container max-w-5xl">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2 class="font-head text-hero mb-10" style="color:var(--navy-950)">Speak to a strategist</h2>
+        <form name="contact" method="POST" data-netlify="true" style="display:flex;flex-direction:column;gap:1.5rem">
+          <input type="hidden" name="form-name" value="contact">
+          <div>
+            <label class="label form-label" style="color:rgba(10,10,20,0.5)">Your name</label>
+            <input type="text" name="name" placeholder="Jane Smith" class="form-input" required>
+          </div>
+          <div>
+            <label class="label form-label" style="color:rgba(10,10,20,0.5)">Work Email</label>
+            <input type="email" name="email" placeholder="jane@company.com" class="form-input" required>
+          </div>
+          <div>
+            <label class="label form-label" style="color:rgba(10,10,20,0.5)">Company Name</label>
+            <input type="text" name="company" placeholder="Acme Manufacturing" class="form-input">
+          </div>
+          <div>
+            <label class="label form-label" style="color:rgba(10,10,20,0.5);margin-bottom:0.75rem">How many employees does your company have?</label>
+            <div class="radio-group" id="radio-group">
+              <label class="radio-label" onclick="selectRadio(this)"><input type="radio" name="employees" value="1-10">1-10</label>
+              <label class="radio-label" onclick="selectRadio(this)"><input type="radio" name="employees" value="11-50">11-50</label>
+              <label class="radio-label" onclick="selectRadio(this)"><input type="radio" name="employees" value="51-200">51-200</label>
+              <label class="radio-label" onclick="selectRadio(this)"><input type="radio" name="employees" value="201-500">201-500</label>
+              <label class="radio-label" onclick="selectRadio(this)"><input type="radio" name="employees" value="500+">500+</label>
+            </div>
+          </div>
+          <div>
+            <label class="label form-label" style="color:rgba(10,10,20,0.5)">Describe your specific needs</label>
+            <textarea name="needs" rows="4" placeholder="Tell us about your challenges and what you'd like AI to help with..." class="form-input"></textarea>
+          </div>
+          <button type="submit" class="btn-accent" style="width:100%;justify-content:center">Submit <span>→</span></button>
+        </form>
+      </div>
+
+      <div class="contact-dark reveal reveal-d2">
+        <div class="hero-grid"></div>
+        <div class="grain-heavy" style="position:absolute;inset:0"></div>
+        <div class="orb" style="width:300px;height:300px;background:radial-gradient(circle,rgba(74,144,217,0.12) 0%,transparent 70%);top:30%;left:20%;filter:blur(80px)"></div>
+        <div class="z-10">
+          <div class="card" style="margin-bottom:2.5rem">
+            <span class="font-head" style="color:rgba(74,144,217,0.4);font-size:3rem;line-height:1">&ldquo;</span>
+            <p style="color:rgba(237,234,228,0.7);font-size:17px;line-height:1.7;margin-top:0.5rem;margin-bottom:1.5rem">
+              We bring the AI expertise. You bring the operational knowledge. The best tools come from building together.
+            </p>
+            <p style="font-weight:500;font-size:15px">Vincenzo Landino</p>
+            <p class="label" style="color:rgba(237,234,228,0.5);margin-top:0.25rem">Founder, Bloomfield</p>
+          </div>
+          <p class="label" style="color:rgba(237,234,228,0.4);margin-bottom:1rem">Industries served</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem">
+            <span class="tag">Precision Machining</span>
+            <span class="tag">Hydraulics</span>
+            <span class="tag">Aerospace</span>
+            <span class="tag">Metal Fabrication</span>
+            <span class="tag">Medical Devices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer style="background:var(--navy-950);border-top:1px solid rgba(237,234,228,0.05);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:38px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:28px;width:auto"></div>
+        <p style="color:rgba(237,234,228,0.3);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(237,234,228,0.05);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+// Counter animation
+let counterDone = false;
+const statEl = document.getElementById('stat-counter');
+const counterObs = new IntersectionObserver(function(entries) {
+  if (entries[0].isIntersecting && !counterDone) {
+    counterDone = true;
+    let count = 0;
+    const timer = setInterval(function() {
+      count++;
+      statEl.textContent = '-' + count + '%';
+      if (count >= 23) clearInterval(timer);
+    }, 50);
+  }
+}, { threshold: 0.5 });
+counterObs.observe(statEl);
+
+// Process steps
+const stepsData = [
+  { num: '01', title: 'Listen', body: 'We spend time with the people who do the work. Estimators, engineers, production managers, floor supervisors. We ask where their time goes, what slows them down, and what information they wish they had at their fingertips. The bottleneck is usually obvious to the team living with it every day.' },
+  { num: '02', title: 'Diagnose', body: 'We trace the bottleneck back to its source. That means mapping every system, handoff, and decision point in the workflow. Where does an estimator go to find pricing history? How many people does a scheduler talk to before confirming a ship date? The diagnosis is specific enough to act on.' },
+  { num: '03', title: 'Structure', body: 'Most manufacturing data already exists. It is just scattered across ERPs, spreadsheets, shared drives, email threads, and the notes taped to a machine. We pull it together, clean it, and organize it into something an intelligent system can actually use.' },
+  { num: '04', title: 'Build', body: 'We deliver working software in phases. Not a proof of concept that sits in a slide deck. A tool your team can use on day one of delivery, shaped around the specific workflow we diagnosed. Quoting systems, knowledge bases, dashboards, agents.' },
+  { num: '05', title: 'Refine', body: 'The first version is never the last. Once your team starts using the tool, we watch what works, what gets ignored, and what they wish it did differently. We iterate until the tool fits the work like it was always there.' }
+];
+
+function setStep(i) {
+  document.querySelectorAll('.step-btn').forEach(function(btn, idx) {
+    btn.classList.toggle('active', idx === i);
+  });
+  document.getElementById('step-content-num').textContent = stepsData[i].num;
+  document.getElementById('step-content-title').textContent = stepsData[i].title;
+  document.getElementById('step-content-body').textContent = stepsData[i].body;
+}
+
+// FAQ toggle
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const icon = btn.querySelector('.faq-icon');
+  const isOpen = answer.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-answer').forEach(function(a) { a.classList.remove('open'); });
+  document.querySelectorAll('.faq-icon').forEach(function(ic) { ic.classList.remove('open'); });
+  if (!isOpen) {
+    answer.classList.add('open');
+    icon.classList.add('open');
+  }
+}
+
+// Radio buttons
+function selectRadio(label) {
+  document.querySelectorAll('.radio-label').forEach(function(l) { l.classList.remove('selected'); });
+  label.classList.add('selected');
+  label.querySelector('input').checked = true;
+}
+</script>
+</body>
+</html>
