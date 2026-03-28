@@ -87,14 +87,14 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--slate-50);color:v
 @media(min-width:768px){.container{padding:0 2rem}}
 
 /* Nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(237,234,228,0.05);padding:0.75rem 0}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
 .nav-links{display:flex;align-items:center;gap:2rem}
-.nav-link{color:rgba(237,234,228,0.6);text-decoration:none;transition:color 0.2s}
-.nav-link:hover{color:var(--off-white)}
+.nav-link{color:rgba(26,26,46,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#1a1a2e}
 .nav-mobile{display:none}
 @media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
-.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(237,234,228,0.05)}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
 .mobile-menu.open{display:flex}
 
 .btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
@@ -111,7 +111,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--slate-50);color:v
 .article-body p{font-size:1.0625rem;line-height:1.75;margin-bottom:1.25rem;color:rgba(10,10,20,0.8)}
 .article-body ul,.article-body ol{margin-bottom:1.25rem;padding-left:1.5rem}
 .article-body li{font-size:1.0625rem;line-height:1.75;margin-bottom:0.5rem;color:rgba(10,10,20,0.8)}
-.article-body a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}
 .article-body a:hover{color:var(--accent-dim)}
 .article-body strong{color:var(--navy-950);font-weight:600}
 .article-body blockquote{border-left:3px solid var(--accent);padding:1rem 1.5rem;margin:1.5rem 0;background:rgba(74,144,217,0.04);border-radius:0 2px 2px 0}
@@ -125,12 +125,12 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--slate-50);color:v
 
 /* CTA */
 .cta-section{background:var(--navy-950);border-radius:2px;padding:3rem 2rem;text-align:center;margin-top:4rem}
-.cta-section h2{color:var(--off-white);font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;margin-bottom:1rem}
-.cta-section p{color:rgba(237,234,228,0.6);margin-bottom:1.5rem;font-size:1.0625rem}
+.cta-section h2{color:#1a1a2e;font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;margin-bottom:1rem}
+.cta-section p{color:rgba(26,26,46,0.7);margin-bottom:1.5rem;font-size:1.0625rem}
 
 /* Footer */
-footer a{color:rgba(237,234,228,0.3);text-decoration:none;transition:color 0.2s}
-footer a:hover{color:var(--off-white)}
+footer a{color:rgba(26,26,46,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#1a1a2e}
 
 /* Scrollbar */
 ::-webkit-scrollbar{width:6px}
@@ -151,7 +151,7 @@ footer a:hover{color:var(--off-white)}
       <a href="/#about" class="nav-link label">About</a>
       <a href="/#contact" class="btn-accent">Book a Call <span>&rarr;</span></a>
     </div>
-    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:var(--off-white)">
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -168,12 +168,12 @@ footer a:hover{color:var(--off-white)}
 <section class="article-hero">
   <div class="container" style="position:relative;z-index:10;max-width:48rem">
     <p class="label" style="color:var(--accent);margin-bottom:1.5rem">Guide</p>
-    <h1 class="font-head" style="color:var(--off-white);font-size:clamp(28px,3.5vw,44px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:1.5rem">The Complete Guide to AI for Manufacturers</h1>
-    <p style="color:rgba(237,234,228,0.6);font-size:1.0625rem;line-height:1.7;max-width:40rem">What AI can realistically do on your shop floor today. Quoting, knowledge capture, production visibility, equipment monitoring. Where to start. What to skip. How to measure whether any of it is working.</p>
+    <h1 class="font-head" style="color:#1a1a2e;font-size:clamp(28px,3.5vw,44px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:1.5rem">The Complete Guide to AI for Manufacturers</h1>
+    <p style="color:rgba(26,26,46,0.7);font-size:1.0625rem;line-height:1.7;max-width:40rem">What AI can realistically do on your shop floor today. Quoting, knowledge capture, production visibility, equipment monitoring. Where to start. What to skip. How to measure whether any of it is working.</p>
     <div style="margin-top:1.5rem;display:flex;align-items:center;gap:1rem">
-      <p class="label" style="color:rgba(237,234,228,0.4)">The Bloomfield Team</p>
+      <p class="label" style="color:rgba(26,26,46,0.5)">The Bloomfield Team</p>
       <span style="color:rgba(237,234,228,0.2)">&bull;</span>
-      <p class="label" style="color:rgba(237,234,228,0.4)">March 2026</p>
+      <p class="label" style="color:rgba(26,26,46,0.5)">March 2026</p>
     </div>
   </div>
 </section>
@@ -422,19 +422,19 @@ footer a:hover{color:var(--off-white)}
 </main>
 
 <!-- FOOTER -->
-<footer style="background:var(--navy-950);border-top:1px solid rgba(237,234,228,0.05);padding:3rem 0">
+<footer style="background:var(--navy-950);border-top:1px solid rgba(26,26,46,0.08);padding:3rem 0">
   <div class="container">
     <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
       <div>
         <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
-        <p style="color:rgba(237,234,228,0.3);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
+        <p style="color:rgba(26,26,46,0.4);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
       </div>
       <div style="display:flex;gap:1.5rem;font-size:0.875rem">
         <a href="/privacy.html">Privacy Policy</a>
         <a href="/terms.html">Terms of Service</a>
       </div>
     </div>
-    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(237,234,228,0.05);text-align:center">
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
       <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
     </div>
   </div>
