@@ -12,6 +12,7 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://getbloomfield.com/">
+<link rel="alternate" hreflang="en" href="https://getbloomfield.com/">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Bloomfield | Custom AI Tools for Manufacturers">
@@ -102,6 +103,54 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "An advisory engagement delivers a clear picture of where AI fits in your operation within two to four weeks. A custom build delivers a working tool your team can use within the first phase, typically six to eight weeks. We scope tightly and show progress at every step. No one waits six months wondering what they are paying for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of manufacturers do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Precision machining, aerospace, defense, hydraulics, metal fabrication, CNC manufacturing, fluid power, medical device, injection molding, and industrial component manufacturers. Most of our clients run job shops or mixed-mode operations with 20 to 500 employees. The common thread is operational complexity: custom parts, variable processes, and expertise that lives in people rather than systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to replace our current systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We build on top of what you already use. Your ERP, your spreadsheets, your scheduling tools, your shared drives. Bloomfield connects to those systems and pulls data from them. We are not asking you to rip anything out. We are building an intelligence layer that makes your existing infrastructure more useful than it has ever been on its own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a Bloomfield engagement cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Advisory engagements start at a fixed project fee and typically run two to four weeks. Custom builds are scoped and priced by phase, with clear deliverables and working software at each milestone. We do not bill open-ended retainers. Every dollar has a defined output attached to it. The best way to get a specific number is to book a call and walk us through your operation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI work with our existing ERP system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We have built integrations with JobBOSS, Epicor, Global Shop Solutions, IQMS (DELMIAworks), ProShop, E2, and others. If your ERP can export data or has an API, we can connect to it. The AI layer reads from your ERP data alongside your other operational sources to provide context your ERP was never designed to surface on its own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Bloomfield different from hiring a consulting firm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A consulting firm gives you a report. We give you working software. Our engagements produce tools your team uses every day, built around the specific workflows we diagnose together. There is no 80-page deck that sits in a drawer. Every phase ends with something your people can open, use, and tell us how to improve."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the initial build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first version ships and your team starts using it. We monitor adoption, gather feedback, and iterate. Most clients add capabilities over time as they see what the system makes possible. We offer ongoing support and refinement so the tool keeps pace with how your operation evolves. The relationship does not end at delivery."
       }
     }
   ]
@@ -288,6 +337,7 @@ textarea.form-input{resize:none}
 .radio-label:hover{border-color:var(--accent)}
 .radio-label input{position:absolute;opacity:0;pointer-events:none}
 .radio-label.selected{border-color:var(--accent);background:rgba(74,144,217,0.05)}
+@media(max-width:480px){.radio-group{grid-template-columns:repeat(3,1fr)}}
 
 /* ── Contact panel ── */
 .contact-grid{display:grid;gap:4rem}
@@ -338,9 +388,10 @@ footer a:hover{color:var(--off-white)}
       <a href="#solutions" class="nav-link label">Solutions</a>
       <a href="#process" class="nav-link label">Process</a>
       <a href="#about" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Blog</a>
       <a href="#contact" class="btn-accent">Book a Call <span>→</span></a>
     </div>
-    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:var(--off-white)">
+    <button class="nav-mobile" aria-label="Open navigation menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false'?'true':'false')" style="background:none;border:none;cursor:pointer;color:var(--off-white)">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -348,6 +399,7 @@ footer a:hover{color:var(--off-white)}
     <a href="#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
     <a href="#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
     <a href="#about" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Blog</a>
     <a href="#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call →</a>
   </div>
 </nav>
@@ -640,6 +692,30 @@ footer a:hover{color:var(--off-white)}
     <div class="faq-item reveal reveal-d3">
       <button class="faq-btn" onclick="toggleFaq(this)">How long until we see results?<span class="faq-icon">+</span></button>
       <div class="faq-answer"><p>An advisory engagement delivers a clear picture of where AI fits in your operation within two to four weeks. A custom build delivers a working tool your team can use within the first phase, typically six to eight weeks. We scope tightly and show progress at every step. No one waits six months wondering what they are paying for.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">What types of manufacturers do you work with?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Precision machining, aerospace, defense, hydraulics, metal fabrication, CNC manufacturing, fluid power, medical device, injection molding, and industrial component manufacturers. Most of our clients run job shops or mixed-mode operations with 20 to 500 employees. The common thread is operational complexity: custom parts, variable processes, and expertise that lives in people rather than systems.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">Do we need to replace our current systems?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>No. We build on top of what you already use. Your ERP, your spreadsheets, your scheduling tools, your shared drives. Bloomfield connects to those systems and pulls data from them. We are not asking you to rip anything out. We are building an intelligence layer that makes your existing infrastructure more useful than it has ever been on its own.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">What does a Bloomfield engagement cost?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Advisory engagements start at a fixed project fee and typically run two to four weeks. Custom builds are scoped and priced by phase, with clear deliverables and working software at each milestone. We do not bill open-ended retainers. Every dollar has a defined output attached to it. The best way to get a specific number is to book a call and walk us through your operation.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">Can AI work with our existing ERP system?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes. We have built integrations with JobBOSS, Epicor, Global Shop Solutions, IQMS (DELMIAworks), ProShop, E2, and others. If your ERP can export data or has an API, we can connect to it. The AI layer reads from your ERP data alongside your other operational sources to provide context your ERP was never designed to surface on its own.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">How is Bloomfield different from hiring a consulting firm?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>A consulting firm gives you a report. We give you working software. Our engagements produce tools your team uses every day, built around the specific workflows we diagnose together. There is no 80-page deck that sits in a drawer. Every phase ends with something your people can open, use, and tell us how to improve.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn" onclick="toggleFaq(this)">What happens after the initial build?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>The first version ships and your team starts using it. We monitor adoption, gather feedback, and iterate. Most clients add capabilities over time as they see what the system makes possible. We offer ongoing support and refinement so the tool keeps pace with how your operation evolves. The relationship does not end at delivery.</p></div>
     </div>
   </div>
 </section>
