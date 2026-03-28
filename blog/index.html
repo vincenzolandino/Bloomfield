@@ -60,20 +60,62 @@ body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-
 .btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:#4A90D9;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
 .btn-accent:hover{background:#3A78BF;transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
 
-/* FT-style article list */
-.article-list{border-top:1px solid rgba(26,26,46,0.15)}
+/* Category tags */
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:0.5rem}
+
+/* ===== ZONE 1: Hero ===== */
+.hero-grid{display:grid;grid-template-columns:35% 40% 25%;gap:0;border-bottom:1px solid rgba(26,26,46,0.15);min-height:320px}
+.hero-lead{padding:2rem 2rem 2rem 0;border-right:1px solid rgba(26,26,46,0.15);display:flex;flex-direction:column;justify-content:center}
+.hero-lead .tag{margin-bottom:0.6rem}
+.hero-lead-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;letter-spacing:-0.02em;color:#1a1a2e;text-decoration:none;display:block;margin-bottom:0.6rem;transition:color 0.2s}
+.hero-lead-title:hover{color:#4A90D9}
+.hero-lead-excerpt{font-size:16px;line-height:1.6;color:rgba(26,26,46,0.55);margin-bottom:0.75rem}
+.hero-lead-date{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:rgba(26,26,46,0.4)}
+
+/* Featured center panel */
+.hero-featured{position:relative;background:#0a0a14;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:2.5rem 2rem}
+.hero-featured::before{content:'';position:absolute;inset:0;background-image:
+  linear-gradient(rgba(74,144,217,0.06) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(74,144,217,0.06) 1px, transparent 1px);
+  background-size:40px 40px;pointer-events:none}
+.hero-featured .tag{color:#6aadf0;margin-bottom:0.6rem;position:relative;z-index:1}
+.hero-featured-title{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.01em;color:#edeae4;text-decoration:none;display:block;position:relative;z-index:1;transition:color 0.2s}
+.hero-featured-title:hover{color:#6aadf0}
+
+/* Founder's Picks sidebar */
+.hero-sidebar{padding:1.5rem 0 1.5rem 1.5rem;display:flex;flex-direction:column}
+.sidebar-header{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;color:rgba(26,26,46,0.45);margin-bottom:1rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(26,26,46,0.15)}
+.sidebar-item{padding:0.75rem 0;border-bottom:1px solid rgba(26,26,46,0.1)}
+.sidebar-item:last-child{border-bottom:none}
+.sidebar-link{font-family:Georgia,'Times New Roman',serif;font-size:1.1rem;line-height:1.35;color:#1a1a2e;text-decoration:none;transition:color 0.2s;display:block}
+.sidebar-link:hover{color:#4A90D9}
+
+/* ===== ZONE 2: Top Notes ===== */
+.top-notes-label{text-align:center;padding:2.5rem 0 0;position:relative}
+.top-notes-label::before{content:'';display:block;height:1px;background:rgba(26,26,46,0.15);margin-bottom:1.5rem}
+.top-notes-label span{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;color:rgba(26,26,46,0.4);display:inline-block;padding:0 1.5rem;position:relative}
+.top-notes-label::after{content:'';display:block;height:1px;background:rgba(26,26,46,0.15);margin-top:1.5rem}
+.top-notes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding:2rem 0 0}
+.top-note{padding:0}
+.top-note .tag{margin-bottom:0.4rem}
+.top-note-title{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.3;letter-spacing:-0.01em;margin-bottom:0.5rem}
+.top-note-title a{color:#1a1a2e;text-decoration:none;transition:color 0.2s}
+.top-note-title a:hover{color:#4A90D9}
+.top-note-date{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:rgba(26,26,46,0.4)}
+
+/* ===== ZONE 3: Full article list ===== */
+.all-notes-label{padding:2.5rem 0 0;margin-top:2rem;position:relative}
+.all-notes-label::before{content:'';display:block;height:1px;background:rgba(26,26,46,0.15);margin-bottom:1.5rem}
+.all-notes-label span{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;color:rgba(26,26,46,0.4)}
+
+.article-list{border-top:1px solid rgba(26,26,46,0.15);margin-top:1.5rem}
 .article-item{border-bottom:1px solid rgba(26,26,46,0.15);padding:2rem 0;display:block;text-decoration:none;color:inherit;transition:background 0.2s}
 .article-item:hover{background:rgba(26,26,46,0.03)}
 .article-item:hover .article-title{color:#4A90D9}
 .article-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:0.5rem}
-.article-title{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.02em;color:#1a1a2e;margin-bottom:0.6rem;transition:color 0.2s}
+.article-title{font-family:Georgia,'Times New Roman',serif;font-size:1.35rem;line-height:1.3;letter-spacing:-0.02em;color:#1a1a2e;margin-bottom:0.6rem;transition:color 0.2s}
 .article-excerpt{font-size:16px;line-height:1.7;color:rgba(26,26,46,0.65);max-width:600px}
 .article-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:rgba(26,26,46,0.4);margin-top:0.75rem}
-
-/* Featured/lead article */
-.article-lead{padding:2.5rem 0 2rem;border-bottom:2px solid rgba(26,26,46,0.2)}
-.article-lead .article-title{font-size:2rem;line-height:1.2;margin-bottom:0.75rem}
-.article-lead .article-excerpt{font-size:17px;max-width:640px}
 
 /* Footer */
 footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
@@ -82,6 +124,26 @@ footer a:hover{color:#edeae4}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease-out,transform 0.6s ease-out}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-d1{transition-delay:0.05s}.reveal-d2{transition-delay:0.1s}.reveal-d3{transition-delay:0.15s}.reveal-d4{transition-delay:0.2s}.reveal-d5{transition-delay:0.25s}
+
+/* ===== Responsive ===== */
+@media(max-width:1023px){
+  .hero-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto}
+  .hero-lead{grid-column:1/2;border-right:1px solid rgba(26,26,46,0.15);padding:2rem 1.5rem 2rem 0}
+  .hero-featured{grid-column:2/3;grid-row:1/2}
+  .hero-sidebar{grid-column:1/-1;grid-row:2/3;padding:1.5rem 0;border-top:1px solid rgba(26,26,46,0.15);flex-direction:row;gap:1.5rem;flex-wrap:wrap}
+  .sidebar-header{width:100%;margin-bottom:0.5rem}
+  .sidebar-item{flex:1;min-width:200px;border-bottom:none;border-right:1px solid rgba(26,26,46,0.1);padding:0 1rem 0 0}
+  .sidebar-item:last-child{border-right:none}
+  .top-notes-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:767px){
+  .hero-grid{grid-template-columns:1fr;grid-template-rows:auto auto auto}
+  .hero-lead{grid-column:1;grid-row:1;border-right:none;border-bottom:1px solid rgba(26,26,46,0.15);padding:2rem 0}
+  .hero-featured{grid-column:1;grid-row:2}
+  .hero-sidebar{grid-column:1;grid-row:3;flex-direction:column;gap:0;padding:1.5rem 0}
+  .sidebar-item{border-right:none;border-bottom:1px solid rgba(26,26,46,0.1);padding:0.75rem 0}
+  .top-notes-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -110,309 +172,387 @@ footer a:hover{color:#edeae4}
 </nav>
 
 <main>
-<section style="padding-top:8rem;padding-bottom:4rem">
-  <div class="container">
-    <p class="reveal" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:0.75rem">Field Notes</p>
-    <h1 class="reveal" style="font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,3vw,38px);line-height:1.2;letter-spacing:-0.02em;margin-bottom:0.75rem">Practical thinking on AI for manufacturers.</h1>
-    <p class="reveal reveal-d1" style="font-size:17px;color:rgba(26,26,46,0.6);max-width:520px;line-height:1.7;margin-bottom:3rem">What works, what does not, and what changes when your data starts working as hard as your team.</p>
+<section style="padding-top:7rem;padding-bottom:0">
+  <div class="container-wide">
 
-    <div class="article-list">
+    <!-- Page header -->
+    <div class="reveal" style="margin-bottom:2rem">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:0.5rem">Field Notes</p>
+      <h1 style="font-family:Georgia,'Times New Roman',serif;font-size:clamp(24px,2.5vw,32px);line-height:1.2;letter-spacing:-0.02em;color:#1a1a2e">Practical thinking on AI for manufacturers.</h1>
+    </div>
 
-      <!-- 2026-03-28 — 14 posts -->
+    <!-- ===== ZONE 1: Hero three-column ===== -->
+    <div class="hero-grid reveal reveal-d1">
 
-      <a href="/blog/the-hidden-cost-of-slow-quotes.html" class="article-item article-lead reveal reveal-d1">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">The Hidden Cost of Slow Quotes in Manufacturing</h2>
-        <p class="article-excerpt">Manufacturers that respond to RFQs in two days win 35% of bids. At five days, that drops to 12%. The math is clear, and the reasons behind slow quotes are fixable.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
+      <!-- Left column: Latest post -->
+      <div class="hero-lead">
+        <p class="tag">Quoting</p>
+        <a href="/blog/the-hidden-cost-of-slow-quotes.html" class="hero-lead-title">The Hidden Cost of Slow Quotes in Manufacturing</a>
+        <p class="hero-lead-excerpt">Manufacturers that respond to RFQs in two days win 35% of bids. At five days, that drops to 12%.</p>
+        <p class="hero-lead-date">March 28, 2026</p>
+      </div>
 
-      <a href="/blog/how-to-capture-tribal-knowledge.html" class="article-item reveal reveal-d2">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">How to Capture Tribal Knowledge Before Your Best Machinist Retires</h2>
-        <p class="article-excerpt">The average skilled machinist in the U.S. is 52 years old. Ten thousand retire every year. What they know about running your operation walks out with them unless you build a system to keep it.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
+      <!-- Center column: Featured dark panel -->
+      <div class="hero-featured">
+        <p class="tag">The Complete Guide</p>
+        <a href="/manufacturing-ai-guide.html" class="hero-featured-title">The Manufacturer&rsquo;s Complete Guide to AI: What Works, What Doesn&rsquo;t, and Where to Start</a>
+      </div>
 
-      <a href="/blog/why-your-erp-cant-do-this.html" class="article-item reveal reveal-d3">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">Why Your ERP Cannot Do What Custom AI Can</h2>
-        <p class="article-excerpt">ERPs manage transactions. They were never designed to understand the way your specific shop runs. That gap is where spreadsheets, workarounds, and custom AI all live.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/ai-for-manufacturers-2026.html" class="article-item reveal reveal-d4">
-        <p class="article-tag">Industry</p>
-        <h2 class="article-title">AI for Manufacturers: What Is Actually Possible in 2026</h2>
-        <p class="article-excerpt">Most of what you read about AI in manufacturing is either five years away or already obsolete. Here is what actually works on the shop floor today, in plain terms.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/signs-your-shop-is-ready-for-ai.html" class="article-item reveal reveal-d5">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">5 Signs Your Machine Shop Is Ready for AI</h2>
-        <p class="article-excerpt">AI readiness has nothing to do with how advanced your technology stack is. It has everything to do with the problems you are already trying to solve and the data you are already sitting on.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/competitors-quoting-faster.html" class="article-item reveal">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">Why Your Best Customers Are Getting Quotes Faster From Your Competitors</h2>
-        <p class="article-excerpt">Your competitors are quoting in one to two days. If you are still at four or five, your best customers are noticing. Here is what is happening and how to respond.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/ai-aerospace-manufacturing-compliance.html" class="article-item reveal">
-        <p class="article-tag">Industry</p>
-        <h2 class="article-title">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</h2>
-        <p class="article-excerpt">Aerospace manufacturers operate under AS9100, ITAR, NADCAP, and FAA oversight. AI tools built for this environment need a compliance architecture from day one.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/ai-job-shops-vs-production-shops.html" class="article-item reveal">
-        <p class="article-tag">Industry</p>
-        <h2 class="article-title">AI for Job Shops vs. Production Shops: Completely Different Problems</h2>
-        <p class="article-excerpt">A job shop running 200 different parts per month and a production shop running 15 part numbers at volume need fundamentally different AI tools.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/hydraulic-manufacturers-using-ai.html" class="article-item reveal">
-        <p class="article-tag">Industry</p>
-        <h2 class="article-title">How Hydraulic Component Manufacturers Are Using AI in 2026</h2>
-        <p class="article-excerpt">Hydraulic manifold, valve, and cylinder manufacturers face unique quoting and production challenges. Here is where AI delivers real results in this sector.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/medical-device-manufacturers-ai-validation.html" class="article-item reveal">
-        <p class="article-tag">Industry</p>
-        <h2 class="article-title">What Medical Device Manufacturers Need to Know About AI Validation</h2>
-        <p class="article-excerpt">FDA 21 CFR Part 820, ISO 13485, and EU MDR create a specific validation framework for AI tools in medical device manufacturing.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/quoting-make-to-order-vs-make-to-stock.html" class="article-item reveal">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">Quoting for Make-to-Order vs. Make-to-Stock: Where AI Fits in Each</h2>
-        <p class="article-excerpt">Make-to-order and make-to-stock manufacturers have fundamentally different quoting challenges. AI addresses both, but the tools look nothing alike.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <a href="/blog/small-manufacturers-compete-with-ai.html" class="article-item reveal">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">How Small Manufacturers Compete With AI (Without Enterprise Budgets)</h2>
-        <p class="article-excerpt">Shops with 20 to 100 employees do not need million-dollar AI platforms. They need focused tools built around specific problems.</p>
-        <p class="article-meta">March 28, 2026</p>
-      </a>
-
-      <!-- 2026-03-27 -->
-
-      <a href="/blog/ai-ready-data-50-person-shop.html" class="article-item reveal">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">What &lsquo;AI-Ready Data&rsquo; Really Means for a 50-Person Shop</h2>
-        <p class="article-excerpt">AI-ready data does not mean perfect data. It means structured, accessible, and connected. Here is what that looks like for a 50-person manufacturing operation.</p>
-        <p class="article-meta">March 27, 2026</p>
-      </a>
-
-      <a href="/blog/cheapest-ai-project-most-expensive.html" class="article-item reveal">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">Why the Cheapest AI Project Is Usually the Most Expensive</h2>
-        <p class="article-excerpt">The $15,000 AI pilot that goes nowhere costs more than the $80,000 project that ships. Here is how manufacturers end up spending more by trying to spend less.</p>
-        <p class="article-meta">March 27, 2026</p>
-      </a>
-
-      <!-- 2026-03-26 -->
-
-      <a href="/blog/build-vs-buy-custom-software.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">Build vs. Buy: How to Decide What Custom Software You Actually Need</h2>
-        <p class="article-excerpt">Most manufacturers default to buying off-the-shelf software. Sometimes that is the right call. Often it costs more in the long run than building exactly what you need.</p>
-        <p class="article-meta">March 26, 2026</p>
-      </a>
-
-      <a href="/blog/evaluating-ai-vendors-manufacturers.html" class="article-item reveal">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">The Manufacturer&rsquo;s Guide to Evaluating AI Vendors</h2>
-        <p class="article-excerpt">There are hundreds of AI vendors targeting manufacturers. Most of them will waste your time. Here is how to evaluate them based on what matters.</p>
-        <p class="article-meta">March 26, 2026</p>
-      </a>
-
-      <!-- 2026-03-25 -->
-
-      <a href="/blog/run-ai-pilot-without-disruption.html" class="article-item reveal">
-        <p class="article-tag">Getting Started</p>
-        <h2 class="article-title">How to Run an AI Pilot Without Disrupting Your Operation</h2>
-        <p class="article-excerpt">AI pilots in manufacturing fail when they try to change too much at once. Here is a framework for running a pilot that delivers results without disrupting the floor.</p>
-        <p class="article-meta">March 25, 2026</p>
-      </a>
-
-      <!-- 2026-03-24 -->
-
-      <a href="/blog/scheduling-by-gut-feel.html" class="article-item reveal">
-        <p class="article-tag">Operations</p>
-        <h2 class="article-title">The Problem With Scheduling by Gut Feel</h2>
-        <p class="article-excerpt">Most job shop scheduling relies on one person's experience and instinct. That works until it does not. Here is what gut-feel scheduling misses.</p>
-        <p class="article-meta">March 24, 2026</p>
-      </a>
-
-      <!-- 2026-03-22 -->
-
-      <a href="/blog/what-production-dashboard-should-show.html" class="article-item reveal">
-        <p class="article-tag">Operations</p>
-        <h2 class="article-title">What a Production Dashboard Should Actually Show</h2>
-        <p class="article-excerpt">Most production dashboards display data that is either too old, too raw, or too disconnected to drive decisions. Here is what belongs on the screen.</p>
-        <p class="article-meta">March 22, 2026</p>
-      </a>
-
-      <!-- 2026-03-21 -->
-
-      <a href="/blog/how-late-shipments-actually-start.html" class="article-item reveal">
-        <p class="article-tag">Operations</p>
-        <h2 class="article-title">How Late Shipments Actually Start</h2>
-        <p class="article-excerpt">Late shipments in manufacturing rarely originate on the shop floor. They start days or weeks earlier in quoting, purchasing, and planning.</p>
-        <p class="article-meta">March 21, 2026</p>
-      </a>
-
-      <!-- 2026-03-19 -->
-
-      <a href="/blog/ninety-minute-morning-ritual.html" class="article-item reveal">
-        <p class="article-tag">Operations</p>
-        <h2 class="article-title">The 90-Minute Morning Ritual That Tells You Nothing</h2>
-        <p class="article-excerpt">Production managers spend 60 to 90 minutes every morning assembling a picture of what is happening on the floor. By the time they have it, the picture is already changing.</p>
-        <p class="article-meta">March 19, 2026</p>
-      </a>
-
-      <!-- 2026-03-17 -->
-
-      <a href="/blog/on-time-delivery-number-lying.html" class="article-item reveal">
-        <p class="article-tag">Operations</p>
-        <h2 class="article-title">Why Your On-Time Delivery Number Is Lying to You</h2>
-        <p class="article-excerpt">Most manufacturers report on-time delivery above 90%. Most of their customers disagree. The gap comes from how the metric is calculated, and what it hides.</p>
-        <p class="article-meta">March 17, 2026</p>
-      </a>
-
-      <!-- 2026-03-14 -->
-
-      <a href="/blog/real-cost-of-manual-data-entry.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">The Real Cost of Manual Data Entry in Manufacturing</h2>
-        <p class="article-excerpt">Manual data entry costs the average manufacturing operation 3,100 labor hours per year. The error rate compounds the damage.</p>
-        <p class="article-meta">March 14, 2026</p>
-      </a>
-
-      <!-- 2026-03-12 -->
-
-      <a href="/blog/connecting-systems-never-meant-to-talk.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">How to Connect Systems That Were Never Meant to Talk to Each Other</h2>
-        <p class="article-excerpt">Most manufacturers run 4 to 7 disconnected software systems. Getting them to share data is not an IT project. It is an operational one.</p>
-        <p class="article-meta">March 12, 2026</p>
-      </a>
-
-      <!-- 2026-03-10 -->
-
-      <a href="/blog/erp-data-more-valuable-than-you-think.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">Your ERP Data Is More Valuable Than You Think</h2>
-        <p class="article-excerpt">Most manufacturers sit on years of ERP data they never use for decision-making. The problem is access, not value. Here is what that data can actually do.</p>
-        <p class="article-meta">March 10, 2026</p>
-      </a>
-
-      <!-- 2026-03-07 -->
-
-      <a href="/blog/what-manufacturers-get-wrong-about-crm.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">What Manufacturers Get Wrong About CRM</h2>
-        <p class="article-excerpt">Most manufacturers buy a CRM designed for SaaS sales teams and wonder why nobody uses it. Manufacturing sales run on job history, quoting data, and technical relationships.</p>
-        <p class="article-meta">March 7, 2026</p>
-      </a>
-
-      <!-- 2026-03-03 -->
-
-      <a href="/blog/spreadsheet-that-runs-your-shop.html" class="article-item reveal">
-        <p class="article-tag">Systems</p>
-        <h2 class="article-title">The Spreadsheet That Runs Your Shop (And Why Nobody Admits It)</h2>
-        <p class="article-excerpt">Behind every ERP system in manufacturing, there is a spreadsheet doing the real work. The critical functions live in Excel files that one person maintains.</p>
-        <p class="article-meta">March 3, 2026</p>
-      </a>
-
-      <!-- 2026-02-24 -->
-
-      <a href="/blog/machinist-notebook-to-knowledge-system.html" class="article-item reveal">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">How One Machinist&rsquo;s Notebook Became a Searchable Knowledge System</h2>
-        <p class="article-excerpt">A senior machinist's spiral notebook held 23 years of setup notes, tooling preferences, and lessons learned. When digitized, it became a knowledge system every operator could use.</p>
-        <p class="article-meta">February 24, 2026</p>
-      </a>
-
-      <!-- 2026-02-17 -->
-
-      <a href="/blog/documentation-vs-usable-knowledge.html" class="article-item reveal">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">The Difference Between Documentation and Usable Knowledge</h2>
-        <p class="article-excerpt">Most manufacturers have documentation. Few have usable knowledge. The difference is whether information reaches the right person at the right moment.</p>
-        <p class="article-meta">February 17, 2026</p>
-      </a>
-
-      <!-- 2026-02-10 -->
-
-      <a href="/blog/three-retirements-same-year.html" class="article-item reveal">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">What Happens to Your Shop When Three People Retire in the Same Year</h2>
-        <p class="article-excerpt">One retirement is manageable. Three in the same year creates a compounding knowledge crisis. Setup times spike, quality slips, and informal systems disappear.</p>
-        <p class="article-meta">February 10, 2026</p>
-      </a>
-
-      <!-- 2026-02-03 -->
-
-      <a href="/blog/why-training-manuals-fail.html" class="article-item reveal">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">Why Training Manuals Fail and What Actually Works for Knowledge Transfer</h2>
-        <p class="article-excerpt">Most manufacturing training manuals are obsolete within six months. The problem is format, not effort. Here is what actually transfers knowledge to the next generation.</p>
-        <p class="article-meta">February 3, 2026</p>
-      </a>
-
-      <!-- 2026-01-27 -->
-
-      <a href="/blog/cost-of-one-retiring-engineer.html" class="article-item reveal">
-        <p class="article-tag">Knowledge</p>
-        <h2 class="article-title">The $2.4 Million Cost of One Retiring Engineer</h2>
-        <p class="article-excerpt">When a senior manufacturing engineer retires, the real cost goes far beyond replacing a salary. Lost knowledge, relearned mistakes, and slower operations add up.</p>
-        <p class="article-meta">January 27, 2026</p>
-      </a>
-
-      <!-- 2026-01-20 -->
-
-      <a href="/blog/anatomy-of-a-winning-quote.html" class="article-item reveal">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">The Anatomy of a Manufacturing Quote That Wins</h2>
-        <p class="article-excerpt">Winning quotes share five structural characteristics. Speed is one. The other four are about the quality of information behind every line item on the page.</p>
-        <p class="article-meta">January 20, 2026</p>
-      </a>
-
-      <!-- 2026-01-13 -->
-
-      <a href="/blog/what-estimators-wish-front-office-knew.html" class="article-item reveal">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">What Your Estimator Wishes the Front Office Understood</h2>
-        <p class="article-excerpt">Estimators spend 60% of their time on information retrieval, not estimating. The front office sees slow quotes. The estimator sees a broken system nobody will fix.</p>
-        <p class="article-meta">January 13, 2026</p>
-      </a>
-
-      <!-- 2026-01-06 -->
-
-      <a href="/blog/quote-cycle-kills-win-rate.html" class="article-item reveal">
-        <p class="article-tag">Quoting</p>
-        <h2 class="article-title">How a 5-Day Quote Cycle Quietly Kills Your Win Rate</h2>
-        <p class="article-excerpt">Every additional day in your quoting cycle costs you bids. A 5-day turnaround means your competitors have already closed the deal before your price hits the inbox.</p>
-        <p class="article-meta">January 6, 2026</p>
-      </a>
+      <!-- Right column: Founder's Picks -->
+      <div class="hero-sidebar">
+        <p class="sidebar-header">Founder&rsquo;s Picks</p>
+        <div class="sidebar-item">
+          <a href="/blog/cost-of-one-retiring-engineer.html" class="sidebar-link">The $2.4 Million Cost of One Retiring Engineer</a>
+        </div>
+        <div class="sidebar-item">
+          <a href="/blog/spreadsheet-that-runs-your-shop.html" class="sidebar-link">The Spreadsheet That Runs Your Shop (And Why Nobody Admits It)</a>
+        </div>
+        <div class="sidebar-item">
+          <a href="/blog/how-late-shipments-actually-start.html" class="sidebar-link">How Late Shipments Actually Start</a>
+        </div>
+      </div>
 
     </div>
+
+    <!-- ===== ZONE 2: Top Notes ===== -->
+    <div class="reveal reveal-d2">
+      <div class="top-notes-label">
+        <span>Top Notes</span>
+      </div>
+      <div class="top-notes-grid">
+
+        <div class="top-note">
+          <p class="tag">Quoting</p>
+          <p class="top-note-title"><a href="/blog/quote-cycle-kills-win-rate.html">How a 5-Day Quote Cycle Quietly Kills Your Win Rate</a></p>
+          <p class="top-note-date">January 6, 2026</p>
+        </div>
+
+        <div class="top-note">
+          <p class="tag">Knowledge</p>
+          <p class="top-note-title"><a href="/blog/why-training-manuals-fail.html">Why Training Manuals Fail and What Actually Works</a></p>
+          <p class="top-note-date">February 3, 2026</p>
+        </div>
+
+        <div class="top-note">
+          <p class="tag">Production</p>
+          <p class="top-note-title"><a href="/blog/on-time-delivery-number-lying.html">Why Your On-Time Delivery Number Is Lying to You</a></p>
+          <p class="top-note-date">March 17, 2026</p>
+        </div>
+
+        <div class="top-note">
+          <p class="tag">Strategy</p>
+          <p class="top-note-title"><a href="/blog/run-ai-pilot-without-disruption.html">How to Run an AI Pilot Without Disrupting Your Operation</a></p>
+          <p class="top-note-date">March 25, 2026</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== ZONE 3: All Field Notes ===== -->
+    <div class="reveal reveal-d3">
+      <div class="all-notes-label">
+        <span>All Field Notes</span>
+      </div>
+
+      <div class="article-list">
+
+        <!-- 2026-03-28 -->
+
+        <a href="/blog/the-hidden-cost-of-slow-quotes.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">The Hidden Cost of Slow Quotes in Manufacturing</h2>
+          <p class="article-excerpt">Manufacturers that respond to RFQs in two days win 35% of bids. At five days, that drops to 12%. The math is clear, and the reasons behind slow quotes are fixable.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/how-to-capture-tribal-knowledge.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">How to Capture Tribal Knowledge Before Your Best Machinist Retires</h2>
+          <p class="article-excerpt">The average skilled machinist in the U.S. is 52 years old. Ten thousand retire every year. What they know about running your operation walks out with them unless you build a system to keep it.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/why-your-erp-cant-do-this.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">Why Your ERP Cannot Do What Custom AI Can</h2>
+          <p class="article-excerpt">ERPs manage transactions. They were never designed to understand the way your specific shop runs. That gap is where spreadsheets, workarounds, and custom AI all live.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/ai-for-manufacturers-2026.html" class="article-item">
+          <p class="article-tag">Industry</p>
+          <h2 class="article-title">AI for Manufacturers: What Is Actually Possible in 2026</h2>
+          <p class="article-excerpt">Most of what you read about AI in manufacturing is either five years away or already obsolete. Here is what actually works on the shop floor today, in plain terms.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/signs-your-shop-is-ready-for-ai.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">5 Signs Your Machine Shop Is Ready for AI</h2>
+          <p class="article-excerpt">AI readiness has nothing to do with how advanced your technology stack is. It has everything to do with the problems you are already trying to solve and the data you are already sitting on.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/competitors-quoting-faster.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">Why Your Best Customers Are Getting Quotes Faster From Your Competitors</h2>
+          <p class="article-excerpt">Your competitors are quoting in one to two days. If you are still at four or five, your best customers are noticing. Here is what is happening and how to respond.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/ai-aerospace-manufacturing-compliance.html" class="article-item">
+          <p class="article-tag">Industry</p>
+          <h2 class="article-title">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</h2>
+          <p class="article-excerpt">Aerospace manufacturers operate under AS9100, ITAR, NADCAP, and FAA oversight. AI tools built for this environment need a compliance architecture from day one.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/ai-job-shops-vs-production-shops.html" class="article-item">
+          <p class="article-tag">Industry</p>
+          <h2 class="article-title">AI for Job Shops vs. Production Shops: Completely Different Problems</h2>
+          <p class="article-excerpt">A job shop running 200 different parts per month and a production shop running 15 part numbers at volume need fundamentally different AI tools.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/hydraulic-manufacturers-using-ai.html" class="article-item">
+          <p class="article-tag">Industry</p>
+          <h2 class="article-title">How Hydraulic Component Manufacturers Are Using AI in 2026</h2>
+          <p class="article-excerpt">Hydraulic manifold, valve, and cylinder manufacturers face unique quoting and production challenges. Here is where AI delivers real results in this sector.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/medical-device-manufacturers-ai-validation.html" class="article-item">
+          <p class="article-tag">Industry</p>
+          <h2 class="article-title">What Medical Device Manufacturers Need to Know About AI Validation</h2>
+          <p class="article-excerpt">FDA 21 CFR Part 820, ISO 13485, and EU MDR create a specific validation framework for AI tools in medical device manufacturing.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/quoting-make-to-order-vs-make-to-stock.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">Quoting for Make-to-Order vs. Make-to-Stock: Where AI Fits in Each</h2>
+          <p class="article-excerpt">Make-to-order and make-to-stock manufacturers have fundamentally different quoting challenges. AI addresses both, but the tools look nothing alike.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <a href="/blog/small-manufacturers-compete-with-ai.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">How Small Manufacturers Compete With AI (Without Enterprise Budgets)</h2>
+          <p class="article-excerpt">Shops with 20 to 100 employees do not need million-dollar AI platforms. They need focused tools built around specific problems.</p>
+          <p class="article-meta">March 28, 2026</p>
+        </a>
+
+        <!-- 2026-03-27 -->
+
+        <a href="/blog/ai-ready-data-50-person-shop.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">What &lsquo;AI-Ready Data&rsquo; Really Means for a 50-Person Shop</h2>
+          <p class="article-excerpt">AI-ready data does not mean perfect data. It means structured, accessible, and connected. Here is what that looks like for a 50-person manufacturing operation.</p>
+          <p class="article-meta">March 27, 2026</p>
+        </a>
+
+        <a href="/blog/cheapest-ai-project-most-expensive.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">Why the Cheapest AI Project Is Usually the Most Expensive</h2>
+          <p class="article-excerpt">The $15,000 AI pilot that goes nowhere costs more than the $80,000 project that ships. Here is how manufacturers end up spending more by trying to spend less.</p>
+          <p class="article-meta">March 27, 2026</p>
+        </a>
+
+        <!-- 2026-03-26 -->
+
+        <a href="/blog/build-vs-buy-custom-software.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">Build vs. Buy: How to Decide What Custom Software You Actually Need</h2>
+          <p class="article-excerpt">Most manufacturers default to buying off-the-shelf software. Sometimes that is the right call. Often it costs more in the long run than building exactly what you need.</p>
+          <p class="article-meta">March 26, 2026</p>
+        </a>
+
+        <a href="/blog/evaluating-ai-vendors-manufacturers.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">The Manufacturer&rsquo;s Guide to Evaluating AI Vendors</h2>
+          <p class="article-excerpt">There are hundreds of AI vendors targeting manufacturers. Most of them will waste your time. Here is how to evaluate them based on what matters.</p>
+          <p class="article-meta">March 26, 2026</p>
+        </a>
+
+        <!-- 2026-03-25 -->
+
+        <a href="/blog/run-ai-pilot-without-disruption.html" class="article-item">
+          <p class="article-tag">Getting Started</p>
+          <h2 class="article-title">How to Run an AI Pilot Without Disrupting Your Operation</h2>
+          <p class="article-excerpt">AI pilots in manufacturing fail when they try to change too much at once. Here is a framework for running a pilot that delivers results without disrupting the floor.</p>
+          <p class="article-meta">March 25, 2026</p>
+        </a>
+
+        <!-- 2026-03-24 -->
+
+        <a href="/blog/scheduling-by-gut-feel.html" class="article-item">
+          <p class="article-tag">Operations</p>
+          <h2 class="article-title">The Problem With Scheduling by Gut Feel</h2>
+          <p class="article-excerpt">Most job shop scheduling relies on one person's experience and instinct. That works until it does not. Here is what gut-feel scheduling misses.</p>
+          <p class="article-meta">March 24, 2026</p>
+        </a>
+
+        <!-- 2026-03-22 -->
+
+        <a href="/blog/what-production-dashboard-should-show.html" class="article-item">
+          <p class="article-tag">Operations</p>
+          <h2 class="article-title">What a Production Dashboard Should Actually Show</h2>
+          <p class="article-excerpt">Most production dashboards display data that is either too old, too raw, or too disconnected to drive decisions. Here is what belongs on the screen.</p>
+          <p class="article-meta">March 22, 2026</p>
+        </a>
+
+        <!-- 2026-03-21 -->
+
+        <a href="/blog/how-late-shipments-actually-start.html" class="article-item">
+          <p class="article-tag">Operations</p>
+          <h2 class="article-title">How Late Shipments Actually Start</h2>
+          <p class="article-excerpt">Late shipments in manufacturing rarely originate on the shop floor. They start days or weeks earlier in quoting, purchasing, and planning.</p>
+          <p class="article-meta">March 21, 2026</p>
+        </a>
+
+        <!-- 2026-03-19 -->
+
+        <a href="/blog/ninety-minute-morning-ritual.html" class="article-item">
+          <p class="article-tag">Operations</p>
+          <h2 class="article-title">The 90-Minute Morning Ritual That Tells You Nothing</h2>
+          <p class="article-excerpt">Production managers spend 60 to 90 minutes every morning assembling a picture of what is happening on the floor. By the time they have it, the picture is already changing.</p>
+          <p class="article-meta">March 19, 2026</p>
+        </a>
+
+        <!-- 2026-03-17 -->
+
+        <a href="/blog/on-time-delivery-number-lying.html" class="article-item">
+          <p class="article-tag">Operations</p>
+          <h2 class="article-title">Why Your On-Time Delivery Number Is Lying to You</h2>
+          <p class="article-excerpt">Most manufacturers report on-time delivery above 90%. Most of their customers disagree. The gap comes from how the metric is calculated, and what it hides.</p>
+          <p class="article-meta">March 17, 2026</p>
+        </a>
+
+        <!-- 2026-03-14 -->
+
+        <a href="/blog/real-cost-of-manual-data-entry.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">The Real Cost of Manual Data Entry in Manufacturing</h2>
+          <p class="article-excerpt">Manual data entry costs the average manufacturing operation 3,100 labor hours per year. The error rate compounds the damage.</p>
+          <p class="article-meta">March 14, 2026</p>
+        </a>
+
+        <!-- 2026-03-12 -->
+
+        <a href="/blog/connecting-systems-never-meant-to-talk.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">How to Connect Systems That Were Never Meant to Talk to Each Other</h2>
+          <p class="article-excerpt">Most manufacturers run 4 to 7 disconnected software systems. Getting them to share data is not an IT project. It is an operational one.</p>
+          <p class="article-meta">March 12, 2026</p>
+        </a>
+
+        <!-- 2026-03-10 -->
+
+        <a href="/blog/erp-data-more-valuable-than-you-think.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">Your ERP Data Is More Valuable Than You Think</h2>
+          <p class="article-excerpt">Most manufacturers sit on years of ERP data they never use for decision-making. The problem is access, not value. Here is what that data can actually do.</p>
+          <p class="article-meta">March 10, 2026</p>
+        </a>
+
+        <!-- 2026-03-07 -->
+
+        <a href="/blog/what-manufacturers-get-wrong-about-crm.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">What Manufacturers Get Wrong About CRM</h2>
+          <p class="article-excerpt">Most manufacturers buy a CRM designed for SaaS sales teams and wonder why nobody uses it. Manufacturing sales run on job history, quoting data, and technical relationships.</p>
+          <p class="article-meta">March 7, 2026</p>
+        </a>
+
+        <!-- 2026-03-03 -->
+
+        <a href="/blog/spreadsheet-that-runs-your-shop.html" class="article-item">
+          <p class="article-tag">Systems</p>
+          <h2 class="article-title">The Spreadsheet That Runs Your Shop (And Why Nobody Admits It)</h2>
+          <p class="article-excerpt">Behind every ERP system in manufacturing, there is a spreadsheet doing the real work. The critical functions live in Excel files that one person maintains.</p>
+          <p class="article-meta">March 3, 2026</p>
+        </a>
+
+        <!-- 2026-02-24 -->
+
+        <a href="/blog/machinist-notebook-to-knowledge-system.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">How One Machinist&rsquo;s Notebook Became a Searchable Knowledge System</h2>
+          <p class="article-excerpt">A senior machinist's spiral notebook held 23 years of setup notes, tooling preferences, and lessons learned. When digitized, it became a knowledge system every operator could use.</p>
+          <p class="article-meta">February 24, 2026</p>
+        </a>
+
+        <!-- 2026-02-17 -->
+
+        <a href="/blog/documentation-vs-usable-knowledge.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">The Difference Between Documentation and Usable Knowledge</h2>
+          <p class="article-excerpt">Most manufacturers have documentation. Few have usable knowledge. The difference is whether information reaches the right person at the right moment.</p>
+          <p class="article-meta">February 17, 2026</p>
+        </a>
+
+        <!-- 2026-02-10 -->
+
+        <a href="/blog/three-retirements-same-year.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">What Happens to Your Shop When Three People Retire in the Same Year</h2>
+          <p class="article-excerpt">One retirement is manageable. Three in the same year creates a compounding knowledge crisis. Setup times spike, quality slips, and informal systems disappear.</p>
+          <p class="article-meta">February 10, 2026</p>
+        </a>
+
+        <!-- 2026-02-03 -->
+
+        <a href="/blog/why-training-manuals-fail.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">Why Training Manuals Fail and What Actually Works for Knowledge Transfer</h2>
+          <p class="article-excerpt">Most manufacturing training manuals are obsolete within six months. The problem is format, not effort. Here is what actually transfers knowledge to the next generation.</p>
+          <p class="article-meta">February 3, 2026</p>
+        </a>
+
+        <!-- 2026-01-27 -->
+
+        <a href="/blog/cost-of-one-retiring-engineer.html" class="article-item">
+          <p class="article-tag">Knowledge</p>
+          <h2 class="article-title">The $2.4 Million Cost of One Retiring Engineer</h2>
+          <p class="article-excerpt">When a senior manufacturing engineer retires, the real cost goes far beyond replacing a salary. Lost knowledge, relearned mistakes, and slower operations add up.</p>
+          <p class="article-meta">January 27, 2026</p>
+        </a>
+
+        <!-- 2026-01-20 -->
+
+        <a href="/blog/anatomy-of-a-winning-quote.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">The Anatomy of a Manufacturing Quote That Wins</h2>
+          <p class="article-excerpt">Winning quotes share five structural characteristics. Speed is one. The other four are about the quality of information behind every line item on the page.</p>
+          <p class="article-meta">January 20, 2026</p>
+        </a>
+
+        <!-- 2026-01-13 -->
+
+        <a href="/blog/what-estimators-wish-front-office-knew.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">What Your Estimator Wishes the Front Office Understood</h2>
+          <p class="article-excerpt">Estimators spend 60% of their time on information retrieval, not estimating. The front office sees slow quotes. The estimator sees a broken system nobody will fix.</p>
+          <p class="article-meta">January 13, 2026</p>
+        </a>
+
+        <!-- 2026-01-06 -->
+
+        <a href="/blog/quote-cycle-kills-win-rate.html" class="article-item">
+          <p class="article-tag">Quoting</p>
+          <h2 class="article-title">How a 5-Day Quote Cycle Quietly Kills Your Win Rate</h2>
+          <p class="article-excerpt">Every additional day in your quoting cycle costs you bids. A 5-day turnaround means your competitors have already closed the deal before your price hits the inbox.</p>
+          <p class="article-meta">January 6, 2026</p>
+        </a>
+
+      </div>
+    </div>
+
   </div>
 </section>
 </main>
 
-<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0">
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0;margin-top:4rem">
   <div class="container-wide">
     <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
       <div>
