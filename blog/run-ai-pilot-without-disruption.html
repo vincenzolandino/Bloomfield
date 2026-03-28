@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Run an AI Pilot Without Disrupting Your Operation | Bloomfield</title>
+<meta name="description" content="AI pilots in manufacturing fail when they try to change too much at once. Here is a framework for running a pilot that delivers results without disrupting the floor.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html">
+
+<meta property="og:title" content="How to Run an AI Pilot Without Disrupting Your Operation | Bloomfield">
+<meta property="og:description" content="AI pilots in manufacturing fail when they try to change too much at once. Here is a framework that works.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+<meta property="article:published_time" content="2026-03-25T08:00:00-05:00">
+<meta property="article:author" content="The Bloomfield Team">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Run an AI Pilot Without Disrupting Your Operation | Bloomfield">
+<meta name="twitter:description" content="A framework for running an AI pilot in manufacturing that delivers results without disrupting the floor.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Run an AI Pilot Without Disrupting Your Operation",
+  "description": "AI pilots in manufacturing fail when they try to change too much at once. Here is a framework for running a pilot that delivers results without disrupting the floor.",
+  "author": {
+    "@type": "Person",
+    "name": "The Bloomfield Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloomfield",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getbloomfield.com/logo-icon.png"
+    }
+  },
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html"
+  },
+  "url": "https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.font-mono{font-family:'IBM Plex Mono',monospace}
+.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+
+.grain{position:relative}
+.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav.scrolled{background:rgba(10,10,20,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
+.mobile-menu.open{display:flex}
+
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#edeae4}
+
+.article-body{max-width:42rem;margin:0 auto;position:relative;z-index:10}
+.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem;color:#1a1a2e}
+.article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.4;margin-top:2.5rem;margin-bottom:0.75rem;color:#1a1a2e}
+.article-body p{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem}
+.article-body ul,.article-body ol{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem;padding-left:1.5rem}
+.article-body li{margin-bottom:0.5rem}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:#1a1a2e}
+.article-body blockquote{border-left:2px solid var(--accent);padding-left:1.5rem;margin:2rem 0}
+.article-body blockquote p{color:rgba(26,26,46,0.7);font-style:italic}
+.article-body strong{color:#1a1a2e;font-weight:600}
+
+.cta-box{border:1px solid rgba(74,144,217,0.3);border-radius:2px;background:#0a0a14;color:#edeae4;padding:2.5rem;margin-top:3rem;text-align:center}
+.cta-box p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem}
+.article-body .btn-accent{color:#fff;text-decoration:none}
+.article-body .btn-accent:hover{color:#fff}
+.cta-box h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:1rem;color:#edeae4}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#fff1e0}
+::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link label">Solutions</a>
+      <a href="/#process" class="nav-link label">Process</a>
+      <a href="/#about" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Field Notes</a>
+      <a href="/#contact" class="btn-accent">Book a Call <span>&rarr;</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
+    <a href="/#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
+    <a href="/#about" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Field Notes</a>
+    <a href="/#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call &rarr;</a>
+  </div>
+</nav>
+
+<main>
+<article class="grain" style="padding-top:10rem;padding-bottom:6rem">
+  <div class="article-body">
+
+    <a href="/blog/" class="label" style="color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:2rem">&larr; Back to Field Notes</a>
+
+    <p class="label" style="color:rgba(26,26,46,0.5);margin-bottom:1rem"><time datetime="2026-03-25">March 25, 2026</time> &middot; The Bloomfield Team</p>
+
+    <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">How to Run an AI Pilot Without Disrupting Your Operation</h1>
+
+    <p>A 90-person contract manufacturer in Pennsylvania decided to explore AI in early 2025. They engaged a consulting firm, spent $85,000 on a three-month "AI readiness assessment," and received a 47-page report recommending a full-scale deployment across quoting, scheduling, quality, and shop floor data collection. The estimated implementation cost was $400,000 to $600,000. The estimated timeline was 12 to 18 months.</p>
+
+    <p>The report is still sitting in a drawer. The shop has not started.</p>
+
+    <p>This outcome is common. A 2025 survey by the Manufacturing Leadership Council found that 61% of manufacturers who completed an AI assessment or strategy engagement had not deployed any AI tool within 12 months of the assessment. The gap between assessment and action is where most AI initiatives in manufacturing go to die. The assessment is too big. The recommended deployment is too expensive. The risk feels too high. And the operation keeps running the way it always has.</p>
+
+    <p>The alternative is to skip the assessment phase entirely and run a pilot. A small, contained project that solves one specific problem, proves the value with real data, and creates the foundation for expansion. Done correctly, the pilot does not touch the production process. Nobody on the floor changes what they do. The tool sits alongside the existing workflow and delivers its value without requiring anyone to learn a new system or change an established routine.</p>
+
+    <h2>Choosing the Right Problem</h2>
+
+    <p>The pilot should target a problem that meets four criteria.</p>
+
+    <p><strong>First, the problem must be specific and measurable.</strong> "We want to use AI to improve our operation" is not a pilot scope. "We want to reduce the average time to produce a quote from 3.5 days to 1 day" is. The measurement gives the pilot a success criterion that everyone can evaluate at the end.</p>
+
+    <p><strong>Second, the data to solve the problem must already exist.</strong> A pilot that requires six months of new data collection before it can produce results is not a pilot. It is a research project. The best pilot targets use data that is already sitting in the ERP, in spreadsheets, in emails, or in documents on the shared drive. <a href="/blog/erp-data-more-valuable-than-you-think.html">Most manufacturers have far more usable data than they realize.</a></p>
+
+    <p><strong>Third, the problem should affect a small number of people.</strong> A pilot that requires twenty people to change their workflow is an organizational change project with AI attached. A pilot that requires one or two people to try a new tool alongside their existing process is a test. Quoting is a common starting point because it typically involves one to three estimators, the data is concentrated in the ERP and supplier communications, and the output is measurable in turnaround time and win rate.</p>
+
+    <p><strong>Fourth, the problem should have a clear dollar value.</strong> If the pilot succeeds, the financial impact should be calculable. <a href="/blog/the-hidden-cost-of-slow-quotes.html">Faster quoting produces a measurable increase in win rate.</a> Better scheduling reduces overtime. Fewer data entry errors reduce rework. The dollar value gives the pilot credibility with ownership and makes the decision to expand straightforward.</p>
+
+    <h2>The Three Best Starting Points</h2>
+
+    <p>Based on the pilots we have run and observed across dozens of manufacturing operations, three starting points consistently produce the best combination of fast results and low disruption.</p>
+
+    <p><strong>Quoting assistance.</strong> The AI tool connects to the ERP and reads historical job data: part numbers, material costs, cycle times, setup hours, and margins on completed jobs. When an estimator opens a new RFQ, the tool surfaces the most similar past jobs with their actual costs and identifies any patterns the estimator should know about, such as parts with similar geometries that historically required extra setup time or specific material lots that caused quality issues. The estimator still builds the quote. The tool provides the research that used to take hours in minutes.</p>
+
+    <p>The disruption to the existing process is near zero. The estimator's workflow does not change. They receive additional information at the start of the quoting process that makes their existing process faster and more accurate. Nobody else in the operation is affected.</p>
+
+    <p><strong>Production visibility.</strong> The AI tool connects to the ERP and reads job status, due dates, and operation progress. It compares remaining work against available time and flags jobs at risk of <a href="/blog/how-late-shipments-actually-start.html">shipping late</a>. The production manager gets a daily summary of at-risk jobs with the specific reason each one is flagged: material not received, behind schedule at a work center, quality hold not resolved.</p>
+
+    <p>Again, near-zero disruption. The production manager receives a report. The floor keeps running the same way. The value comes from catching problems earlier, when the options for resolution are cheaper and more varied than expediting.</p>
+
+    <p><strong>Document extraction.</strong> The AI tool reads incoming documents, supplier certifications, packing slips, customer RFQs, inspection reports, and extracts the relevant data into a structured format. Instead of someone manually reading a cert and typing the heat number, chemical composition, and mechanical properties into the quality system, the tool reads the PDF and populates the fields. A person reviews and confirms. <a href="/blog/real-cost-of-manual-data-entry.html">The time savings on document processing alone</a> can justify the pilot cost within weeks.</p>
+
+    <h2>Setting Up the Pilot</h2>
+
+    <p>A well-structured pilot has five components.</p>
+
+    <p><strong>1. Baseline measurement.</strong> Before the tool goes live, measure the current state. If the pilot targets quoting, measure the average turnaround time, the number of quotes per month, and the win rate for the past six months. If the pilot targets production visibility, measure the current on-time delivery rate against original customer-requested dates. The baseline gives you a before number to compare against the after number.</p>
+
+    <p><strong>2. Data connection.</strong> The tool connects to the existing data sources. For most pilots, this means a read connection to the ERP database and access to relevant file shares, email accounts, or other document repositories. No data is modified, moved, or deleted. The tool reads. It does not write. This eliminates the risk of the pilot affecting any existing system.</p>
+
+    <p><strong>3. Tool deployment to a small group.</strong> One to three people get access to the tool. They use it alongside their existing workflow. The tool does not replace anything. It adds a layer of information or automation to the existing process. The users give feedback on what works, what does not, and what additional information would be useful.</p>
+
+    <p><strong>4. Iteration based on feedback.</strong> The first version of any custom tool needs refinement. The estimator wants the similar-job results sorted by date rather than by similarity score. The production manager wants the at-risk report to include the customer's name, which was not in the initial version. These adjustments happen in the first two to four weeks and are a normal part of the process.</p>
+
+    <p><strong>5. Results measurement.</strong> After 60 to 90 days, measure the same metrics you baselined. Quote turnaround dropped from 3.5 days to 1.2 days. Win rate increased from 18% to 27%. On-time delivery improved from 74% to 83%. Document processing time decreased by 65%. The numbers tell you whether the pilot worked and provide the data to calculate ROI for a broader deployment.</p>
+
+    <h2>What to Avoid</h2>
+
+    <p>The most common pilot failure mode is scope expansion. The pilot starts with quoting. Three weeks in, the owner says, "Can we also use this for scheduling?" The sales manager says, "Can it pull data from our CRM too?" The quality manager says, "Can it read our inspection reports?" Each request is reasonable. Together, they turn a focused pilot into a multi-department project that takes six months instead of three and loses its measurable focus.</p>
+
+    <p>The answer to scope expansion requests during a pilot is: yes, that is possible, and it goes on the list for phase two. The pilot stays narrow. It proves one thing. The success of that one thing creates the organizational confidence to fund phase two, which addresses the next problem on the list.</p>
+
+    <p>The second most common failure mode is choosing a problem that requires behavioral change on the floor. If the pilot needs operators to scan barcodes at each operation, or enter data into a tablet at the work station, or follow a new procedure for reporting downtime, the adoption challenge overwhelms the technology. The pilot becomes a change management project, and the AI tool gets blamed for the resistance. Choose a problem where the AI tool works behind the scenes, serving information to people who already want it, without requiring anyone to change their daily routine.</p>
+
+    <p>The third failure mode is measuring the wrong thing. A pilot that measures "user satisfaction" or "perceived improvement" will produce ambiguous results that do not support a business decision. Measure dollars: revenue gained, costs avoided, hours saved. Those numbers speak to ownership in a language that drives further investment.</p>
+
+    <h2>From Pilot to Deployment</h2>
+
+    <p>A successful pilot, one that produces measurable results in 60 to 90 days on a defined problem, creates the foundation for a phased deployment. The data connections built during the pilot carry forward. The team's familiarity with AI tools as a working concept, rather than an abstract technology, makes the next phase easier to launch.</p>
+
+    <p>The progression typically follows the operation's priority stack. If quoting was the pilot and produced a 30% improvement in turnaround time, the next phase might be <a href="/blog/what-production-dashboard-should-show.html">production visibility</a>, then scheduling support, then <a href="/blog/how-to-capture-tribal-knowledge.html">knowledge capture</a>. Each phase builds on the data connections and organizational learning from the prior one.</p>
+
+    <p>The manufacturers who are deploying AI successfully in 2026 are not the ones who started with a $500,000 assessment and a 47-page roadmap. They are the ones who picked one problem, built one tool, measured the results, and expanded from there. The <a href="/blog/signs-your-shop-is-ready-for-ai.html">readiness to start</a> is simpler than most vendors make it sound. You need a specific problem, existing data, and the willingness to try something for 90 days.</p>
+
+    <div class="cta-box">
+      <h3>Run a pilot that proves the value</h3>
+      <p>We will identify the highest-impact starting point for your operation and build a focused pilot that delivers measurable results in 90 days.</p>
+      <a href="/#contact" class="btn-accent">Talk to Our Team <span>&rarr;</span></a>
+    </div>
+
+  </div>
+</article>
+</main>
+
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.08);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(26,26,46,0.4);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>

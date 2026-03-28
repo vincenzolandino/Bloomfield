@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI in Aerospace Manufacturing: What the Compliance Layer Looks Like | Bloomfield</title>
+<meta name="description" content="Aerospace manufacturers operate under AS9100, ITAR, NADCAP, and FAA oversight. AI tools built for this environment need a compliance architecture from day one.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html">
+
+<meta property="og:title" content="AI in Aerospace Manufacturing: What the Compliance Layer Looks Like | Bloomfield">
+<meta property="og:description" content="Aerospace manufacturers operate under AS9100, ITAR, NADCAP, and FAA oversight. AI tools built for this environment need a compliance architecture from day one.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+<meta property="article:published_time" content="2026-03-28T08:00:00-05:00">
+<meta property="article:author" content="The Bloomfield Team">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI in Aerospace Manufacturing: What the Compliance Layer Looks Like | Bloomfield">
+<meta name="twitter:description" content="AI tools for aerospace manufacturing need a compliance architecture from day one. Here is what that looks like.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI in Aerospace Manufacturing: What the Compliance Layer Looks Like",
+  "description": "Aerospace manufacturers operate under AS9100, ITAR, NADCAP, and FAA oversight. AI tools built for this environment need a compliance architecture from day one.",
+  "author": {
+    "@type": "Person",
+    "name": "The Bloomfield Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloomfield",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getbloomfield.com/logo-icon.png"
+    }
+  },
+  "datePublished": "2026-03-28",
+  "dateModified": "2026-03-28",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html"
+  },
+  "url": "https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.font-mono{font-family:'IBM Plex Mono',monospace}
+.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+
+.grain{position:relative}
+.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav.scrolled{background:rgba(10,10,20,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
+.mobile-menu.open{display:flex}
+
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#edeae4}
+
+.article-body{max-width:42rem;margin:0 auto;position:relative;z-index:10}
+.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem;color:#1a1a2e}
+.article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.4;margin-top:2.5rem;margin-bottom:0.75rem;color:#1a1a2e}
+.article-body p{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem}
+.article-body ul,.article-body ol{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem;padding-left:1.5rem}
+.article-body li{margin-bottom:0.5rem}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:#1a1a2e}
+.article-body blockquote{border-left:2px solid var(--accent);padding-left:1.5rem;margin:2rem 0}
+.article-body blockquote p{color:rgba(26,26,46,0.7);font-style:italic}
+.article-body strong{color:#1a1a2e;font-weight:600}
+
+.cta-box{border:1px solid rgba(74,144,217,0.3);border-radius:2px;background:#0a0a14;color:#edeae4;padding:2.5rem;margin-top:3rem;text-align:center}
+.cta-box p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem}
+.article-body .btn-accent{color:#fff;text-decoration:none}
+.article-body .btn-accent:hover{color:#fff}
+.cta-box h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:1rem;color:#edeae4}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#fff1e0}
+::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link label">Solutions</a>
+      <a href="/#process" class="nav-link label">Process</a>
+      <a href="/#about" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Field Notes</a>
+      <a href="/#contact" class="btn-accent">Book a Call <span>&rarr;</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
+    <a href="/#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
+    <a href="/#about" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Field Notes</a>
+    <a href="/#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call &rarr;</a>
+  </div>
+</nav>
+
+<main>
+<article class="grain" style="padding-top:10rem;padding-bottom:6rem">
+  <div class="article-body">
+
+    <a href="/blog/" class="label" style="color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:2rem">&larr; Back to Field Notes</a>
+
+    <p class="label" style="color:rgba(26,26,46,0.5);margin-bottom:1rem"><time datetime="2026-03-28">March 28, 2026</time> &middot; The Bloomfield Team</p>
+
+    <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</h1>
+
+    <p>An aerospace machine shop considering AI tools faces a question that general-purpose AI vendors rarely understand: every output of every system that touches production data is potentially auditable. AS9100 registrars, NADCAP auditors, prime contractor quality teams, and FAA designees all have the authority to ask how a decision was made, what data supported it, and whether the process followed the documented procedure. An AI tool that cannot answer those questions is a compliance liability, regardless of how well it performs.</p>
+
+    <p>Roughly 12,000 manufacturers in the United States hold AS9100 certification. Most of them operate between 30 and 200 employees. They machine structural components, fabricate sheet metal assemblies, process special treatments, and produce the precision parts that go into every airframe and engine in production. For these shops, AI adoption depends on one thing above all: can the tool operate within the compliance framework that governs everything they do?</p>
+
+    <h2>The Regulatory Stack</h2>
+
+    <p>Aerospace manufacturing compliance is layered. Understanding those layers is the starting point for understanding where AI can and cannot operate.</p>
+
+    <p><strong>AS9100 Rev D</strong> is the quality management system standard derived from ISO 9001 with aerospace-specific additions. It requires documented processes, controlled records, risk-based thinking applied to every change, and a configuration management system that tracks the relationship between requirements, design, production, and inspection. Any AI tool that generates recommendations, surfaces data, or supports decision-making in a quality-relevant process needs to fit within the QMS documentation structure. That means the tool's inputs, outputs, logic, and version history must be traceable.</p>
+
+    <p><strong>NADCAP</strong> governs special processes: heat treatment, chemical processing, welding, nondestructive testing, and surface coatings. NADCAP audits focus on process control, calibration, operator certification, and the documented evidence that every step was performed within specified parameters. AI tools that monitor special process parameters or predict process drift need to produce records that meet NADCAP documentation requirements. An AI-generated alert that a furnace load may need extended soak time is valuable. An alert with no traceable logic or data source is an audit finding waiting to happen.</p>
+
+    <p><strong>ITAR (International Traffic in Arms Regulations)</strong> restricts access to technical data related to defense articles. For the roughly 30% of aerospace shops that handle ITAR-controlled work, this means the AI system cannot send data to foreign servers, cannot be accessed by non-US persons, and cannot store technical data in any location that is not ITAR-compliant. Cloud-based AI tools built on infrastructure that spans multiple countries fail this requirement by default unless they are specifically architected for ITAR compliance with data residency controls and access restrictions.</p>
+
+    <p><strong>FAA Production Approvals</strong> (PMA, TSOA, and Parts Manufacturer Approval) carry their own documentation requirements for any system that influences production decisions. If an AI tool recommends a process parameter, inspection frequency, or material substitution on an FAA-controlled part, the recommendation and the data behind it become part of the quality record.</p>
+
+    <h2>Where AI Operates Safely in Aerospace</h2>
+
+    <p>The compliance framework does not prevent AI adoption. It constrains how AI tools are designed, deployed, and documented. The practical applications fall into categories based on their proximity to production decisions.</p>
+
+    <p><strong>Quoting and estimating.</strong> This is the lowest compliance risk application because quoting happens before a production order exists. An AI tool that surfaces historical job data, comparable past quotes, material pricing, and setup time estimates to support the estimator's pricing decisions operates entirely outside the AS9100 quality record. The estimator uses the information to build a price. The tool does not make production decisions. For aerospace shops where <a href="/blog/the-hidden-cost-of-slow-quotes.html">slow quoting costs contracts</a>, this is the highest-value, lowest-risk starting point.</p>
+
+    <p><strong>Production planning and scheduling.</strong> AI-assisted scheduling that accounts for machine capability, operator certifications, and material availability is a planning function. The schedule itself is not a controlled record in most QMS implementations. The work orders, travelers, and inspection records generated from that schedule are controlled. An AI scheduling tool that optimizes load balancing and identifies bottlenecks ahead of time operates in a planning capacity. The compliance requirement is that the resulting work orders follow the documented process for their creation and approval.</p>
+
+    <p><strong>Nonconformance pattern detection.</strong> An AI tool that analyzes NCR data to identify recurring defect patterns by part type, machine, operator, or material lot is a quality analysis function. The tool surfaces patterns. The quality engineer evaluates them and decides on corrective action through the documented CAPA process. The AI output is an input to a human decision, and the decision and its rationale are documented in the CAPA record. This architecture satisfies AS9100 requirements because the controlled process (CAPA) is human-driven, and the AI serves as an analytical tool.</p>
+
+    <p><strong>Supplier performance analysis.</strong> Tracking supplier delivery performance, quality metrics, and pricing trends with AI-assisted analysis supports the required supplier evaluation process under AS9100 Section 8.4. The AI tool aggregates data that already exists in the QMS and purchasing records. The supplier rating decisions remain with the quality team.</p>
+
+    <h2>The Architecture That Passes Audit</h2>
+
+    <p>An AI tool built for an aerospace manufacturing environment needs five architectural features that general-purpose AI tools typically lack.</p>
+
+    <p><strong>Traceability of inputs.</strong> When the AI surfaces a recommendation, the system must show exactly which data records contributed to that output. If the quoting tool suggests a setup time of 4.5 hours for a new part, the system should display the three historical jobs it analyzed to reach that estimate, with their job numbers, actual setup times, and the dates they were run. The auditor can then follow the chain from AI output back to source records.</p>
+
+    <p><strong>Version control on logic.</strong> If the AI model is updated, retrained, or adjusted, the system must maintain a record of what changed, when, and what the previous version produced. This mirrors the configuration management requirements that AS9100 applies to product design and process documentation. A model that produces different outputs today than it did last month, with no record of what changed, creates an uncontrolled condition.</p>
+
+    <p><strong>Access controls aligned with ITAR.</strong> For shops handling controlled technical data, the AI system must enforce access restrictions at the data level. An operator cleared for commercial work should not be able to query the AI system about a defense program's historical job data. The access control model must match the facility's Technology Control Plan.</p>
+
+    <p><strong>Audit logging.</strong> Every query, every recommendation, and every user action within the AI system should be logged with timestamps, user IDs, and the specific data accessed. This log serves the same function as the controlled document register: it provides an auditable trail of how the system was used.</p>
+
+    <p><strong>Human-in-the-loop architecture.</strong> For any application that touches production decisions, the AI recommends and the human decides. This is not a philosophical position. It is the only architecture that satisfies the AS9100 requirement for competent persons making quality-relevant decisions. <a href="/blog/ai-for-manufacturers-2026.html">The AI tool is a decision support system</a>, and the documented process must reflect that the human authority for each decision is clearly defined.</p>
+
+    <h2>What the Auditor Asks</h2>
+
+    <p>In a surveillance or recertification audit, the registrar will want to understand any new system that influences quality-relevant processes. Based on current audit practices, the questions follow a predictable pattern.</p>
+
+    <p>How is this system documented in the QMS? The AI tool should appear in the relevant process procedures as a tool used within the workflow, with its scope and limitations defined. It does not need its own standalone procedure. It needs to be referenced in the procedures it supports.</p>
+
+    <p>What training is required to use this system? The answer should reference the training records for each user, consistent with the competency requirements in AS9100 Section 7.2. If the quoting tool requires the estimator to interpret AI-generated recommendations, the training should cover what the recommendations mean, how to evaluate them, and when to override them.</p>
+
+    <p>How do you validate the system's outputs? The answer is ongoing comparison of AI recommendations against actual results. For a quoting tool, that means tracking quoted cost versus actual cost for jobs where the AI's recommendations were used. For a quality prediction tool, tracking predicted defects against actual inspection results. This validation data becomes part of the management review input under Section 9.3.</p>
+
+    <p>What happens when the system is unavailable? The fallback process must be documented. If the AI quoting tool goes down, the estimator reverts to the manual process. That manual process must still be documented and maintained, which it already is in most shops because the AI tool was built on top of an existing workflow.</p>
+
+    <h2>ITAR-Specific Considerations</h2>
+
+    <p>For shops handling ITAR-controlled work, the AI system's data architecture requires specific controls that many AI vendors cannot provide.</p>
+
+    <p>All data must reside on servers physically located within the United States, operated by US persons. Cloud providers that offer GovCloud or ITAR-compliant regions satisfy the infrastructure requirement, but the AI application layer must also enforce data residency. A model trained on ITAR data cannot be deployed on shared infrastructure where non-US-person administrators have access to the underlying data.</p>
+
+    <p>The Technology Control Plan must be updated to address the AI system. The TCP already defines how the facility controls access to ITAR technical data. The AI tool is a new access point for that data, and the TCP must document how access is controlled, who has access, and what technical data the system can access.</p>
+
+    <p>Encryption requirements apply to data in transit and at rest. The AI system's communication with ERP systems, file servers, and user interfaces must use encryption that meets the facility's existing security requirements.</p>
+
+    <h2>Starting the Right Way</h2>
+
+    <p>Aerospace shops that adopt AI successfully do so by starting with applications that carry low compliance risk and high operational value. Quoting is the natural entry point. It sits outside the production quality record, delivers measurable speed and accuracy improvements, and gives the quality team time to develop the documentation and training framework that will be needed for higher-risk applications later.</p>
+
+    <p>The second application typically involves quality data analysis or supplier performance tracking, both of which operate as analytical tools within existing QMS processes. By the time the shop considers AI for production-adjacent applications like scheduling optimization or process monitoring, the compliance architecture is established and the audit team has already evaluated the approach.</p>
+
+    <p>The shops that struggle are the ones that deploy a general-purpose AI tool without considering the compliance layer, then discover during an audit that the system's outputs are not traceable, its logic is not documented, and its data handling does not meet ITAR requirements. That discovery usually results in the tool being shut down until it can be brought into compliance, which often means rebuilding it from the ground up.</p>
+
+    <p>Building <a href="/blog/build-vs-buy-custom-software.html">the compliance architecture into the tool from day one</a> costs less and takes less time than retrofitting it after an auditor raises a finding. For aerospace manufacturers, the compliance layer is where AI adoption either succeeds or stalls. Getting it right at the start is the only path that works.</p>
+
+    <div class="cta-box">
+      <h3>See how AI fits within your aerospace compliance framework</h3>
+      <p>We build AI tools for aerospace manufacturers with AS9100, NADCAP, and ITAR requirements built into the architecture from the start.</p>
+      <a href="/#contact" class="btn-accent">Talk to Our Team <span>&rarr;</span></a>
+    </div>
+
+  </div>
+</article>
+</main>
+
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.08);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(26,26,46,0.4);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>

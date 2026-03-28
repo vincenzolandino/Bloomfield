@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What a Production Dashboard Should Actually Show | Bloomfield</title>
+<meta name="description" content="Most production dashboards display data that is either too old, too raw, or too disconnected to drive decisions. Here is what belongs on the screen and what does not.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/blog/what-production-dashboard-should-show.html">
+
+<meta property="og:title" content="What a Production Dashboard Should Actually Show | Bloomfield">
+<meta property="og:description" content="Most production dashboards display data that is too old, too raw, or too disconnected to drive decisions. Here is what belongs on the screen.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/blog/what-production-dashboard-should-show.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+<meta property="article:published_time" content="2026-03-22T08:00:00-05:00">
+<meta property="article:author" content="The Bloomfield Team">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What a Production Dashboard Should Actually Show | Bloomfield">
+<meta name="twitter:description" content="Most production dashboards are useless. Here is what a useful one looks like.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What a Production Dashboard Should Actually Show",
+  "description": "Most production dashboards display data that is either too old, too raw, or too disconnected to drive decisions. Here is what belongs on the screen and what does not.",
+  "author": {
+    "@type": "Person",
+    "name": "The Bloomfield Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloomfield",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getbloomfield.com/logo-icon.png"
+    }
+  },
+  "datePublished": "2026-03-22",
+  "dateModified": "2026-03-22",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getbloomfield.com/blog/what-production-dashboard-should-show.html"
+  },
+  "url": "https://getbloomfield.com/blog/what-production-dashboard-should-show.html"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.font-mono{font-family:'IBM Plex Mono',monospace}
+.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+
+.grain{position:relative}
+.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav.scrolled{background:rgba(10,10,20,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
+.mobile-menu.open{display:flex}
+
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#edeae4}
+
+.article-body{max-width:42rem;margin:0 auto;position:relative;z-index:10}
+.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem;color:#1a1a2e}
+.article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.4;margin-top:2.5rem;margin-bottom:0.75rem;color:#1a1a2e}
+.article-body p{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem}
+.article-body ul,.article-body ol{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem;padding-left:1.5rem}
+.article-body li{margin-bottom:0.5rem}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:#1a1a2e}
+.article-body blockquote{border-left:2px solid var(--accent);padding-left:1.5rem;margin:2rem 0}
+.article-body blockquote p{color:rgba(26,26,46,0.7);font-style:italic}
+.article-body strong{color:#1a1a2e;font-weight:600}
+
+.cta-box{border:1px solid rgba(74,144,217,0.3);border-radius:2px;background:#0a0a14;color:#edeae4;padding:2.5rem;margin-top:3rem;text-align:center}
+.cta-box p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem}
+.article-body .btn-accent{color:#fff;text-decoration:none}
+.article-body .btn-accent:hover{color:#fff}
+.cta-box h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:1rem;color:#edeae4}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#fff1e0}
+::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link label">Solutions</a>
+      <a href="/#process" class="nav-link label">Process</a>
+      <a href="/#about" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Field Notes</a>
+      <a href="/#contact" class="btn-accent">Book a Call <span>&rarr;</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
+    <a href="/#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
+    <a href="/#about" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Field Notes</a>
+    <a href="/#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call &rarr;</a>
+  </div>
+</nav>
+
+<main>
+<article class="grain" style="padding-top:10rem;padding-bottom:6rem">
+  <div class="article-body">
+
+    <a href="/blog/" class="label" style="color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:2rem">&larr; Back to Field Notes</a>
+
+    <p class="label" style="color:rgba(26,26,46,0.5);margin-bottom:1rem"><time datetime="2026-03-22">March 22, 2026</time> &middot; The Bloomfield Team</p>
+
+    <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">What a Production Dashboard Should Actually Show</h1>
+
+    <p>A production manager at a 55-person stamping shop in Tennessee has a 65-inch TV mounted on the wall outside his office. It displays the shop's production dashboard: machine utilization percentages for each press, updated every 15 minutes. Green means above 80%. Yellow means 60 to 80%. Red means below 60%. On any given day, the screen is mostly green with a few yellows and an occasional red.</p>
+
+    <p>He described the dashboard as "wallpaper." Something people glance at as they walk by. Nobody changes their behavior based on what it shows. Nobody makes a decision differently because a press is running at 73% utilization instead of 82%.</p>
+
+    <p>This is the standard outcome for production dashboards in manufacturing. The shop invests in the hardware, the software, and the data connections. The TV goes on the wall. Within three months, it becomes part of the scenery. The problem is what the dashboard shows, which in most cases is a collection of metrics that describe activity without revealing the decisions that need to be made.</p>
+
+    <h2>The Problem With Activity Metrics</h2>
+
+    <p>Machine utilization, parts per hour, OEE (Overall Equipment Effectiveness), uptime percentage. These are the standard metrics on most production dashboards. They answer the question: "How busy are we?" They do not answer the question that matters: "Are we going to ship everything on time this week, and if not, what needs to change right now?"</p>
+
+    <p>A machine running at 92% utilization tells you the machine is busy. It does not tell you whether the job on that machine is the right job to be running right now, given the ship dates of everything in the queue. A press could run at 95% utilization all week on jobs that are not due for three weeks while jobs due Friday sit waiting for an open slot. The utilization number looks great. The delivery performance is about to get worse.</p>
+
+    <p>Parts per hour tells you the rate. It does not tell you whether that rate is going to get the job done in time for the next operation in the routing, or whether the parts coming off the machine are going to pass inspection. A cell producing 40 parts per hour that is making scrap at a 6% rate is not performing as well as the parts-per-hour number suggests.</p>
+
+    <p>OEE combines availability, performance, and quality into a single number. It is useful for long-term analysis of equipment capability. It is almost useless for daily decision-making because it obscures the specific factors that a production manager can act on in the moment. An OEE of 72% does not tell anyone what to do next.</p>
+
+    <h2>What Decisions Need to Be Made</h2>
+
+    <p>A useful production dashboard starts with the decisions it needs to support, then works backward to the data those decisions require.</p>
+
+    <p>The production manager at a job shop makes a limited number of recurring decisions each day. <a href="/blog/ninety-minute-morning-ritual.html">Every morning</a>, they need to answer these questions:</p>
+
+    <ol>
+      <li>Which jobs are at risk of shipping late, and what is causing the risk?</li>
+      <li>Which work centers have the most schedule pressure this week?</li>
+      <li>Are there any jobs waiting to start that are blocked by material, tooling, programming, or a prior operation?</li>
+      <li>Did anything happen on the previous shift that changes today's priorities?</li>
+      <li>Which jobs currently running are behind their estimated pace?</li>
+    </ol>
+
+    <p>These five questions drive 90% of the production manager's daily decisions. A dashboard that answers them clearly and accurately is useful. A dashboard that shows utilization percentages is not.</p>
+
+    <h2>The First Layer: At-Risk Jobs</h2>
+
+    <p>The most valuable thing a production dashboard can show is a list of jobs ranked by delivery risk. Delivery risk is calculated by comparing the remaining work on each job against the available time before its ship date, factoring in the capacity of the work centers involved and any known constraints like missing material or quality holds.</p>
+
+    <p>A job with 20 hours of remaining work, one week until its ship date, and an open path through available machines is low risk. A job with 20 hours of remaining work, two days until its ship date, and a machine queue that is already full for both days is high risk. The dashboard should show this clearly: these five jobs are in trouble, and here is why.</p>
+
+    <p>For each at-risk job, the dashboard should show the specific bottleneck. Is the job waiting for material? Show when the material is expected. Is the job queued behind three other jobs at a work center? Show the estimated wait time. Is the job on hold for a quality issue? Show the nonconformance and what action is needed to release it. The production manager needs to see the problem and the path to resolving it in a single view.</p>
+
+    <p>This requires data from multiple sources: the ERP for job status and due dates, the scheduling system for machine queues, the purchasing system for material delivery dates, and the quality system for open holds. <a href="/blog/connecting-systems-never-meant-to-talk.html">Connecting these sources</a> is the prerequisite for a useful dashboard.</p>
+
+    <h2>The Second Layer: Work Center Load</h2>
+
+    <p>Below the at-risk job list, the dashboard should show a capacity view by work center for the current week and next week. This view shows how many hours of work are scheduled against each machine or cell versus how many hours of capacity are available.</p>
+
+    <p>A work center with 45 hours of work scheduled against 40 hours of capacity is overloaded. The dashboard should flag this and show which jobs are contributing to the overload, ranked by priority. The production manager can then decide which job to move to an alternate machine, which to push to next week, or which to expedite by running overtime.</p>
+
+    <p>A work center with 20 hours of work against 40 hours of capacity has open time. The dashboard should show whether any at-risk jobs from other work centers could be routed there. In a shop with multiple machines capable of running similar work, this rebalancing decision happens informally every day. Making it data-driven instead of intuitive means it happens faster and catches opportunities that the informal process misses.</p>
+
+    <h2>The Third Layer: Blocked Jobs</h2>
+
+    <p>Every job shop has work-in-process sitting on the floor waiting for something. Waiting for material. Waiting for an open machine. Waiting for tooling. Waiting for a first-article approval. Waiting for a drawing revision from the customer. This waiting time is invisible in most ERP systems because the job shows as "in process" from the moment it is released until it ships.</p>
+
+    <p>The dashboard should show every job that is currently blocked, what it is blocked by, and how long it has been waiting. A job that has been waiting for material for five days is a different problem than a job that has been waiting for first-article approval for two hours. Both are blocked, but the urgency and the responsible party are different.</p>
+
+    <p>Displaying blocked jobs creates accountability. When the dashboard shows that three jobs have been waiting for tooling for more than 24 hours, the tooling manager sees it. When two jobs are waiting for a customer-approved first article, the quality manager or the sales team can follow up. The information was always available in theory, buried across multiple systems and people's memories. The dashboard makes it visible to everyone simultaneously.</p>
+
+    <h2>The Fourth Layer: Pace Versus Plan</h2>
+
+    <p>For jobs that are currently running, the dashboard should show whether the actual production rate matches the estimated rate. If a job was quoted at 3 minutes per part and the actual pace is 4.5 minutes per part, the job will take 50% longer than planned. That overage has a direct impact on the schedule for every job behind it in the queue.</p>
+
+    <p>Real-time pace tracking requires some form of data collection from the floor, either from machine monitoring (MTConnect, OPC-UA, or simple cycle counters), from operator input at the work station, or from barcode scanning at operation completion. The method depends on the shop's equipment and workflow. The output is the same: a comparison of actual versus estimated pace that flags deviations before they cascade into delivery problems.</p>
+
+    <p>A job running 15% behind pace with two days remaining before its ship date is a different conversation than a job running 15% behind pace with two weeks remaining. The dashboard should present both the deviation and the context, so the production manager can prioritize which pace problems to address and which to absorb.</p>
+
+    <h2>What Does Not Belong on the Dashboard</h2>
+
+    <p>Removing clutter is as important as adding useful information. A dashboard that shows twenty metrics invites the same wallpaper effect as a dashboard that shows one useless metric. The screen has limited real estate. Every element should correspond to a decision someone needs to make today.</p>
+
+    <p>Machine utilization percentages can go. They are useful in monthly reports for capacity planning. They are not useful for daily decision-making. Revenue figures can go. They belong in accounting, not on the shop floor. Monthly OTD numbers can go. The at-risk job list shows the leading indicator; the monthly OTD is the trailing result.</p>
+
+    <p>The test for whether a metric belongs on the production dashboard: if this number changed by 10% right now, would someone on the floor do something differently in the next four hours? If the answer is no, the metric belongs in a report, not on the wall.</p>
+
+    <h2>Building the Dashboard That Works</h2>
+
+    <p>A useful production dashboard requires three things. Data from <a href="/blog/erp-data-more-valuable-than-you-think.html">multiple systems connected into a single source</a>. Logic that transforms raw data into decision-relevant information, such as the risk calculation that turns job status plus due date plus machine availability into a priority ranking. And a display that presents the information at the right level of detail for the audience, which on a shop floor TV means large text, clear color coding, and no more than four or five items visible at a glance with the ability to drill down on a tablet or workstation.</p>
+
+    <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> start with the decisions your production team needs to make and work backward to the data and logic required to support those decisions. The result is a dashboard that people actually use, because it shows them what needs their attention right now. Not what happened yesterday. Not how busy the machines are. What is at risk, what is blocked, and what needs to change in the next shift.</p>
+
+    <p>The 65-inch TV on the wall can be useful. It depends entirely on what is on the screen.</p>
+
+    <div class="cta-box">
+      <h3>Build a dashboard your team will actually use</h3>
+      <p>We will map your production decision-making process and design a dashboard around the information that drives those decisions.</p>
+      <a href="/#contact" class="btn-accent">Talk to Our Team <span>&rarr;</span></a>
+    </div>
+
+  </div>
+</article>
+</main>
+
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.08);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(26,26,46,0.4);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>
