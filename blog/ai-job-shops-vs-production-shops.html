@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "AI for Job Shops vs. Production Shops: Completely Different Problems"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">AI for Job Shops vs. Production Shops: Completely Different Problems</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/ai-job-shops-vs-production-shops.jpg" alt="AI for Job Shops vs. Production Shops: Completely Different Problems" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/ai-job-shops-vs-production-shops.webp" alt="AI for Job Shops vs. Production Shops: Completely Different Problems" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>A job shop in eastern Pennsylvania runs 180 to 220 different part numbers through 12 CNC machines every month. Average lot size: 8 pieces. The shop quotes 50 RFQs per month, wins about 15, rarely sees the same part twice in a quarter. Setup time: 35% of total machine time.</p>
@@ -175,6 +187,8 @@ footer a:hover{color:#edeae4}
     <p>Job shops live and die by their front office. The bottleneck is almost always quoting. Every new part requires the estimator to evaluate material, operations, tooling, setup time, and cycle time for a geometry they may have never seen before. The estimator's accuracy depends on their ability to recall similar past jobs and extrapolate from that experience. <a href="/blog/the-hidden-cost-of-slow-quotes.html">When the quoting queue backs up</a>, the shop either takes longer to respond to RFQs and loses win rate, or the estimator rushes quotes and loses margin.</p>
 
     <p>Scheduling at a job shop is a daily puzzle. New jobs arrive constantly. Each requires a specific machine capability, specific tooling, and often a specific operator certification. The schedule changes every time a job finishes early, runs late, hits a quality issue, or a customer expedites an order. The production manager rebuilds the schedule mentally, sometimes hourly.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/manufacturing-ai-guide.html">our complete guide to AI in manufacturing</a>.</p>
 
     <p>Knowledge management in a job shop is acute because the variety of work means the shop accumulates specialized knowledge across dozens of materials, hundreds of geometries, and thousands of process combinations. That knowledge lives in the heads of experienced operators and estimators. When those people leave or retire, the knowledge goes with them.</p>
 
@@ -229,6 +243,15 @@ footer a:hover{color:#edeae4}
     <p>For production shops: start with quality and process optimization. The data exists in your SPC system, your machine monitoring data, and your inspection records. The pain is on the floor. The ROI comes from scrap reduction, cycle time improvement, and unplanned downtime prevention. The data preparation requirements are different because you are working with time-series production data rather than discrete job records.</p>
 
     <p><a href="/blog/build-vs-buy-custom-software.html">The right approach is a custom tool</a> built around the specific problems of your specific operation. The problems are different. The tools should be too.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/hydraulic-manufacturers-using-ai.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How Hydraulic Component Manufacturers Are Using AI in 2026</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/ai-aerospace-manufacturing-compliance.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/small-manufacturers-compete-with-ai.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How Small Manufacturers Compete With AI (Without Enterprise Budgets)</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Find the right AI starting point for your operation</h3>

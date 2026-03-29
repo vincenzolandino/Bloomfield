@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "What Medical Device Manufacturers Need to Know About AI Validation"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">What Medical Device Manufacturers Need to Know About AI Validation</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/medical-device-manufacturers-ai-validation.jpg" alt="What Medical Device Manufacturers Need to Know About AI Validation" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/medical-device-manufacturers-ai-validation.webp" alt="What Medical Device Manufacturers Need to Know About AI Validation" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>Medical device manufacturing operates under one of the most prescriptive regulatory frameworks in any industry. FDA 21 CFR Part 820 requires that any software used in production or quality systems must be validated for its intended use. ISO 13485 adds an international layer. The EU Medical Device Regulation (MDR 2017/745) introduced additional software validation and documentation demands.</p>
@@ -173,6 +185,8 @@ footer a:hover{color:#edeae4}
     <p>Software validation under FDA guidance (General Principles of Software Validation, 2002) and ISO 13485 Section 4.1.6 means establishing documented evidence that a system consistently produces results meeting predetermined specifications and quality attributes. For traditional software, this is well-understood: you define requirements, verify the software meets them, and document the results through Installation Qualification (IQ), Operational Qualification (OQ), and Performance Qualification (PQ).</p>
 
     <p>AI introduces a complication. A traditional software function produces the same output for the same input every time. An AI model may produce different outputs based on its training data, its version, and in some architectures, the specific sequence of queries preceding a given input. The validation framework must account for this variability while still demonstrating that the system produces reliable, consistent results within defined parameters.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/manufacturing-ai-guide.html">our complete guide to AI in manufacturing</a>.</p>
 
     <p>The practical approach that FDA reviewers and ISO auditors currently accept treats AI tools as decision-support systems operating within a validated process. The AI produces recommendations or analyses. The qualified human makes the decision. The validation demonstrates that the AI's recommendations fall within acceptable accuracy ranges for the specific use case, and the process documentation makes clear that the human authority for each decision is defined.</p>
 
@@ -235,6 +249,15 @@ footer a:hover{color:#edeae4}
     <p><a href="/blog/build-vs-buy-custom-software.html">Building the validation framework into the project from day one</a> adds 15 to 20% to the project timeline and 10 to 15% to the cost. Retrofitting validation after deployment typically adds 40 to 60% to both, because the testing must be designed around a system that is already in use, and any findings during validation may require changes that disrupt operations.</p>
 
     <p>AI validation follows the same logic as any process validation in medical device manufacturing: do it right the first time, document it thoroughly, maintain the validated state through ongoing monitoring and change control. The tools are new. The governing principles are decades old.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/ai-aerospace-manufacturing-compliance.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/ai-job-shops-vs-production-shops.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">AI for Job Shops vs. Production Shops: Completely Different Problems</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/evaluating-ai-vendors-manufacturers.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The Manufacturer's Guide to Evaluating AI Vendors</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Build AI tools with medical device validation from the start</h3>

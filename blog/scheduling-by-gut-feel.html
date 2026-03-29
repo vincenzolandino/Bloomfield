@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "The Problem With Scheduling by Gut Feel"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">The Problem With Scheduling by Gut Feel</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/scheduling-by-gut-feel.jpg" alt="The Problem With Scheduling by Gut Feel" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/scheduling-by-gut-feel.webp" alt="The Problem With Scheduling by Gut Feel" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>In most job shops with 30 to 100 employees, the production schedule lives in one person's head. A whiteboard exists. Maybe a spreadsheet. The ERP has a dispatch list. The actual sequence of what runs when on which machine is determined by the production manager or lead planner based on experience, instinct, and a set of priorities they recalculate mentally several times per day.</p>
@@ -175,6 +187,8 @@ footer a:hover{color:#edeae4}
     <p>A 50-person job shop running 10 CNC machines, 2 grinders, a deburring station, and an inspection department might have 80 to 120 active jobs at any given time. Each job has 3 to 8 operations. Each operation needs a specific machine or class of machines, specific tooling, specific material, and a qualified operator. The total number of scheduling variables, machine assignments, operator assignments, sequence dependencies, material constraints, and due date priorities, runs into the thousands.</p>
 
     <p>A person can hold about seven items in working memory at once. A great scheduler might mentally juggle fifteen or twenty active priorities. The shop has eighty.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/production-visibility-manufacturing.html">our guide to production visibility</a>.</p>
 
     <p>That is why gut-feel scheduling produces three predictable failure modes.</p>
 
@@ -221,6 +235,15 @@ footer a:hover{color:#edeae4}
     <p>The scheduler's experience does not become less valuable with better data. It becomes more effective. The knowledge of which operator runs which jobs best, which machines need warm-up time, and which customers need special attention is the judgment layer that no tool can replace. What the tool provides is the visibility layer that ensures that judgment is applied with full knowledge of the downstream effects.</p>
 
     <p>The shops that schedule well over the next five years will combine deep floor knowledge with connected data. The <a href="/#solutions">custom tools to build that connection</a> exist now. The scheduler's expertise is the hard part, the part that takes years to develop. The data part is an engineering problem. Engineering problems get solved.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/how-late-shipments-actually-start.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How Late Shipments Actually Start</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/on-time-delivery-number-lying.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Why Your On-Time Delivery Number Is Lying to You</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/what-production-dashboard-should-show.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">What a Production Dashboard Should Actually Show</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>See what data-informed scheduling looks like for your shop</h3>

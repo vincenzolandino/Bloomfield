@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "How Late Shipments Actually Start"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">How Late Shipments Actually Start</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/how-late-shipments-actually-start.jpg" alt="How Late Shipments Actually Start" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/how-late-shipments-actually-start.webp" alt="How Late Shipments Actually Start" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>A shipment goes out three days late. Someone asks the production manager what happened. The answer focuses on the last 72 hours: the job took longer than expected, the machine went down, first article failed. Every explanation points at the end of the chain.</p>
@@ -173,6 +185,8 @@ footer a:hover{color:#edeae4}
     <p>Late deliveries often begin the moment the lead time is quoted.</p>
 
     <p>An estimator receives an RFQ for 200 precision-ground shafts. Customer wants four weeks. The estimator checks ERP capacity, sees an opening in grinding three weeks out, confirms four weeks. Quote goes out. Customer places the order.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/production-visibility-manufacturing.html">our guide to production visibility</a>.</p>
 
     <p>What the estimator did not check: 4340 alloy steel in the required diameter is running six-week lead times from two of the shop's three suppliers. The third can deliver in three weeks at a 15% premium that was never included in the quote. The estimator quoted based on processing time and assumed material availability. That assumption created a delivery commitment the shop cannot keep without absorbing a cost increase or missing the date.</p>
 
@@ -229,6 +243,15 @@ footer a:hover{color:#edeae4}
     <p>Each fix addresses a specific link. The combined effect is a delivery process that stops generating the problems it spends most of its energy reacting to. Production stops fighting fires. The shipping dock stops being the place where upstream failures become visible for the first time.</p>
 
     <p>The <a href="/#solutions">tools to connect these upstream processes</a> and surface risks before they become late shipments are buildable now. The hardest part is accepting that the answer to "why was this late" is rarely "production was slow." It is almost always "we did not have the right information at the right time, three weeks ago."</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/on-time-delivery-number-lying.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Why Your On-Time Delivery Number Is Lying to You</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/scheduling-by-gut-feel.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The Problem With Scheduling by Gut Feel</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/ninety-minute-morning-ritual.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The 90-Minute Morning Ritual That Tells You Nothing</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Trace your late shipments back to their origin</h3>

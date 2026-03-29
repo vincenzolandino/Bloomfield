@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "AI in Aerospace Manufacturing: What the Compliance Layer Looks Like"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">AI in Aerospace Manufacturing: What the Compliance Layer Looks Like</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/ai-aerospace-manufacturing-compliance.jpg" alt="AI in Aerospace Manufacturing: What the Compliance Layer Looks Like" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/ai-aerospace-manufacturing-compliance.webp" alt="AI in Aerospace Manufacturing: What the Compliance Layer Looks Like" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>Every output of every system that touches production data in an aerospace shop is potentially auditable. AS9100 registrars, NADCAP auditors, prime contractor quality teams, FAA designees can all ask how a decision was made, what data supported it, and whether the process followed the documented procedure. An AI tool that cannot answer those questions is a compliance liability. Performance is irrelevant if the tool creates an audit finding.</p>
@@ -173,6 +185,8 @@ footer a:hover{color:#edeae4}
     <p>Aerospace manufacturing compliance is layered. Understanding those layers is the starting point for understanding where AI can and cannot operate.</p>
 
     <p><strong>AS9100 Rev D</strong> is the quality management system standard derived from ISO 9001 with aerospace-specific additions. It requires documented processes, controlled records, risk-based thinking applied to every change, and a configuration management system that tracks the relationship between requirements, design, production, and inspection. Any AI tool that generates recommendations, surfaces data, or supports decision-making in a quality-relevant process needs to fit within the QMS documentation structure. That means the tool's inputs, outputs, logic, and version history must be traceable.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/manufacturing-ai-guide.html">our complete guide to AI in manufacturing</a>.</p>
 
     <p><strong>NADCAP</strong> governs special processes: heat treatment, chemical processing, welding, nondestructive testing, and surface coatings. NADCAP audits focus on process control, calibration, operator certification, and the documented evidence that every step was performed within specified parameters. AI tools that monitor special process parameters or predict process drift need to produce records that meet NADCAP documentation requirements. An AI-generated alert that a furnace load may need extended soak time is valuable. An alert with no traceable logic or data source is an audit finding waiting to happen.</p>
 
@@ -237,6 +251,15 @@ footer a:hover{color:#edeae4}
     <p>The shops that struggle are the ones that deploy a general-purpose AI tool without considering the compliance layer, then discover during an audit that the system's outputs are not traceable, its logic is not documented, and its data handling does not meet ITAR requirements. That discovery usually results in the tool being shut down until it can be brought into compliance, which often means rebuilding it from the ground up.</p>
 
     <p>Building <a href="/blog/build-vs-buy-custom-software.html">the compliance architecture into the tool from day one</a> costs less and takes less time than retrofitting after an auditor raises a finding. For aerospace manufacturers, the compliance layer determines whether AI adoption succeeds or stalls. Getting it right at the start is the only path that works.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/medical-device-manufacturers-ai-validation.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">What Medical Device Manufacturers Need to Know About AI Validation</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/hydraulic-manufacturers-using-ai.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How Hydraulic Component Manufacturers Are Using AI in 2026</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/ai-job-shops-vs-production-shops.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">AI for Job Shops vs. Production Shops: Completely Different Problems</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>See how AI fits within your aerospace compliance framework</h3>

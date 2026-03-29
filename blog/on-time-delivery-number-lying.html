@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "Why Your On-Time Delivery Number Is Lying to You"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">Why Your On-Time Delivery Number Is Lying to You</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/on-time-delivery-number-lying.jpg" alt="Why Your On-Time Delivery Number Is Lying to You" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/on-time-delivery-number-lying.webp" alt="Why Your On-Time Delivery Number Is Lying to You" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>Your on-time delivery number is probably around 93%. Your ERP says so. Your scorecards say so. The slide deck you showed your biggest customer last quarter said so.</p>
@@ -175,6 +187,8 @@ footer a:hover{color:#edeae4}
     <p>Standard OTD math: line items shipped on or before the committed date, divided by total line items shipped. Ship 200 line items in March, 186 go out by the date in the system, the ERP reports 93%.</p>
 
     <p>The failure is in those three words: "committed ship date." That date moves. Constantly.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/production-visibility-manufacturing.html">our guide to production visibility</a>.</p>
 
     <p>A customer orders parts on March 1 with a requested delivery of March 20. The planner reviews capacity and moves the committed date to March 25. Material arrives late. The date moves again to March 28. The job ships March 27. The ERP calls that on-time because it shipped before the current committed date. The customer needed parts on March 20. They received them eight days late. Green checkmark in the system.</p>
 
@@ -236,6 +250,15 @@ footer a:hover{color:#edeae4}
     <p>Within six months, the shop's actual on-time delivery rate improved from 71% to 84%. Their largest customer noticed. Unprompted, the purchasing manager mentioned at the next quarterly review that delivery performance had improved.</p>
 
     <p>That happened because the shop measured what was true instead of what felt good. The number got worse before it got better. The operation improved because the metric finally pointed at the right problems.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/how-late-shipments-actually-start.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How Late Shipments Actually Start</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/what-production-dashboard-should-show.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">What a Production Dashboard Should Actually Show</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/scheduling-by-gut-feel.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The Problem With Scheduling by Gut Feel</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Find out what your real OTD number is</h3>

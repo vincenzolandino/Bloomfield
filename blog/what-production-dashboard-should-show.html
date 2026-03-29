@@ -63,6 +63,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "": "https://schema.org",
+  "": "BreadcrumbList",
+  "itemListElement": [
+    {"": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"": "ListItem", "position": 3, "name": "What a Production Dashboard Should Actually Show"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -161,7 +173,7 @@ footer a:hover{color:#edeae4}
     <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">What a Production Dashboard Should Actually Show</h1>
 
     <figure style="margin:2rem 0 2.5rem">
-      <img src="/images/blog/what-production-dashboard-should-show.jpg" alt="What a Production Dashboard Should Actually Show" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+      <img src="/images/blog/what-production-dashboard-should-show.webp" alt="What a Production Dashboard Should Actually Show" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
     <p>There is a 65-inch TV on the wall outside the production manager's office at a 55-person stamping shop in Tennessee. Machine utilization percentages for each press, updated every 15 minutes. Green above 80%. Yellow 60 to 80%. Red below 60%. Most days, the screen is green with a few yellows.</p>
@@ -175,6 +187,8 @@ footer a:hover{color:#edeae4}
     <p>Machine utilization, parts per hour, OEE, uptime percentage. Standard dashboard fare. They answer one question: "How busy are we?" They do not answer the question that matters: "Are we going to ship everything on time this week, and if not, what needs to change right now?"</p>
 
     <p>A machine at 92% utilization is busy. That tells you nothing about whether the job running on it is the right job given the ship dates of everything else in the queue. A press could run at 95% utilization all week on work that is not due for three weeks while Friday's orders sit waiting. The utilization number looks great. Delivery performance is about to crater.</p>
+
+    <p>For a deeper look at how these ideas connect across the shop floor, see <a href="/production-visibility-manufacturing.html">our guide to production visibility</a>.</p>
 
     <p>Parts per hour tells you the rate. It does not tell you whether that rate will finish the job in time for the next operation, or whether the parts coming off the machine will pass inspection. A cell producing 40 parts per hour with a 6% scrap rate is not performing nearly as well as the hourly number suggests.</p>
 
@@ -245,6 +259,15 @@ footer a:hover{color:#edeae4}
     <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> start with the decisions your production team makes and work backward to the data and logic required. The result is a dashboard people use because it shows what needs attention right now. What is at risk. What is blocked. What needs to change in the next shift.</p>
 
     <p>The 65-inch TV on the wall can be useful. That depends entirely on what is on the screen.</p>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/on-time-delivery-number-lying.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Why Your On-Time Delivery Number Is Lying to You</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/ninety-minute-morning-ritual.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The 90-Minute Morning Ritual That Tells You Nothing</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/scheduling-by-gut-feel.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The Problem With Scheduling by Gut Feel</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Build a dashboard your team will actually use</h3>
