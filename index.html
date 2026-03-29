@@ -219,6 +219,14 @@
 <link rel="preload" href="/logo-icon.png" as="image">
 <link rel="preload" href="/wordmark.png" as="image">
 <style>
+/* ── Font Faces ── */
+@font-face { font-family: 'GT Sectra'; src: url('/fonts/gt-sectra-book.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'GT Sectra'; src: url('/fonts/gt-sectra-bold.woff') format('woff'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'GT Sectra'; src: url('/fonts/gt-sectra-black.woff') format('woff'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Sohne'; src: url('/fonts/sohne-buch.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Sohne'; src: url('/fonts/sohne-kraftig.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Sohne'; src: url('/fonts/sohne-halbfett.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }
+
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -247,7 +255,7 @@
   --accent: #4A90D9;
   --green: #4ADE80;
   --mono: 'IBM Plex Mono', monospace;
-  --serif: Georgia, 'Times New Roman', serif;
+  --serif: 'GT Sectra', Georgia, 'Times New Roman', serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -1440,7 +1448,7 @@ footer {
         <span class="status-dot"></span>
         <span id="hero-status-text">Operational Intelligence for Manufacturers</span>
       </div>
-      <h1 class="serif" id="hero-headline"><span class="gsap-hero-line" style="display:block;">The knowledge your shop floor</span><span class="gsap-hero-line" style="display:block;">already has. Finally put to work.</span></h1>
+      <h1 class="serif" id="hero-headline"><span class="gsap-hero-line" style="display:block;">The knowledge your shop floor already has.</span><span class="gsap-hero-line" style="display:block;">Finally put to work.</span></h1>
       <p class="hero-subtitle">We help manufacturers reduce quoting errors, late deliveries, and knowledge loss with custom AI tools built around how your operation actually runs.</p>
       <a href="#contact" class="hero-cta">Talk to Our Team &rarr;</a>
     </div>
