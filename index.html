@@ -208,9 +208,14 @@
 }
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="/css/bloomfield.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/gt-sectra-book.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/sohne-buch.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="/logo-icon.png" as="image">
 <link rel="preload" href="/wordmark.png" as="image">
 <style>
@@ -289,7 +294,7 @@ body {
 }
 
 .section-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   max-width: 720px;
@@ -328,6 +333,8 @@ body {
     linear-gradient(var(--grid-dark) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-dark) 1px, transparent 1px);
   background-size: 48px 48px;
+  background-position-y: var(--grid-offset, 0px);
+  will-change: background-position;
 }
 
 .section-dark .section-title { color: var(--text-dark); }
@@ -618,6 +625,8 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
     linear-gradient(var(--grid-dark) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-dark) 1px, transparent 1px);
   background-size: 48px 48px;
+  background-position-y: var(--grid-offset, 0px);
+  will-change: background-position;
 }
 
 .hero-content {
@@ -648,7 +657,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .hero-subtitle {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.75;
   color: rgba(237, 234, 228, 0.7);
@@ -742,7 +751,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .spec-table .spec-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.85;
   max-width: 720px;
@@ -757,7 +766,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .about-text {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.85;
 }
@@ -784,7 +793,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .about-timeline-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -817,7 +826,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .solution-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.85;
   max-width: 720px;
@@ -891,7 +900,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .flow-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.85;
   max-width: 720px;
@@ -1023,7 +1032,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .engagement-desc {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -1034,7 +1043,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .engagement-features li {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 15px;
   padding: 0.65rem 0;
   display: flex;
@@ -1058,7 +1067,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .faq-question {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 17px;
   font-weight: 500;
   padding-right: 1rem;
@@ -1090,7 +1099,7 @@ nav.nav-light .nav-toggle { color: var(--text-light); }
 }
 
 .faq-answer-text {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Sohne', 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.85;
   max-width: 720px;
@@ -1349,6 +1358,36 @@ footer {
   .flow-node { width: 36px; height: 36px; font-size: 11px; }
   .flow-line { left: 17px; }
 }
+
+/* ── GSAP Animation Defaults ── */
+.gsap-hero-line,
+.hero-subtitle,
+.hero-cta,
+.hero-status {
+  will-change: transform, opacity;
+}
+
+.gsap-section {
+  will-change: transform, opacity;
+}
+
+.floating-dot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform;
+}
+
+.tilt-card {
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: box-shadow 0.3s ease;
+}
+
+.counter-value {
+  font-variant-numeric: tabular-nums;
+}
 </style>
 </head>
 <body>
@@ -1392,13 +1431,16 @@ footer {
 
 <!-- ── HERO (Dark) ── -->
 <section class="hero" data-nav-theme="dark">
+  <div class="floating-dot" style="width:6px;height:6px;background:rgba(74,144,217,0.3);top:25%;left:80%;"></div>
+  <div class="floating-dot" style="width:4px;height:4px;background:rgba(74,222,128,0.25);top:60%;left:90%;"></div>
+  <div class="floating-dot" style="width:5px;height:5px;background:rgba(74,144,217,0.2);top:75%;left:15%;"></div>
   <div class="container">
     <div class="hero-content">
       <div class="hero-status">
         <span class="status-dot"></span>
-        <span>Operational Intelligence for Manufacturers</span>
+        <span id="hero-status-text">Operational Intelligence for Manufacturers</span>
       </div>
-      <h1 class="serif">The knowledge your shop floor already has. Finally put to work.</h1>
+      <h1 class="serif" id="hero-headline"><span class="gsap-hero-line" style="display:block;">The knowledge your shop floor</span><span class="gsap-hero-line" style="display:block;">already has. Finally put to work.</span></h1>
       <p class="hero-subtitle">We help manufacturers reduce quoting errors, late deliveries, and knowledge loss with custom AI tools built around how your operation actually runs.</p>
       <a href="#contact" class="hero-cta">Talk to Our Team &rarr;</a>
     </div>
@@ -1454,7 +1496,7 @@ footer {
         </div>
         <div class="about-timeline-item">
           <div class="about-timeline-year">2020s</div>
-          <div class="about-timeline-desc">That generation is retiring. 2.1 million manufacturing jobs will go unfilled by 2030. The knowledge gap is already here.</div>
+          <div class="about-timeline-desc">That generation is retiring. <span class="counter-value" data-counter-target="2.1" data-counter-suffix="M" data-counter-decimals="1">2.1M</span> manufacturing jobs will go unfilled by 2030. The knowledge gap is already here.</div>
         </div>
         <div class="about-timeline-item">
           <div class="about-timeline-year">2026</div>
@@ -1579,7 +1621,7 @@ footer {
     <h2 class="section-title reveal">Two ways to start</h2>
     <p class="section-desc reveal" style="margin-bottom: 2rem;">Every engagement begins with understanding how your operation works. The path forward depends on where you are.</p>
     <div class="engagement-grid reveal">
-      <div class="engagement-panel">
+      <div class="engagement-panel tilt-card">
         <div class="engagement-type">Track A</div>
         <div class="engagement-title serif">Advisory &amp; Strategy</div>
         <div class="engagement-desc">For teams exploring where AI fits in their operation.</div>
@@ -1591,7 +1633,7 @@ footer {
           <li><span class="status-dot"></span>Delivered in 2 to 4 weeks</li>
         </ul>
       </div>
-      <div class="engagement-panel">
+      <div class="engagement-panel tilt-card">
         <div class="engagement-type">Track B</div>
         <div class="engagement-title serif">Custom Build</div>
         <div class="engagement-desc">For operations ready to put custom tools in the hands of their team.</div>
@@ -1832,20 +1874,6 @@ document.querySelectorAll('.nav-links a').forEach(function(link) {
   });
 });
 
-// ── Scroll reveal ──
-var observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.reveal').forEach(function(el) {
-  observer.observe(el);
-});
-
 // ── FAQ toggle ──
 function toggleFaq(btn) {
   var answer = btn.nextElementSibling;
@@ -1861,6 +1889,329 @@ function toggleFaq(btn) {
     icon.classList.add('open');
   }
 }
+
+// ══════════════════════════════════════════
+// GSAP ANIMATIONS
+// ══════════════════════════════════════════
+(function() {
+  // Bail gracefully if GSAP failed to load
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    // Fallback: make all .reveal elements visible immediately
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+    document.querySelectorAll('.gsap-hero-line, .hero-subtitle, .hero-cta, .hero-status').forEach(function(el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ── 1. HERO ENTRANCE ──
+  // Hide hero elements initially
+  gsap.set('.hero-status', { opacity: 0, y: 10 });
+  gsap.set('.gsap-hero-line', { opacity: 0, y: 40, rotationX: 8 });
+  gsap.set('.hero-subtitle', { opacity: 0, y: 20 });
+  gsap.set('.hero-cta', { opacity: 0, y: 20 });
+
+  var heroTL = gsap.timeline({ delay: 0.3 });
+
+  // Status label fades in first
+  heroTL.to('.hero-status', {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    ease: 'power2.out'
+  });
+
+  // Headline lines stagger up with rotation correction
+  heroTL.to('.gsap-hero-line', {
+    opacity: 1,
+    y: 0,
+    rotationX: 0,
+    duration: 0.7,
+    stagger: 0.15,
+    ease: 'power3.out'
+  }, '-=0.2');
+
+  // Subtitle fades in 0.3s after headline completes
+  heroTL.to('.hero-subtitle', {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    ease: 'power2.out'
+  }, '+=0.3');
+
+  // CTA slides up 0.2s after subtitle
+  heroTL.to('.hero-cta', {
+    opacity: 1,
+    y: 0,
+    duration: 0.5,
+    ease: 'power2.out'
+  }, '+=0.2');
+
+
+  // ── 2. SCROLL-TRIGGERED SECTION REVEALS ──
+  // Replace CSS .reveal with GSAP ScrollTrigger
+  document.querySelectorAll('.reveal').forEach(function(el) {
+    // Remove the CSS-based reveal so GSAP takes over
+    el.classList.remove('reveal');
+    el.classList.add('gsap-section');
+
+    gsap.set(el, { opacity: 0, y: 30 });
+
+    // Animate children if they exist, otherwise animate the element
+    var children = el.querySelectorAll(':scope > tr, :scope > div, :scope > .solution-row, :scope > .flow-step, :scope > .engagement-panel, :scope > .faq-item');
+
+    if (children.length > 1) {
+      gsap.set(children, { opacity: 0, y: 30 });
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 85%',
+        once: true,
+        onEnter: function() {
+          gsap.to(el, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' });
+          gsap.to(children, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: 'power2.out',
+            delay: 0.15
+          });
+        }
+      });
+    } else {
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 85%',
+        once: true,
+        onEnter: function() {
+          gsap.to(el, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' });
+        }
+      });
+    }
+  });
+
+
+  // ── 3. COUNTER ANIMATION ──
+  document.querySelectorAll('.counter-value').forEach(function(el) {
+    var target = parseFloat(el.getAttribute('data-counter-target'));
+    var suffix = el.getAttribute('data-counter-suffix') || '';
+    var decimals = parseInt(el.getAttribute('data-counter-decimals')) || 0;
+    var counter = { val: 0 };
+
+    ScrollTrigger.create({
+      trigger: el,
+      start: 'top 85%',
+      once: true,
+      onEnter: function() {
+        gsap.to(counter, {
+          val: target,
+          duration: 1.8,
+          ease: 'power2.out',
+          onUpdate: function() {
+            el.textContent = counter.val.toFixed(decimals) + suffix;
+          }
+        });
+      }
+    });
+  });
+
+
+  // ── 4. PARALLAX ON DARK SECTIONS ──
+  document.querySelectorAll('.section-dark').forEach(function(section) {
+    // Target the ::before pseudo-element via the section's background-position
+    gsap.to(section, {
+      backgroundPositionY: '40px',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 0.5
+      }
+    });
+
+    // Move the grid (::before) slower than content via a wrapper approach
+    // We animate the pseudo-element background offset via CSS custom property
+    gsap.fromTo(section, {
+      '--grid-offset': '0px'
+    }, {
+      '--grid-offset': '60px',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 0.5
+      }
+    });
+  });
+
+  // Also do it for the hero grid
+  gsap.fromTo('.hero', {
+    '--grid-offset': '0px'
+  }, {
+    '--grid-offset': '60px',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 0.5
+    }
+  });
+
+
+  // ── 5. CARD HOVER MICRO-INTERACTIONS (3D TILT) ──
+  document.querySelectorAll('.tilt-card').forEach(function(card) {
+    card.addEventListener('mousemove', function(e) {
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var centerX = rect.width / 2;
+      var centerY = rect.height / 2;
+      var rotateX = ((y - centerY) / centerY) * -4;
+      var rotateY = ((x - centerX) / centerX) * 4;
+
+      gsap.to(card, {
+        rotateX: rotateX,
+        rotateY: rotateY,
+        duration: 0.3,
+        ease: 'power2.out',
+        transformPerspective: 800
+      });
+    });
+
+    card.addEventListener('mouseleave', function() {
+      gsap.to(card, {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        transformPerspective: 800
+      });
+    });
+  });
+
+  // Also apply tilt to solution rows on hover
+  document.querySelectorAll('.solution-row').forEach(function(row) {
+    row.style.willChange = 'transform';
+    row.addEventListener('mousemove', function(e) {
+      var rect = row.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var centerX = rect.width / 2;
+      var rotateY = ((x - centerX) / centerX) * 2;
+
+      gsap.to(row, {
+        rotateY: rotateY,
+        duration: 0.3,
+        ease: 'power2.out',
+        transformPerspective: 1200
+      });
+    });
+
+    row.addEventListener('mouseleave', function() {
+      gsap.to(row, {
+        rotateY: 0,
+        duration: 0.5,
+        ease: 'power2.out'
+      });
+    });
+  });
+
+
+  // ── 6. SMOOTH SECTION TRANSITIONS ──
+  document.querySelectorAll('.section, .quote-section, .contact-section').forEach(function(section) {
+    gsap.fromTo(section, {
+      scale: 0.98,
+      opacity: 0.8
+    }, {
+      scale: 1,
+      opacity: 1,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        end: 'top 60%',
+        scrub: 0.3
+      }
+    });
+
+    gsap.to(section, {
+      scale: 0.98,
+      opacity: 0.8,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: 'bottom 40%',
+        end: 'bottom top',
+        scrub: 0.3
+      }
+    });
+  });
+
+
+  // ── 7. NAV SHRINK ON SCROLL ──
+  ScrollTrigger.create({
+    trigger: '.hero',
+    start: 'bottom top',
+    onEnter: function() {
+      gsap.to('#nav', {
+        padding: '0.6rem 0',
+        boxShadow: '0 2px 20px rgba(0,0,0,0.3)',
+        duration: 0.3,
+        ease: 'power2.out'
+      });
+    },
+    onLeaveBack: function() {
+      gsap.to('#nav', {
+        padding: '1.25rem 0',
+        boxShadow: 'none',
+        duration: 0.3,
+        ease: 'power2.out'
+      });
+    }
+  });
+
+
+  // ── 8. FLOATING ACCENT ELEMENTS ──
+  document.querySelectorAll('.floating-dot').forEach(function(dot, i) {
+    var xRange = 15 + (i * 8);
+    var yRange = 20 + (i * 10);
+    var duration = 4 + (i * 1.5);
+
+    gsap.to(dot, {
+      x: xRange,
+      y: yRange,
+      duration: duration,
+      ease: 'sine.inOut',
+      repeat: -1,
+      yoyo: true
+    });
+
+    // Secondary slower rotation for organic feel
+    gsap.to(dot, {
+      opacity: 0.15 + (Math.random() * 0.3),
+      duration: duration * 0.7,
+      ease: 'sine.inOut',
+      repeat: -1,
+      yoyo: true,
+      delay: i * 0.5
+    });
+  });
+
+
+  // ── Refresh ScrollTrigger after layout settles ──
+  window.addEventListener('load', function() {
+    ScrollTrigger.refresh();
+  });
+
+})();
 </script>
 
 </body>
