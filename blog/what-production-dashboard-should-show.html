@@ -164,21 +164,21 @@ footer a:hover{color:#edeae4}
       <img src="/images/blog/what-production-dashboard-should-show.jpg" alt="What a Production Dashboard Should Actually Show" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
-    <p>A production manager at a 55-person stamping shop in Tennessee has a 65-inch TV mounted on the wall outside his office. It displays the shop's production dashboard: machine utilization percentages for each press, updated every 15 minutes. Green means above 80%. Yellow means 60 to 80%. Red means below 60%. On any given day, the screen is mostly green with a few yellows and an occasional red.</p>
+    <p>There is a 65-inch TV on the wall outside the production manager's office at a 55-person stamping shop in Tennessee. Machine utilization percentages for each press, updated every 15 minutes. Green above 80%. Yellow 60 to 80%. Red below 60%. Most days, the screen is green with a few yellows.</p>
 
-    <p>He described the dashboard as "wallpaper." Something people glance at as they walk by. Nobody changes their behavior based on what it shows. Nobody makes a decision differently because a press is running at 73% utilization instead of 82%.</p>
+    <p>The production manager calls it "wallpaper." Nobody changes their behavior based on what it shows. A press running at 73% versus 82% does not trigger a single different decision from anyone on the floor.</p>
 
-    <p>This is the standard outcome for production dashboards in manufacturing. The shop invests in the hardware, the software, and the data connections. The TV goes on the wall. Within three months, it becomes part of the scenery. The problem is what the dashboard shows, which in most cases is a collection of metrics that describe activity without revealing the decisions that need to be made.</p>
+    <p>This is the standard outcome for production dashboards in manufacturing. The shop buys the hardware, the software, the data connections. The TV goes on the wall. Three months later, it is scenery. The failure is in what the dashboard displays: metrics that describe activity without revealing the decisions that need to be made.</p>
 
     <h2>The Problem With Activity Metrics</h2>
 
-    <p>Machine utilization, parts per hour, OEE (Overall Equipment Effectiveness), uptime percentage. These are the standard metrics on most production dashboards. They answer the question: "How busy are we?" They do not answer the question that matters: "Are we going to ship everything on time this week, and if not, what needs to change right now?"</p>
+    <p>Machine utilization, parts per hour, OEE, uptime percentage. Standard dashboard fare. They answer one question: "How busy are we?" They do not answer the question that matters: "Are we going to ship everything on time this week, and if not, what needs to change right now?"</p>
 
-    <p>A machine running at 92% utilization tells you the machine is busy. It does not tell you whether the job on that machine is the right job to be running right now, given the ship dates of everything in the queue. A press could run at 95% utilization all week on jobs that are not due for three weeks while jobs due Friday sit waiting for an open slot. The utilization number looks great. The delivery performance is about to get worse.</p>
+    <p>A machine at 92% utilization is busy. That tells you nothing about whether the job running on it is the right job given the ship dates of everything else in the queue. A press could run at 95% utilization all week on work that is not due for three weeks while Friday's orders sit waiting. The utilization number looks great. Delivery performance is about to crater.</p>
 
-    <p>Parts per hour tells you the rate. It does not tell you whether that rate is going to get the job done in time for the next operation in the routing, or whether the parts coming off the machine are going to pass inspection. A cell producing 40 parts per hour that is making scrap at a 6% rate is not performing as well as the parts-per-hour number suggests.</p>
+    <p>Parts per hour tells you the rate. It does not tell you whether that rate will finish the job in time for the next operation, or whether the parts coming off the machine will pass inspection. A cell producing 40 parts per hour with a 6% scrap rate is not performing nearly as well as the hourly number suggests.</p>
 
-    <p>OEE combines availability, performance, and quality into a single number. It is useful for long-term analysis of equipment capability. It is almost useless for daily decision-making because it obscures the specific factors that a production manager can act on in the moment. An OEE of 72% does not tell anyone what to do next.</p>
+    <p>OEE combines availability, performance, and quality into a single number. Useful for long-term equipment analysis. Nearly useless for daily decisions because it obscures the specific factors a production manager can act on in the moment. An OEE of 72% tells nobody what to do next.</p>
 
     <h2>What Decisions Need to Be Made</h2>
 
@@ -198,13 +198,13 @@ footer a:hover{color:#edeae4}
 
     <h2>The First Layer: At-Risk Jobs</h2>
 
-    <p>The most valuable thing a production dashboard can show is a list of jobs ranked by delivery risk. Delivery risk is calculated by comparing the remaining work on each job against the available time before its ship date, factoring in the capacity of the work centers involved and any known constraints like missing material or quality holds.</p>
+    <p>The most valuable element on any production dashboard is a list of jobs ranked by delivery risk. Risk calculated by comparing remaining work against available time before the ship date, factoring in work center capacity and known constraints: missing material, quality holds, machine availability.</p>
 
-    <p>A job with 20 hours of remaining work, one week until its ship date, and an open path through available machines is low risk. A job with 20 hours of remaining work, two days until its ship date, and a machine queue that is already full for both days is high risk. The dashboard should show this clearly: these five jobs are in trouble, and here is why.</p>
+    <p>A job with 20 hours of remaining work, one week to ship, and an open path through available machines is low risk. A job with 20 hours of remaining work, two days to ship, and a machine queue already full for both days is in trouble. The dashboard should make this obvious: these five jobs need attention, and here is specifically why.</p>
 
-    <p>For each at-risk job, the dashboard should show the specific bottleneck. Is the job waiting for material? Show when the material is expected. Is the job queued behind three other jobs at a work center? Show the estimated wait time. Is the job on hold for a quality issue? Show the nonconformance and what action is needed to release it. The production manager needs to see the problem and the path to resolving it in a single view.</p>
+    <p>For each at-risk job, show the bottleneck. Waiting for material? Show the expected arrival date. Queued behind three other jobs? Show estimated wait time. On quality hold? Show the nonconformance and the action needed to release it. The production manager needs the problem and the path to resolution in a single view.</p>
 
-    <p>This requires data from multiple sources: the ERP for job status and due dates, the scheduling system for machine queues, the purchasing system for material delivery dates, and the quality system for open holds. <a href="/blog/connecting-systems-never-meant-to-talk.html">Connecting these sources</a> is the prerequisite for a useful dashboard.</p>
+    <p>This requires data from multiple sources: ERP for job status and due dates, scheduling for machine queues, purchasing for material delivery dates, quality system for open holds. <a href="/blog/connecting-systems-never-meant-to-talk.html">Connecting these sources</a> is the prerequisite for a useful dashboard.</p>
 
     <h2>The Second Layer: Work Center Load</h2>
 
@@ -240,11 +240,11 @@ footer a:hover{color:#edeae4}
 
     <h2>Building the Dashboard That Works</h2>
 
-    <p>A useful production dashboard requires three things. Data from <a href="/blog/erp-data-more-valuable-than-you-think.html">multiple systems connected into a single source</a>. Logic that transforms raw data into decision-relevant information, such as the risk calculation that turns job status plus due date plus machine availability into a priority ranking. And a display that presents the information at the right level of detail for the audience, which on a shop floor TV means large text, clear color coding, and no more than four or five items visible at a glance with the ability to drill down on a tablet or workstation.</p>
+    <p>A useful production dashboard requires three things. Data from <a href="/blog/erp-data-more-valuable-than-you-think.html">multiple systems connected into a single source</a>. Logic that transforms raw data into decision-relevant information: the risk calculation that turns job status plus due date plus machine availability into a priority ranking. And a display built for the audience, which on a shop floor TV means large text, clear color coding, no more than four or five items visible at a glance, with drill-down on a tablet or workstation.</p>
 
-    <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> start with the decisions your production team needs to make and work backward to the data and logic required to support those decisions. The result is a dashboard that people actually use, because it shows them what needs their attention right now. Not what happened yesterday. Not how busy the machines are. What is at risk, what is blocked, and what needs to change in the next shift.</p>
+    <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> start with the decisions your production team makes and work backward to the data and logic required. The result is a dashboard people use because it shows what needs attention right now. What is at risk. What is blocked. What needs to change in the next shift.</p>
 
-    <p>The 65-inch TV on the wall can be useful. It depends entirely on what is on the screen.</p>
+    <p>The 65-inch TV on the wall can be useful. That depends entirely on what is on the screen.</p>
 
     <div class="cta-box">
       <h3>Build a dashboard your team will actually use</h3>

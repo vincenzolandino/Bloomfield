@@ -164,81 +164,77 @@ footer a:hover{color:#edeae4}
       <img src="/images/blog/erp-data-more-valuable-than-you-think.jpg" alt="Your ERP Data Is More Valuable Than You Think. You Just Cannot Access It." style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
-    <p>A contract manufacturer in Ohio runs Epicor. They have run it for eleven years. Every job that has moved through the shop since 2015 is recorded in that system: part numbers, material costs, cycle times, setup hours, scrap rates, customer purchase orders, and shipping records. Roughly 43,000 completed jobs. Tens of millions of data points.</p>
+
+
+    <p>A contract manufacturer in Ohio runs Epicor. Eleven years. Every job since 2015 recorded: part numbers, material costs, cycle times, setup hours, scrap rates, customer purchase orders, shipping records. Roughly 43,000 completed jobs. Tens of millions of data points.</p>
 
     <p>The owner uses Epicor to generate invoices and track open orders. That is about 5% of what the system contains.</p>
 
-    <p>This is not unusual. A 2024 survey by the MPI Group found that 72% of small and mid-size manufacturers use their ERP at less than 40% of its functional capacity. The data goes in. It rarely comes back out in a form that helps anyone make a better decision.</p>
+    <p>A 2024 survey by the MPI Group found that 72% of small and mid-size manufacturers use their ERP at less than 40% of functional capacity. The data goes in. It rarely comes back out in a form that helps anyone make a better decision.</p>
 
     <h2>The Access Problem</h2>
 
-    <p>ERP systems were designed for transactions. They record what happened: a purchase order was created, a job was opened, material was received, a shipment went out. Each event gets logged with a timestamp, a reference number, and a set of associated fields.</p>
+    <p>ERPs record transactions. Purchase order created. Job opened. Material received. Shipment out. Each event logged with a timestamp, reference number, and associated fields.</p>
 
-    <p>What ERP systems were never designed to do is answer questions across those transactions. Questions like: what did we charge the last time we ran this part for this customer, what was the actual cycle time versus the estimated cycle time, which material supplier gave us the best price on 4140 bar stock over the past two years, and which jobs with tolerances under 0.001" required rework.</p>
+    <p>What ERPs were never designed to do is answer questions across those transactions. What did we charge the last time we ran this part for this customer? What was actual cycle time versus estimated? Which supplier gave the best price on 4140 bar stock over the past two years? Which jobs with tolerances under 0.001" required rework?</p>
 
-    <p>Those questions require pulling data from multiple tables, joining records that the system stores separately, and filtering by criteria that the built-in reporting tools do not support. The information exists. The retrieval path does not.</p>
+    <p>Those questions require pulling data from multiple tables, joining separately stored records, filtering by criteria the built-in reporting tools do not support. The information exists. The retrieval path does not.</p>
 
-    <p>Most manufacturers work around this by asking the person who remembers. The estimator who has been quoting jobs for fifteen years. The production manager who knows which parts always cause setup problems. The purchasing agent who recalls which vendor was late last quarter. These people are the de facto query engine for the entire operation.</p>
-
-    <p>When they retire, take vacation, or leave for another job, the query engine goes with them.</p>
+    <p>Most manufacturers work around this by asking the person who remembers. The estimator quoting jobs for fifteen years. The production manager who knows which parts cause setup problems. The purchasing agent who recalls the late vendor. These people are the de facto query engine for the entire operation. When they retire, take vacation, or leave, the query engine goes with them.</p>
 
     <h2>What the Data Actually Contains</h2>
 
-    <p>Walk through a typical ERP database in a $10 million job shop and the depth of what is recorded becomes clear.</p>
+    <p><strong>Job records</strong> contain estimated versus actual hours for every operation on every job. Five years of this data is enough to build highly accurate cycle time predictions for new quotes. The gap between estimated and actual reveals which operations the shop underestimates and where margin erosion starts.</p>
 
-    <p><strong>Job records</strong> contain estimated hours versus actual hours for every operation on every job. Across five years, that is enough data to build highly accurate cycle time predictions for new quotes. The gap between estimated and actual hours reveals which operations the shop consistently underestimates and where margin erosion starts.</p>
+    <p><strong>Purchase order history</strong> shows every material buy with vendor, price, lead time, and quantity. Aggregated over time, this answers questions about price trends, vendor reliability, and volume discount thresholds that nobody currently tracks in a structured way.</p>
 
-    <p><strong>Purchase order history</strong> shows every material buy for every job, with vendor, price, lead time, and quantity. Aggregated over time, this data answers questions about price trends, vendor reliability, and volume discount thresholds that no one in the shop currently tracks in a structured way.</p>
+    <p><strong>Customer records</strong> contain order frequency, average job value, quote-to-order conversion, payment history. This identifies which customers are growing, which declining, which cost more to serve than they generate in margin.</p>
 
-    <p><strong>Customer records</strong> contain order frequency, average job value, quote-to-order conversion rates, and payment history. This data can identify which customers are growing, which are declining, and which cost more to serve than they generate in margin.</p>
+    <p><strong>Quality records</strong> track nonconformances, rework hours, scrap. Linked to job parameters, this reveals which geometries, materials, or tolerance bands produce the most issues. That information should flow into the quoting process. In most shops, it does not.</p>
 
-    <p><strong>Quality records</strong>, where they exist, track nonconformances, rework hours, and scrap. Linked to job parameters, this data reveals which part geometries, materials, or tolerance bands produce the most quality issues. That information should flow directly into the quoting process. In most shops, it does not.</p>
+    <p><strong>Shipping records</strong> show on-time delivery by customer, part family, and production cell. Cross-referenced with scheduling data, they reveal where delays originate, how far upstream root causes sit, and which work types are most likely to ship late.</p>
 
-    <p><strong>Shipping records</strong> show on-time delivery performance by customer, by part family, and by production cell. Cross-referenced with job scheduling data, these records reveal where delays originate, how far upstream the root causes sit, and which types of work are most likely to ship late.</p>
-
-    <p>All of this is sitting in the database. Searchable in theory. Inaccessible in practice.</p>
+    <p>All sitting in the database. Searchable in theory. Inaccessible in practice.</p>
 
     <h2>Why Built-In Reporting Falls Short</h2>
 
-    <p>Every ERP vendor sells reporting as a feature. Epicor has BAQs (Business Activity Queries). JobBOSS has Crystal Reports integration. Global Shop Solutions has its own reporting module. These tools can pull data from the system, format it into tables and charts, and deliver it on a schedule.</p>
+    <p>Every ERP vendor sells reporting as a feature. Epicor has BAQs. JobBOSS has Crystal Reports. Global Shop Solutions has its own module. These tools work within the ERP's data model, answering questions the vendor anticipated. Open jobs in the shop right now? Report is there. Jobs from the past three years with a specific material, tolerance band, and customer where actual cycle times exceeded estimates by more than 20%? That requires a custom query from someone who understands the database schema.</p>
 
-    <p>The limitation is structural. Built-in reporting tools work within the data model the ERP was designed around, which means they answer the questions the software vendor anticipated when they built the product. If you want to know how many open jobs are in the shop right now, the report is already there. If you want to know which jobs from the past three years with a specific material, tolerance band, and customer had actual cycle times more than 20% above the estimate, you are writing a custom query that requires someone who understands the database schema.</p>
+    <p>Most shops do not have that person on staff. They have an ERP administrator handling permissions, backups, and login issues. The gap between what the system can theoretically produce and what anyone knows how to ask for is enormous.</p>
 
-    <p>Most shops do not have that person on staff. They have an ERP administrator who handles user permissions, runs backups, and troubleshoots login issues. The gap between what the system can theoretically produce and what anyone in the building knows how to ask for is enormous.</p>
-
-    <p>So the reports that run are the same ones that have always run. Open orders by customer. Jobs by work center. Revenue by month. These reports describe the present. They do not explain the past in ways that improve the future.</p>
+    <p>So the reports that run are the same ones that have always run. Open orders by customer. Jobs by work center. Revenue by month. These describe the present. They do not explain the past in ways that improve the future.</p>
 
     <h2>The Cost of Not Using What You Have</h2>
 
-    <p>Consider quoting. An estimator at a 40-person shop builds 30 to 50 quotes per month. Each quote requires estimating material cost, setup time, cycle time per operation, and outside processing costs. The accuracy of those estimates determines whether the shop wins the job and whether the job makes money.</p>
+    <p>An estimator at a 40-person shop builds 30 to 50 quotes per month. Without historical data in usable format, they work from memory and rules of thumb. A study in the Journal of Manufacturing Systems found manual quoting methods deviate from actual costs by 15 to 30% on average. On a $25,000 job, $3,750 to $7,500 in potential margin variance per quote.</p>
 
-    <p>Without access to historical job data in a usable format, the estimator works from memory and rules of thumb. A study published in the Journal of Manufacturing Systems found that manual quoting methods in job shops produce estimates that deviate from actual costs by 15 to 30% on average. On a $25,000 job, that is $3,750 to $7,500 in potential margin variance per quote.</p>
+    <p>With structured access to past job data, estimates tighten. The system surfaces the five most similar jobs from three years, shows actual costs, flags where previous estimates were off. The estimator still makes the final call, but with evidence instead of instinct.</p>
 
-    <p>With structured access to past job data, those estimates tighten considerably. The system can surface the five most similar jobs from the past three years, show the actual costs, and flag where previous estimates were off. The estimator still makes the final call, but they make it with evidence instead of instinct.</p>
-
-    <p>The same logic applies to scheduling, purchasing, and quality management. Every decision made from memory or rough estimates carries an accuracy penalty. Every decision made with historical data carries less risk. The data to reduce that risk is already in the building. The <a href="/blog/why-your-erp-cant-do-this.html">gap between what the ERP stores and what your team can access</a> is where the value sits.</p>
+    <p>The same logic applies to scheduling, purchasing, and quality management. Every decision from memory carries an accuracy penalty. Every decision from historical data carries less risk. The data to reduce that risk is already in the building. The <a href="/blog/why-your-erp-cant-do-this.html">gap between what the ERP stores and what your team can access</a> is where the value sits.</p>
 
     <h2>What Structured Access Looks Like</h2>
 
-    <p>The goal is not to replace the ERP. The ERP does its transaction-recording job well enough. The goal is to build a retrieval layer on top of it that makes the accumulated data useful for the decisions people actually make every day.</p>
+    <p>The goal is building a retrieval layer on top of the ERP that makes accumulated data useful for daily decisions.</p>
 
-    <p>That retrieval layer connects to the ERP database and reads it. It also connects to the other places where operational data lives: spreadsheets, shared drives, emails with supplier quotes, quality inspection reports in PDF form, and notes from job travelers. It pulls all of that into a structure where it can be queried by a person who does not know SQL and does not understand the database schema.</p>
+    <p>That layer connects to the ERP database and reads it. Also connects to spreadsheets, shared drives, emails with supplier quotes, PDF inspection reports, job traveler notes. Pulls everything into a structure queryable by someone who does not know SQL and does not understand the database schema.</p>
 
-    <p>An estimator opens a new RFQ. The retrieval layer identifies the customer, finds the five closest historical jobs by geometry and material, surfaces actual costs and cycle times, and shows the current material pricing from the most recent supplier quotes. What used to require an hour of searching takes seconds.</p>
+    <p>Estimator opens an RFQ. The retrieval layer identifies the customer, finds five closest historical jobs by geometry and material, surfaces actual costs and cycle times, shows current material pricing from the most recent supplier quotes. An hour of searching becomes seconds.</p>
 
-    <p>A production manager wants to know which work centers are running above estimated cycle times this month. The retrieval layer compares actual clock-ins against job estimates in real time and shows the variance by cell, by operator, and by part family. That information used to take a full day to compile from raw ERP reports. Now it updates continuously.</p>
+    <p>Production manager wants to know which work centers run above estimated cycle times this month. The layer compares actual clock-ins against estimates in real time, showing variance by cell, operator, and part family. A full day to compile from raw reports becomes a continuous update.</p>
 
-    <p>A sales manager wants to see which customers have increased order volume over the past six months and which have declined. The retrieval layer aggregates purchase order data, groups it by customer and time period, and shows the trends. No spreadsheet required. No report request to the IT department.</p>
+    <p>Sales manager wants customer order volume trends over six months. The layer aggregates purchase order data, groups by customer and period, shows trends. No spreadsheet. No IT request.</p>
 
-    <p>This is what <a href="/#solutions">custom AI tools for manufacturers</a> do. They turn transaction data into decision support. They make the knowledge the operation has already generated available to the people who need it, in the moment they need it.</p>
+    <p>This is what <a href="/#solutions">custom AI tools for manufacturers</a> do. Turn transaction data into decision support. Make the knowledge the operation has generated available to people who need it, in the moment they need it.</p>
 
     <h2>The Compounding Return</h2>
 
-    <p>Every month that passes adds more data to the ERP. More jobs completed. More purchase orders fulfilled. More quality records logged. The value of structured access grows with every transaction because the historical base gets richer and the predictions get more accurate.</p>
+    <p>Every month adds more data. More completed jobs. More purchase orders. More quality records. Structured access value grows with every transaction because the historical base gets richer and predictions get more accurate.</p>
 
-    <p>A shop that builds its retrieval layer in year one gets immediate benefit from the existing data. By year two, the system has a full cycle of data captured with consistent structure, which makes the analysis more precise. By year three, the operation is making decisions based on thousands of data points that no human could hold in memory, and the compounding effect on quoting accuracy, scheduling precision, and purchasing efficiency becomes measurable in the financials.</p>
+    <p>A shop building its retrieval layer in year one gets immediate benefit. By year two, a full cycle of consistently structured data makes analysis more precise. By year three, decisions are based on thousands of data points no human could hold in memory, and compounding effects on quoting accuracy, scheduling precision, and purchasing efficiency become measurable in financials.</p>
 
-    <p>The manufacturers that will pull ahead over the next five years will not necessarily be the ones with the newest machines or the largest headcount. They will be the ones that figured out how to use the data they had been sitting on for a decade. The <a href="/blog/ai-for-manufacturers-2026.html">tools to do this exist today</a>. The question is who builds the retrieval layer first.</p>
+    <p>The manufacturers pulling ahead over the next five years will not necessarily have the newest machines or largest headcount. They will be the ones that figured out how to use data they had been sitting on for a decade. The <a href="/blog/ai-for-manufacturers-2026.html">tools exist today</a>. The question is who builds the retrieval layer first.</p>
+
+
 
     <div class="cta-box">
       <h3>Find out what your ERP data can tell you</h3>

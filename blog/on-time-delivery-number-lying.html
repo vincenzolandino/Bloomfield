@@ -164,82 +164,78 @@ footer a:hover{color:#edeae4}
       <img src="/images/blog/on-time-delivery-number-lying.jpg" alt="Why Your On-Time Delivery Number Is Lying to You" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
-    <p>Ask a contract manufacturer about their on-time delivery rate and you will hear a number above 90%. Usually 93 to 96%. The number comes from the ERP, calculated monthly, and it appears on scorecards, customer presentations, and the company website.</p>
+    <p>Your on-time delivery number is probably around 93%. Your ERP says so. Your scorecards say so. The slide deck you showed your biggest customer last quarter said so.</p>
 
-    <p>Ask their three largest customers the same question. You will hear a different number. Usually 10 to 20 points lower.</p>
+    <p>Your customer's scorecard says 74%. They are right and you are wrong. The disagreement comes down to a structural flaw in how every major ERP system calculates this metric, a flaw that flatters the shop and punishes the buyer.</p>
 
-    <p>Both sides have data to support their claim. The disagreement comes from what the metric actually measures, which in most manufacturing operations is something far narrower than what the customer experiences.</p>
+    <p>Understanding why requires breaking the OTD calculation down to its components.</p>
 
     <h2>How the Number Gets Built</h2>
 
-    <p>The standard OTD calculation in most ERP systems works like this: take the number of line items shipped on or before the committed ship date, divide by the total number of line items shipped in the period. If the shop shipped 200 line items in March and 186 of them went out on or before the date in the system, OTD is 93%.</p>
+    <p>Standard OTD math: line items shipped on or before the committed date, divided by total line items shipped. Ship 200 line items in March, 186 go out by the date in the system, the ERP reports 93%.</p>
 
-    <p>The problem starts with the phrase "committed ship date." In most shops, this date gets changed. Often multiple times.</p>
+    <p>The failure is in those three words: "committed ship date." That date moves. Constantly.</p>
 
-    <p>A customer places an order on March 1 with a requested delivery of March 20. The shop enters the order, reviews capacity, and realizes March 20 is tight. The planner moves the committed date to March 25. Material arrives late on March 10. The committed date moves again to March 28. The job ships on March 27. The ERP records this as on-time, because the shipment went out before the current committed date of March 28.</p>
+    <p>A customer orders parts on March 1 with a requested delivery of March 20. The planner reviews capacity and moves the committed date to March 25. Material arrives late. The date moves again to March 28. The job ships March 27. The ERP calls that on-time because it shipped before the current committed date. The customer needed parts on March 20. They received them eight days late. Green checkmark in the system.</p>
 
-    <p>The customer, who needed the parts on March 20, experienced an 8-day late delivery. The shop's OTD report shows a green checkmark.</p>
-
-    <p>This happens constantly. A 2023 survey by MESA International found that 58% of manufacturers surveyed had moved committed delivery dates at least once on more than 30% of orders in the preceding 12 months. In job shops with high product mix, that percentage rises above 40%.</p>
-
-    <p>Every time a date moves, the gap between what the metric reports and what the customer experiences grows wider.</p>
+    <p>A 2023 MESA International survey found that 58% of manufacturers surveyed had moved committed delivery dates at least once on more than 30% of orders in the prior 12 months. In high-mix job shops, that figure exceeds 40%. Every date change widens the gap between what the metric reports and what the customer experiences.</p>
 
     <h2>The Partial Shipment Problem</h2>
 
-    <p>A customer orders 1,000 brackets with a delivery date of April 5. The shop ships 800 on April 4 and the remaining 200 on April 12. In many ERP configurations, the first shipment of 800 units counts as on-time because it went out before the due date. The second shipment of 200 counts as late.</p>
+    <p>A customer orders 1,000 brackets for April 5. The shop ships 800 on April 4 and the remaining 200 on April 12. Many ERP configurations score that as one on-time shipment and one late shipment. Fifty percent OTD.</p>
 
-    <p>From the OTD calculation, this order is 50% on-time, 50% late: one shipment on-time, one late. From the customer's perspective, the order was late. They needed 1,000 brackets to run their assembly line on April 5. They got 800. The line could not run a full shift. The remaining 200 arrived a week later.</p>
+    <p>The customer sees it differently. They needed 1,000 brackets to run their assembly line on April 5. They got 800. The line could not run a full shift. The rest arrived a week later. The order was late.</p>
 
-    <p>Some shops calculate OTD by line item. Some by order. Some by unit quantity. The choice of denominator changes the number, and most shops choose the denominator that makes the number look best. This is not deliberate deception. It is a consequence of the ERP's default settings and the fact that nobody has configured the metric to match what the customer actually cares about: did all the parts arrive when they were supposed to.</p>
+    <p>Some shops calculate OTD by line item. Some by order. Some by unit quantity. The choice of denominator changes the number, and most shops pick the denominator that flatters them. Nobody configured the metric to answer the question the customer actually cares about: did all the parts arrive when they were supposed to.</p>
 
     <h2>What the Customer Measures</h2>
 
-    <p>Large OEMs and tier-one manufacturers track their suppliers using a metric called OTIF: On-Time In-Full. A shipment counts as on-time only if the complete ordered quantity arrives on or before the original requested date. No partial credit. No date changes.</p>
+    <p>Large OEMs and tier-one manufacturers track suppliers on OTIF: On-Time In-Full. Complete ordered quantity, on or before the original requested date. No partial credit. No date changes.</p>
 
-    <p>The difference between a shop's internal OTD and their customer's OTIF score can be staggering. A shop reporting 94% internal OTD might score 72% on their customer's OTIF scorecard. That 22-point gap represents the date changes, partial shipments, and measurement differences between the two systems.</p>
+    <p>A shop reporting 94% internal OTD might score 72% on their customer's OTIF scorecard. That 22-point gap is where the date changes, partial shipments, and measurement differences live. And it has direct commercial consequences. Many OEM customers use OTIF scores to allocate future programs. Above 90% gets first look at new work. Below 80% gets probation or removal from the approved vendor list.</p>
 
-    <p>This gap has commercial consequences. Many tier-one and OEM customers use OTIF scores to allocate future orders. A supplier scoring above 90% OTIF gets first look at new programs. A supplier scoring below 80% gets put on probation or dropped from the approved vendor list entirely. The shop that thinks it is performing at 94% because its ERP says so may not realize it is at risk until the customer's quarterly business review, where the 72% number appears on a red-highlighted slide.</p>
+    <p>The shop running at a self-reported 94% may not learn it is at risk until the quarterly business review, when that 72% appears on a red-highlighted slide.</p>
 
     <h2>Where the Delays Actually Start</h2>
 
-    <p>Measuring OTD correctly is the first problem. Understanding why deliveries are late is the second, and it is the one that leads to improvement.</p>
+    <p>Measuring correctly is one problem. Understanding root cause is the one that leads to actual improvement.</p>
 
-    <p>In most shops, a <a href="/blog/how-late-shipments-actually-start.html">late shipment is treated as a production problem</a>. The parts did not get through the shop fast enough. But when you trace the delay back through the process, production is the proximate cause only about 35 to 40% of the time.</p>
+    <p>Most shops treat a <a href="/blog/how-late-shipments-actually-start.html">late shipment as a production problem</a>. The parts did not move fast enough. But tracing the delay back through the process reveals that production is the proximate cause only 35 to 40% of the time.</p>
 
     <p>The rest breaks down roughly like this:</p>
 
     <ul>
-      <li><strong>Material delays (25 to 30%):</strong> Raw material arrived late from the supplier, was not ordered in time, or was the wrong specification. The job sat waiting for material before it could start.</li>
-      <li><strong>Planning and scheduling errors (15 to 20%):</strong> The job was scheduled to start too late to meet the ship date given the actual processing time required. Or it was scheduled correctly but bumped by a higher-priority job that came in after the original schedule was set.</li>
-      <li><strong>Engineering and pre-production (10 to 15%):</strong> The customer's drawings were revised after the order was placed. The first article took three iterations to approve. The programming took longer than expected because the geometry was more complex than it appeared in the quoting phase.</li>
-      <li><strong>Quality issues (5 to 10%):</strong> The first run failed inspection. Rework was required. A second setup and run consumed time that was not in the schedule.</li>
+      <li><strong>Material delays (25 to 30%):</strong> Raw material arrived late, was ordered too late, or was the wrong specification. The job sat waiting before it could start.</li>
+      <li><strong>Planning and scheduling errors (15 to 20%):</strong> The job was scheduled too late for its actual processing time, or it was bumped by a rush order that came in after the original schedule was set.</li>
+      <li><strong>Engineering and pre-production (10 to 15%):</strong> Drawing revisions after order entry. Three iterations on first article. Programming took longer because the geometry was more complex than it looked during quoting.</li>
+      <li><strong>Quality issues (5 to 10%):</strong> Failed first run. Rework. A second setup and run that consumed time the schedule never accounted for.</li>
     </ul>
 
-    <p>When a shop measures only whether the shipment left on time and does not track where in the process the delay originated, the root causes remain invisible. The production team gets pressure to move faster while the actual bottleneck sits in purchasing, planning, or engineering.</p>
+    <p>When a shop tracks only whether the shipment left on time and ignores where in the process the delay began, the root causes stay invisible. Production absorbs the pressure. The actual bottleneck sits in purchasing, planning, or engineering.</p>
 
     <h2>Measuring What Matters</h2>
 
     <p>An honest OTD metric requires three things that most ERP configurations do not provide by default.</p>
 
-    <p><strong>First, lock the original requested date.</strong> The date the customer asked for should be captured at order entry and preserved, unchanged, for the life of the order. The committed date can change based on capacity and material availability, but the original request date is the benchmark against which delivery performance is measured. This means adding a field to the order record that the system does not allow anyone to edit after initial entry.</p>
+    <p><strong>First, lock the original requested date.</strong> Capture it at order entry. Preserve it, unchanged, for the life of the order. The committed date can move based on capacity and material. The original request date is the benchmark. Add a field that nobody can edit after initial entry.</p>
 
-    <p><strong>Second, measure by complete order, not by line item or shipment.</strong> An order is on-time only when the full quantity ships by the original requested date. Partial shipments count as late until the remainder arrives. This aligns the metric with what the customer experiences.</p>
+    <p><strong>Second, measure by complete order.</strong> An order is on-time only when the full quantity ships by the original requested date. Partial shipments count as late until the remainder arrives. This aligns the metric with what the customer experiences.</p>
 
-    <p><strong>Third, capture the reason code for every delay.</strong> When a committed date moves or a shipment goes out late, someone in the operation should record why. Material delay. Capacity conflict. Engineering revision. Quality rework. Customer-requested change. Each reason code feeds a Pareto analysis that reveals where the systemic issues are, and which improvements would have the largest impact on actual delivery performance.</p>
+    <p><strong>Third, capture a reason code for every delay.</strong> Material delay. Capacity conflict. Engineering revision. Quality rework. Customer-requested change. Each code feeds a Pareto analysis that reveals where the systemic failures are and which fixes would move the needle most.</p>
 
-    <p>Implementing these three changes requires reconfiguring how the ERP handles order dates, building a reporting layer that calculates OTD against the original date, and creating a simple workflow for capturing delay reasons. The <a href="/blog/erp-data-more-valuable-than-you-think.html">data to do this exists in most ERP systems</a>. The reporting configuration does not.</p>
+    <p>This requires reconfiguring ERP date handling, building a reporting layer that calculates OTD against the original date, and creating a simple workflow for capturing delay reasons. The <a href="/blog/erp-data-more-valuable-than-you-think.html">data to do this exists in most ERP systems</a>. The reporting configuration does not.</p>
 
     <h2>What Accurate OTD Data Reveals</h2>
 
-    <p>A CNC shop in Wisconsin implemented honest OTD measurement in 2024. Their internal number dropped from 94% to 71% in the first month. The owner described the experience as "uncomfortable but useful."</p>
+    <p>A CNC shop in Wisconsin implemented honest OTD measurement in 2024. Their internal number dropped from 94% to 71% in the first month. The owner called it "uncomfortable but useful."</p>
 
-    <p>Within 90 days, the reason code data showed that 34% of late deliveries originated in material procurement. Steel bar stock from their primary supplier was arriving an average of 3.2 days after the promised delivery date on 40% of orders. The shop had been compensating by padding their production schedule, adding buffer time that made jobs take longer and reduced capacity. When they confronted the supplier with the data and established a secondary source, material-related delays dropped by 60% within two quarters.</p>
+    <p>Within 90 days, reason code data showed that 34% of late deliveries originated in material procurement. Steel bar stock from their primary supplier was arriving 3.2 days late on 40% of orders. The shop had been compensating by padding the production schedule, adding buffer time that consumed capacity. They confronted the supplier with the data and established a secondary source. Material-related delays dropped 60% within two quarters.</p>
 
-    <p>Another 22% of late deliveries came from scheduling conflicts where rush orders bumped standard orders. The production manager had been accepting rush requests without adjusting the delivery dates on the displaced jobs. By building a <a href="/blog/what-production-dashboard-should-show.html">scheduling tool that showed the downstream impact of inserting a rush order</a>, the team could make informed decisions about which jobs to bump and which customers to call with revised dates before the delays happened.</p>
+    <p>Another 22% of late deliveries came from scheduling conflicts where rush orders displaced standard work. The production manager had been accepting rush requests without adjusting dates on the jobs getting bumped. Building a <a href="/blog/what-production-dashboard-should-show.html">scheduling tool that showed the downstream impact of inserting a rush order</a> gave the team the ability to make informed decisions about which jobs to move and which customers to call before the delays materialized.</p>
 
-    <p>Within six months of implementing accurate OTD tracking, the shop's actual on-time delivery rate improved from 71% to 84%. Their largest customer noticed. Unprompted, the purchasing manager mentioned at their quarterly review that delivery performance had improved and asked what changed.</p>
+    <p>Within six months, the shop's actual on-time delivery rate improved from 71% to 84%. Their largest customer noticed. Unprompted, the purchasing manager mentioned at the next quarterly review that delivery performance had improved.</p>
 
-    <p>That conversation happened because the shop stopped measuring what felt good and started measuring what was true. The number got worse before it got better. The operation got better because the number was finally pointing at the right problems.</p>
+    <p>That happened because the shop measured what was true instead of what felt good. The number got worse before it got better. The operation improved because the metric finally pointed at the right problems.</p>
 
     <div class="cta-box">
       <h3>Find out what your real OTD number is</h3>

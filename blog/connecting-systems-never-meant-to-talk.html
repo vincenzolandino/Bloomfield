@@ -164,69 +164,71 @@ footer a:hover{color:#edeae4}
       <img src="/images/blog/connecting-systems-never-meant-to-talk.jpg" alt="How to Connect Systems That Were Never Meant to Talk to Each Other" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
-    <p>A typical mid-size manufacturer runs between four and seven software systems. An ERP for job tracking and invoicing. A CAD/CAM system for programming. A quality management system, maybe a standalone app, maybe a module bolted onto the ERP. A scheduling tool, which might be a spreadsheet. An accounting package. A CRM, possibly. And email, which ends up holding more operational data than any of the purpose-built tools.</p>
 
-    <p>None of these systems were designed to work together. They were purchased at different times, from different vendors, to solve different problems. The ERP vendor did not anticipate that you would need to pull data from your quality system into your quoting process. The CAD/CAM vendor did not build an integration with your scheduling spreadsheet. The accounting software does not know your ERP exists.</p>
 
-    <p>The result is an operation where information moves between systems the same way it has for decades: a person looks at one screen, remembers or writes down what they see, walks to another screen, and types it in again.</p>
+    <p>A typical mid-size manufacturer runs four to seven software systems. ERP for job tracking and invoicing. CAD/CAM for programming. A quality management system. A scheduling tool, possibly a spreadsheet. An accounting package. Maybe a CRM. And email, which ends up holding more operational data than any purpose-built tool.</p>
+
+    <p>None of these were designed to work together. Purchased at different times, from different vendors, to solve different problems. The ERP vendor did not anticipate your quality system's data would need to flow into quoting. The CAD/CAM vendor did not build an integration with your scheduling spreadsheet. The accounting software does not know your ERP exists.</p>
+
+    <p>Information moves between systems the same way it has for decades: a person looks at one screen, remembers or writes down what they see, walks to another screen, types it in again.</p>
 
     <h2>The Real Cost of Disconnected Systems</h2>
 
-    <p>A production planner at a 60-person precision machining shop in Michigan described her Monday morning this way. She opens the ERP to see what jobs are due this week. She opens a shared spreadsheet to check machine availability. She walks to the shop floor to verify that the schedule on the whiteboard matches what the ERP says. She checks her email for material delivery confirmations from three suppliers. She opens the quality system to see if any jobs from last week have open nonconformances that will affect this week's schedule.</p>
+    <p>A production planner at a 60-person precision machining shop in Michigan described her Monday morning. She opens the ERP for this week's jobs. Opens a shared spreadsheet for machine availability. Walks to the floor to verify the whiteboard matches the ERP. Checks email for material delivery confirmations from three suppliers. Opens the quality system for open nonconformances affecting this week's schedule.</p>
 
-    <p>By the time she has a complete picture of the week ahead, two hours have passed. She has touched five systems and made at least three trips to the floor. The information she compiled is accurate as of 9:00 AM Monday. By 11:00 AM, something will change and parts of it will be wrong.</p>
+    <p>Two hours to get a complete picture. Five systems. Three trips to the floor. Accurate as of 9:00 AM Monday. By 11:00 AM, something will change and parts of it will be wrong.</p>
 
-    <p>Multiply this across every role that needs information from more than one system. Estimators cross-referencing the ERP with supplier emails. Quality managers comparing inspection data with job records. Sales managers checking order status in the ERP and delivery promises in their CRM. The total labor hours spent moving information between disconnected systems in a typical 50 to 100 person shop ranges from 800 to 2,000 hours per year. At a blended labor rate of $35 per hour, that is $28,000 to $70,000 annually in data transfer labor alone.</p>
+    <p>Multiply this across every role needing information from more than one system. Total labor hours moving information between disconnected systems in a typical 50 to 100 person shop: 800 to 2,000 hours annually. At a blended rate of $35 per hour, $28,000 to $70,000 in data transfer labor alone.</p>
 
-    <p>The labor cost is measurable. The decision cost is harder to quantify but larger. Every decision made with incomplete information because pulling the full picture takes too long carries an accuracy penalty. <a href="/blog/the-hidden-cost-of-slow-quotes.html">Quotes take longer and contain more errors</a>. Schedules miss dependencies that one system knows about but another does not. Quality issues recur because the connection between a nonconformance and the job parameters that caused it lives in two different databases with no link between them.</p>
+    <p>The labor cost is measurable. The decision cost is larger. Every decision made with incomplete information because assembling the full picture takes too long carries an accuracy penalty. <a href="/blog/the-hidden-cost-of-slow-quotes.html">Quotes take longer and contain more errors</a>. Schedules miss dependencies one system knows about but another does not. Quality issues recur because the connection between a nonconformance and the job parameters causing it lives in two databases with no link.</p>
 
     <h2>Why Traditional Integration Fails</h2>
 
-    <p>The obvious answer is to integrate the systems. Buy middleware. Hire a consultant. Build API connections. This approach has a long track record in manufacturing, and most of that track record is expensive failure.</p>
+    <p>A 2023 Gartner report found that 65% of ERP integration projects in mid-market manufacturing exceed original budget by at least 50%. Average timeline: 9 to 18 months. Many stall after the vendor discovers the ERP's database schema does not support assumed data mapping.</p>
 
-    <p>A 2023 report from Gartner found that 65% of ERP integration projects in mid-market manufacturing exceed their original budget by at least 50%. The average timeline for a full integration project stretches from 9 to 18 months. Many stall entirely after the vendor discovers that the ERP's database schema does not support the data mapping they assumed during the scoping phase.</p>
+    <p>Traditional integration tries to make systems speak the same language natively. Mapping every field in System A to a corresponding field in System B, handling every edge case where formats differ, maintaining that mapping as both systems get updated. For systems designed in different decades by different teams with different data models, this is an enormous engineering effort.</p>
 
-    <p>The core problem is that traditional integration tries to make systems speak the same language natively. It requires mapping every field in System A to a corresponding field in System B, handling every edge case where the data formats differ, and maintaining that mapping as both systems get updated over time. For systems that were designed in different decades by different teams with different data models, this is an enormous engineering effort.</p>
+    <p>A stamping shop in Indiana spent $180,000 on an ERP-to-quality-system integration in 2022. Fourteen months to complete. The integration handled about 70% of data flow. The remaining 30% still required manual entry because field mappings could not account for custom quality codes. Two years later, a major ERP update broke three data pipelines. Fix cost: $40,000.</p>
 
-    <p>A stamping shop in Indiana spent $180,000 on an ERP-to-quality-system integration project in 2022. The project took fourteen months. When it was finished, the integration handled about 70% of the data flow between the two systems. The remaining 30% still required manual entry because the field mappings could not account for the shop's custom quality codes. Two years later, the ERP vendor released a major update that broke three of the integration's data pipelines. Fixing them cost another $40,000.</p>
-
-    <p>This pattern repeats across the industry. The integration works until it does not. The maintenance burden grows over time. And the original promise of seamless data flow between systems remains partially fulfilled at best.</p>
+    <p>The integration works until it does not. Maintenance burden grows. The promise of seamless data flow remains partially fulfilled.</p>
 
     <h2>A Different Approach</h2>
 
-    <p>The alternative is to stop trying to make the systems talk to each other directly and instead build a layer that reads from all of them.</p>
+    <p>Stop trying to make systems talk directly. Build a layer that reads from all of them.</p>
 
-    <p>Think of it as an operational data layer. It connects to the ERP database as a read source. It connects to the quality system the same way. It ingests the scheduling spreadsheet. It reads supplier emails. It pulls in whatever structured or unstructured data the operation generates. Rather than forcing System A and System B to share a common language, the data layer translates from each system into a common structure that supports the queries people actually need to run.</p>
+    <p>An operational data layer. Connects to the ERP database as a read source. Connects to the quality system the same way. Ingests the scheduling spreadsheet. Reads supplier emails. Pulls whatever structured or unstructured data the operation generates. Rather than forcing common language, the layer translates from each system into a common structure supporting the queries people actually need.</p>
 
-    <p>This approach has three advantages over traditional integration.</p>
+    <p>Three advantages over traditional integration.</p>
 
-    <p><strong>First, it does not require changing any existing system.</strong> The ERP keeps running exactly as it does today. The quality system stays in place. No data migration, no field mapping, no vendor coordination. The data layer reads from these systems. It does not write to them, modify them, or depend on their APIs being stable.</p>
+    <p><strong>No existing system changes.</strong> The ERP keeps running as-is. Quality system stays. No data migration, no field mapping, no vendor coordination. The data layer reads from these systems without writing to them, modifying them, or depending on stable APIs.</p>
 
-    <p><strong>Second, it can handle unstructured data.</strong> Traditional integration only works with structured databases. An operational data layer can also ingest PDFs (inspection reports, supplier certifications, job travelers), emails (supplier quotes, customer communications, internal notes), and even images (photos of setups, whiteboard schedules). This is where AI becomes relevant. Modern language models can read a PDF inspection report, extract the relevant measurements, and structure them alongside the corresponding job record from the ERP.</p>
+    <p><strong>Handles unstructured data.</strong> Traditional integration only works with structured databases. An operational data layer also ingests PDFs (inspection reports, supplier certifications, job travelers), emails (supplier quotes, customer communications, internal notes), and images (setup photos, whiteboard schedules). Modern language models can read a PDF inspection report, extract measurements, and structure them alongside the corresponding ERP job record.</p>
 
-    <p><strong>Third, it is incremental.</strong> You do not have to connect everything at once. Start with the two systems whose disconnection causes the most pain. For most shops, that is the ERP and the quoting process. Or the ERP and the scheduling function. Connect those first, prove the value, then expand. A traditional integration project is all-or-nothing. An operational data layer can deliver value in the first month and grow from there.</p>
+    <p><strong>Incremental.</strong> Start with the two systems whose disconnection causes the most pain. For most shops, the ERP and quoting process. Or the ERP and scheduling. Connect those first, prove value, expand. Traditional integration is all-or-nothing. An operational data layer delivers value in month one and grows from there.</p>
 
     <h2>How It Works in Practice</h2>
 
-    <p>Step one is mapping the data sources. This means listing every system, spreadsheet, shared drive, and email thread where operational data lives. In most shops, this exercise alone is revealing. The owner thinks there are four systems. The mapping reveals seven, plus a dozen spreadsheets and two shared drives full of PDFs that contain data people reference daily.</p>
+    <p>Step one: map data sources. List every system, spreadsheet, shared drive, and email thread where operational data lives. This exercise alone is revealing. The owner thinks four systems. Mapping reveals seven, plus a dozen spreadsheets and two shared drives of PDFs referenced daily.</p>
 
-    <p>Step two is identifying the high-value connections. Where does a person currently serve as the bridge between two systems? Where does someone look at Screen A, then walk to Screen B, then make a decision based on information from both? Those bridges are the integration targets. Each one represents labor hours, decision latency, and error risk.</p>
+    <p>Step two: identify high-value connections. Where does a person serve as bridge between two systems? Where does someone look at Screen A, walk to Screen B, then decide based on both? Those bridges are the targets. Each represents labor hours, decision latency, and error risk.</p>
 
-    <p>Step three is building the connectors. For databases with standard schemas (most ERP systems), this involves setting up a read connection that pulls data on a regular schedule or in real time. For unstructured sources, it involves AI-powered extraction: reading PDFs, parsing emails, and converting that unstructured information into structured data. For spreadsheets, it involves either direct file reading or, where the spreadsheet is the source of truth for a process, building a lightweight interface that captures the same data in a queryable format.</p>
+    <p>Step three: build connectors. Standard ERP schemas get read connections pulling data on schedule or in real time. Unstructured sources get AI-powered extraction: reading PDFs, parsing emails, converting to structured data. Spreadsheets get either direct file reading or lightweight interfaces capturing the same data in queryable format.</p>
 
-    <p>Step four is building the query interface. This is the tool that people in the operation actually use. It might be a dashboard that shows production status from the ERP alongside quality data from the QMS alongside material delivery status from supplier emails. It might be a search tool that lets an estimator type a part number and get the full history from every system that part has touched. The form depends on the workflow. The principle is consistent: <a href="/blog/erp-data-more-valuable-than-you-think.html">bring the data to the person, structured around the decision they need to make</a>.</p>
+    <p>Step four: build the query interface. The tool people actually use. Maybe a dashboard showing production status from ERP alongside quality data alongside material delivery status from supplier emails. Maybe a search tool where an estimator types a part number and gets full history from every system that part has touched. Form depends on workflow. Principle is consistent: <a href="/blog/erp-data-more-valuable-than-you-think.html">bring data to the person, structured around the decision they need to make</a>.</p>
 
     <h2>What Changes When Systems Are Connected</h2>
 
-    <p>The production planner who spent two hours assembling her Monday morning picture now opens one screen. Job status from the ERP, machine availability from the scheduling system, material delivery confirmations from supplier emails, and open quality holds from the QMS are all visible in a single view. Her Monday morning takes fifteen minutes instead of two hours.</p>
+    <p>The production planner who spent two hours assembling Monday's picture opens one screen. Job status from ERP, machine availability, material delivery confirmations, open quality holds all visible in a single view. Monday morning takes fifteen minutes instead of two hours.</p>
 
-    <p>The estimator who used to search the ERP for similar past jobs, then check emails for material pricing, then walk to the floor to ask about setup issues now gets all of that information surfaced automatically when they open an RFQ. Their quote cycle drops from days to hours.</p>
+    <p>The estimator who searched the ERP, checked emails for material pricing, then walked to the floor gets all information surfaced automatically when opening an RFQ. Quote cycle drops from days to hours.</p>
 
-    <p>The quality manager who used to manually cross-reference nonconformance reports with job parameters from the ERP now sees the correlations automatically. When three different jobs with the same material and tolerance band all show the same dimensional issue, the system flags it. A pattern that used to take weeks to notice becomes visible in real time.</p>
+    <p>The quality manager who manually cross-referenced nonconformance reports with ERP job parameters sees correlations automatically. Three jobs with the same material and tolerance band showing the same dimensional issue get flagged. A pattern that took weeks to notice becomes visible in real time.</p>
 
-    <p>None of this requires replacing any existing system. The ERP stays. The quality system stays. The accounting package stays. What changes is that the data they contain, which used to be trapped inside each one, can now flow to the people who need it across system boundaries.</p>
+    <p>None of this replaces any existing system. The ERP stays. Quality system stays. Accounting stays. What changes is that data trapped inside each one now flows to people who need it across system boundaries.</p>
 
-    <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> do exactly this. They sit on top of your existing systems, read from all of them, and deliver the connected picture your team has been assembling manually for years.</p>
+    <p>The <a href="/#solutions">custom tools we build at Bloomfield</a> sit on top of your existing systems, read from all of them, and deliver the connected picture your team has been assembling manually for years.</p>
+
+
 
     <div class="cta-box">
       <h3>Map your disconnected systems</h3>

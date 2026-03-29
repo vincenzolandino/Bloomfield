@@ -165,69 +165,69 @@ footer a:hover{color:#edeae4}
       <img src="/images/blog/spreadsheet-that-runs-your-shop.jpg" alt="The Spreadsheet That Runs Your Shop (And Why Nobody Admits It)" style="width:100%;height:auto;border-radius:2px" loading="lazy">
     </figure>
 
-    <p>Walk into any manufacturing operation with 50 to 500 employees and ask where the production schedule lives. The official answer will be the ERP system. JobBOSS, Epicor, Global Shop Solutions, IQMS, ProShop. The shop paid six figures for it. There was a multi-month implementation. Everyone was trained.</p>
 
-    <p>Now walk to the production manager's desk. On their monitor, behind the ERP window, there is an Excel spreadsheet. It has 14 tabs. The column headers are color-coded. There are conditional formatting rules that took two years to build. Several columns contain formulas that reference other tabs, and one formula spans 180 characters. This spreadsheet is the actual production schedule. The ERP contains the data. The spreadsheet is where decisions get made.</p>
 
-    <p>Every shop has at least one of these. Most have three or four, spread across different departments. The estimating team has one for quoting references. The purchasing manager has one for vendor tracking and material lead times. The quality department has one for tracking customer-specific requirements that do not fit neatly into the QMS. Nobody talks about them in management meetings. Everybody depends on them.</p>
+    <p>Walk into any manufacturing operation with 50 to 500 employees and ask where the production schedule lives. The official answer: the ERP system. JobBOSS, Epicor, Global Shop Solutions, IQMS, ProShop. Six-figure purchase. Multi-month implementation. Everyone trained.</p>
+
+    <p>Now walk to the production manager's desk. Behind the ERP window, an Excel spreadsheet with 14 tabs. Color-coded column headers. Conditional formatting rules that took two years to build. One formula spanning 180 characters. This spreadsheet is the actual production schedule. The ERP contains data. The spreadsheet is where decisions get made.</p>
+
+    <p>Every shop has at least one. Most have three or four spread across departments. Estimating has one for quoting references. Purchasing has one for vendor tracking and material lead times. Quality has one for customer-specific requirements that do not fit the QMS. Nobody mentions them in management meetings. Everybody depends on them.</p>
 
     <h2>Why the Spreadsheet Exists</h2>
 
-    <p>The spreadsheet exists because the ERP does not do what the person doing the work needs it to do. That gap is not a failure of the ERP. It is a structural limitation of software that is designed to serve an entire industry rather than a specific operation.</p>
+    <p>The ERP does not do what the person doing the work needs. That gap is a structural limitation of software designed to serve an entire industry rather than a specific operation.</p>
 
-    <p>An ERP system is built for transaction management: tracking orders, routing jobs, recording time, managing inventory, and generating invoices. It handles these functions well. What it does not handle well is the specific way that your production manager thinks about scheduling, or the specific data your estimator needs to see side by side when building a quote, or the specific vendor performance metrics your purchasing manager tracks.</p>
+    <p>An ERP handles transaction management: tracking orders, routing jobs, recording time, managing inventory, generating invoices. What it does not handle is the specific way your production manager thinks about scheduling, the specific data your estimator needs side by side when building a quote, the specific vendor performance metrics your purchasing manager tracks.</p>
 
-    <p>The spreadsheet fills that gap. It is a custom application built by the person who uses it, shaped over months or years to match exactly how they think about their work. The production manager's spreadsheet reflects their mental model of the shop floor: which machines are bottlenecks this week, which jobs are at risk of slipping, which customers will call if a delivery is late, which operators are cross-trained on which machines. <a href="/blog/why-your-erp-cant-do-this.html">The ERP cannot model any of this</a> because it was not designed to model any of this.</p>
+    <p>The spreadsheet fills that gap. A custom application built by the person who uses it, shaped over months or years to match exactly how they think about their work. The production manager's spreadsheet reflects their mental model of the floor: which machines are bottlenecks this week, which jobs are at risk, which customers will call if delivery is late, which operators are cross-trained on which machines. <a href="/blog/why-your-erp-cant-do-this.html">The ERP cannot model any of this</a> because it was never designed to.</p>
 
     <p>The spreadsheet works, as long as the person who built it is the one using it.</p>
 
     <h2>The Risks Nobody Talks About</h2>
 
-    <p><strong>Single point of failure.</strong> The production manager goes on a two-week vacation. The backup scheduler opens the spreadsheet. There are 14 tabs, hundreds of rows, and color codes whose meaning is not documented anywhere. They call the production manager on day two of the vacation to ask what the yellow highlight means on the Acme Precision row. It means the material has not arrived yet. That information lives in the production manager's head, expressed through a highlight color in a spreadsheet that nobody else maintains.</p>
+    <p><strong>Single point of failure.</strong> The production manager goes on two-week vacation. The backup scheduler opens the spreadsheet. Fourteen tabs. Hundreds of rows. Color codes whose meaning is undocumented. They call the production manager on day two to ask what the yellow highlight means on the Acme Precision row. It means material has not arrived. That information lives in the production manager's head, expressed through a highlight color nobody else understands.</p>
 
-    <p>If the production manager leaves the company, the spreadsheet becomes a historical artifact within weeks. <a href="/blog/cost-of-one-retiring-engineer.html">The replacement cannot interpret it</a>, has a different mental model of the work, and builds a new spreadsheet from scratch. Whatever logic, history, and accumulated judgment was embedded in the original spreadsheet is lost.</p>
+    <p>If the production manager leaves, the spreadsheet becomes a historical artifact within weeks. <a href="/blog/cost-of-one-retiring-engineer.html">The replacement cannot interpret it</a>, has a different mental model, builds a new one from scratch. Whatever logic, history, and judgment was embedded in the original is lost.</p>
 
-    <p><strong>Version control does not exist.</strong> The estimator's quoting spreadsheet has material pricing from Q3 of last year in some cells and current pricing in others. There is no way to tell which is which by looking at the file. If someone accidentally overwrites a formula, the error may not surface for weeks, and when it does, it will manifest as a quote that is either too high or too low without an obvious explanation.</p>
+    <p><strong>Version control does not exist.</strong> The estimator's quoting spreadsheet has material pricing from Q3 of last year in some cells and current pricing in others. No way to tell which by looking. If someone accidentally overwrites a formula, the error may not surface for weeks, manifesting as a quote that is too high or too low without explanation.</p>
 
-    <p>We have seen a case where a production scheduling spreadsheet had a broken formula in the lead time column that went undetected for three months. During that period, the production manager was making scheduling decisions based on lead times that were systematically two days shorter than actual. The result was a gradual erosion of on-time delivery performance that everyone attributed to the floor running behind, when the real problem was a formula error in cell G47.</p>
+    <p>A production scheduling spreadsheet at one shop had a broken formula in the lead time column that went undetected for three months. The production manager made scheduling decisions based on lead times systematically two days shorter than actual. On-time delivery eroded gradually, and everyone attributed it to the floor running behind. The real problem: a formula error in cell G47.</p>
 
-    <p><strong>Data isolation.</strong> The spreadsheet contains information that no other system can access. The production manager's scheduling notes, the estimator's pricing adjustments, the purchasing manager's vendor ratings: all of this data is locked inside individual Excel files on individual computers. When the estimator needs to check production capacity before quoting a lead time, they walk to the production manager's desk and look over their shoulder at the spreadsheet. When the production manager needs to know if a rush job can be accommodated, they call the estimator to ask about the current quote backlog. Information flows through conversation because the systems do not connect.</p>
+    <p><strong>Data isolation.</strong> The spreadsheet contains information no other system can access. Scheduling notes, pricing adjustments, vendor ratings all locked in individual Excel files on individual computers. Information flows through conversation because the systems do not connect.</p>
 
-    <p><strong>Scalability ceiling.</strong> A spreadsheet that works at 40 jobs per month breaks at 80. The formulas slow down. The number of rows exceeds what a human can scan visually. The conditional formatting rules conflict with each other. The production manager who managed 40 jobs by glancing at a color-coded screen now needs 30 minutes each morning to review a spreadsheet that has grown beyond what the format can support.</p>
+    <p><strong>Scalability ceiling.</strong> A spreadsheet working at 40 jobs per month breaks at 80. Formulas slow down. Row count exceeds what a human can scan visually. Conditional formatting rules conflict. The production manager who managed 40 jobs by glancing at a screen now needs 30 minutes each morning reviewing a spreadsheet grown beyond what the format supports.</p>
 
     <h2>The Spreadsheet Audit</h2>
 
-    <p>Before you can fix the spreadsheet problem, you need to understand its scope. A straightforward audit involves identifying every spreadsheet in the organization that is used to make operational decisions, who maintains it, who depends on it, and what data it contains that is not available in any other system.</p>
+    <p>We have conducted this audit at dozens of manufacturing operations. Typical findings are consistent.</p>
 
-    <p>We have conducted this audit at dozens of manufacturing operations. The typical findings are consistent.</p>
+    <p>A mid-size job shop with 100 employees typically has 8 to 15 mission-critical spreadsheets. By mission-critical: if the file were deleted, at least one business function would stop or degrade within 24 hours. Maintained by 5 to 8 individuals. Each spreadsheet has exactly one person who understands its full logic.</p>
 
-    <p>A mid-size job shop with 100 employees typically has between 8 and 15 mission-critical spreadsheets. By mission-critical, we mean that if the file were deleted, at least one business function would stop or degrade within 24 hours. These spreadsheets are maintained by 5 to 8 individuals, and in most cases, each spreadsheet has exactly one person who understands its full logic and can modify it.</p>
-
-    <p>The total data trapped in these spreadsheets, data that exists nowhere else in the organization, typically represents 30% to 40% of the operational intelligence the company uses to make daily decisions. Production priorities, customer-specific requirements, vendor performance history, pricing intelligence, machine capability notes: all living in personal files on personal computers.</p>
+    <p>Total data trapped in these spreadsheets, data existing nowhere else, typically represents 30 to 40% of the operational intelligence the company uses for daily decisions. Production priorities, customer requirements, vendor performance history, pricing intelligence, machine capability notes. All in personal files on personal computers.</p>
 
     <h2>What Should Replace the Spreadsheet</h2>
 
-    <p>The answer is not another off-the-shelf system. The spreadsheet exists precisely because off-the-shelf systems could not do what was needed. Replacing a custom spreadsheet with a new generic tool moves the problem rather than solving it.</p>
+    <p>Not another off-the-shelf system. The spreadsheet exists precisely because off-the-shelf could not do what was needed. Replacing a custom spreadsheet with a new generic tool moves the problem rather than solving it.</p>
 
-    <p>The answer is also not to try to force everything back into the ERP. ERP systems are designed for transaction management. Asking them to handle production scheduling logic, quoting intelligence, and vendor performance tracking stretches them beyond their design, and the result is an ERP that is over-customized, slow, and fragile.</p>
+    <p>Not forcing everything back into the ERP. ERPs are designed for transaction management. Asking them to handle production scheduling logic, quoting intelligence, and vendor performance tracking stretches them beyond their design. The result: an over-customized, slow, fragile ERP.</p>
 
-    <p>What works is building <a href="/#solutions">custom tools that do what the spreadsheet does</a>, with three additions: the data is shared and accessible across departments, the system connects to the ERP and other data sources automatically, and the logic is documented and maintainable by more than one person.</p>
+    <p>What works: building <a href="/#solutions">custom tools that do what the spreadsheet does</a> with three additions. Data is shared and accessible across departments. The system connects to the ERP and other sources automatically. Logic is documented and maintainable by more than one person.</p>
 
-    <p>A custom scheduling tool that reflects how your production manager actually thinks about the floor, with real-time data from the ERP, machine availability, material status, and customer priority rules, replaces the scheduling spreadsheet with something that multiple people can use and that scales with the business.</p>
+    <p>A custom scheduling tool reflecting how your production manager actually thinks about the floor, with real-time ERP data, machine availability, material status, and customer priority rules, replaces the scheduling spreadsheet with something multiple people can use and that scales.</p>
 
-    <p>A custom quoting tool that gives estimators instant access to historical pricing, material costs, and production data replaces the quoting spreadsheet with a system that is always current and that captures every quote as a searchable record. <a href="/blog/what-estimators-wish-front-office-knew.html">The estimator's workflow improves</a> because they no longer have to maintain a parallel data system.</p>
-
-    <p>A custom vendor management view that pulls from purchase order history, delivery performance data, and quality records replaces the purchasing spreadsheet with a system that updates automatically and is visible to everyone who needs vendor information.</p>
+    <p>A custom quoting tool giving estimators instant access to historical pricing, material costs, and production data replaces the quoting spreadsheet with a system always current and capturing every quote as a searchable record. <a href="/blog/what-estimators-wish-front-office-knew.html">The estimator's workflow improves</a> because they no longer maintain a parallel data system.</p>
 
     <h2>The Transition</h2>
 
-    <p>The spreadsheet is not the enemy. The spreadsheet represents real operational intelligence that someone took the time to build. The goal is to preserve that intelligence, make it accessible, and put it in a format that does not depend on a single person or a single file.</p>
+    <p>The spreadsheet is not the enemy. It represents real operational intelligence someone took time to build. The goal is preserving that intelligence, making it accessible, and putting it in a format that does not depend on a single person or file.</p>
 
-    <p>The first step is the audit: identify the spreadsheets, map what they contain, and understand who depends on them. The second step is prioritization: which spreadsheet poses the highest risk if its owner leaves or if the file is corrupted? Start there.</p>
+    <p>First, the audit: identify the spreadsheets, map contents, understand who depends on them. Second, prioritize: which poses highest risk if its owner leaves or if the file corrupts? Start there.</p>
 
-    <p>The third step is building the replacement with the person who built the spreadsheet. They understand the logic, the edge cases, and the reasons behind every column and formula. Their knowledge is the specification for the custom tool. The <a href="/blog/signs-your-shop-is-ready-for-ai.html">technology to build these tools exists today</a>, and the people who built the spreadsheets are the best source of requirements.</p>
+    <p>Third, build the replacement with the person who built the spreadsheet. They understand the logic, edge cases, and reasons behind every column. Their knowledge is the specification for the custom tool. The <a href="/blog/signs-your-shop-is-ready-for-ai.html">technology to build these tools exists today</a>, and the people who built the spreadsheets are the best source of requirements.</p>
 
-    <p>The shop that replaces its critical spreadsheets with custom tools does not lose the intelligence those spreadsheets contained. It amplifies that intelligence by making it accessible, shareable, and connected to the rest of the operation.</p>
+    <p>The shop replacing critical spreadsheets with custom tools does not lose the intelligence those spreadsheets contained. It amplifies that intelligence by making it accessible, shareable, and connected to the rest of the operation.</p>
+
+
 
     <div class="cta-box">
       <h3>Replace the spreadsheets that run your shop</h3>
