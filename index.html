@@ -1340,22 +1340,32 @@ footer {
 </article>
 
 <!-- ── NAV ── -->
-<nav id="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo"><img src="/logo-icon.png" alt="Bloomfield" style="height:32px;width:auto"><img src="/wordmark.png" alt="Bloomfield" class="logo-wordmark" style="height:24px;width:auto"></a>
-      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#solutions">Solutions</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#engagement">Engagement</a></li>
-        <li><a href="/blog/">Field Notes</a></li>
-        <li><a href="#contact" class="nav-cta">Book a Call</a></li>
-      </ul>
+<nav class="nav" id="nav" style="position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links-new" style="display:flex;align-items:center;gap:2rem">
+      <a href="#solutions" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='#edeae4'" onmouseout="this.style.color='rgba(237,234,228,0.7)'">Solutions</a>
+      <a href="#process" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='#edeae4'" onmouseout="this.style.color='rgba(237,234,228,0.7)'">Process</a>
+      <a href="/about.html" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='#edeae4'" onmouseout="this.style.color='rgba(237,234,228,0.7)'">About</a>
+      <a href="/blog/" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='#edeae4'" onmouseout="this.style.color='rgba(237,234,228,0.7)'">Field Notes</a>
+      <a href="#contact" class="btn-accent" style="display:inline-flex;align-items:center;gap:0.5rem;background:#4A90D9;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none">Book a Call <span>&rarr;</span></a>
     </div>
+    <button onclick="document.getElementById('mobile-menu-hp').classList.toggle('open')" style="display:none;background:none;border:none;cursor:pointer;color:#edeae4" id="mobile-toggle-hp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu-hp" style="display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(237,234,228,0.08)">
+    <a href="#solutions" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none" onclick="document.getElementById('mobile-menu-hp').classList.remove('open')">Solutions</a>
+    <a href="#process" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none" onclick="document.getElementById('mobile-menu-hp').classList.remove('open')">Process</a>
+    <a href="/about.html" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none" onclick="document.getElementById('mobile-menu-hp').classList.remove('open')">About</a>
+    <a href="/blog/" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none" onclick="document.getElementById('mobile-menu-hp').classList.remove('open')">Field Notes</a>
+    <a href="#contact" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu-hp').classList.remove('open')">Book a Call &rarr;</a>
   </div>
 </nav>
+<style>
+@media(max-width:767px){.nav-links-new{display:none !important}#mobile-toggle-hp{display:block !important}}
+#mobile-menu-hp.open{display:flex !important}
+</style>
 
 <!-- ── HERO (Dark) ── -->
 <section class="hero" data-nav-theme="dark">
