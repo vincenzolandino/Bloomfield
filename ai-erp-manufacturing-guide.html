@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI and ERP in Manufacturing: How They Work Together (2026) | Bloomfield</title>
+<meta name="description" content="How AI integrates with manufacturing ERP systems like JobBOSS, Epicor, ProShop, E2, Global Shop, NetSuite, and SAP. Data layer architecture, integration approaches, real examples, and what AI adds on top of your existing ERP.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/ai-erp-manufacturing-guide.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="AI and ERP in Manufacturing: How They Work Together (2026)">
+<meta property="og:description" content="How AI integrates with manufacturing ERP systems. Integration approaches for JobBOSS, Epicor, ProShop, E2, Global Shop, NetSuite, and SAP. Data layer architecture and real examples.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/ai-erp-manufacturing-guide.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI and ERP in Manufacturing: How They Work Together (2026)">
+<meta name="twitter:description" content="How AI integrates with manufacturing ERP systems. Integration approaches for JobBOSS, Epicor, ProShop, E2, Global Shop, NetSuite, and SAP.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<!-- Structured Data: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI and ERP in Manufacturing: How They Work Together (2026)",
+  "description": "How AI integrates with manufacturing ERP systems like JobBOSS, Epicor, ProShop, E2, Global Shop, NetSuite, and SAP. Data layer architecture, integration approaches, and real examples.",
+  "author": {
+    "@type": "Person",
+    "name": "The Bloomfield Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bloomfield",
+    "url": "https://getbloomfield.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getbloomfield.com/logo-icon.png"
+    }
+  },
+  "datePublished": "2026-03-27",
+  "dateModified": "2026-03-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://getbloomfield.com/ai-erp-manufacturing-guide.html"
+  },
+  "image": "https://getbloomfield.com/logo-icon.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"@type": "ListItem", "position": 2, "name": "AI and ERP in Manufacturing (2026)"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:var(--navy-950);-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.font-mono{font-family:'IBM Plex Mono',monospace}
+.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}
+
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
+.mobile-menu.open{display:flex}
+
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+.article-hero{background:var(--navy-950);padding:8rem 0 4rem;position:relative;overflow:hidden}
+.article-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(74,144,217,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.05) 1px,transparent 1px);background-size:60px 60px}
+.article-body{max-width:48rem;margin:0 auto;padding:3rem 1.5rem 6rem}
+@media(min-width:768px){.article-body{padding:4rem 2rem 8rem}}
+
+.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.75rem;line-height:1.25;margin-top:3.5rem;margin-bottom:1rem;color:var(--navy-950);letter-spacing:-0.01em}
+.article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.25rem;line-height:1.35;margin-top:2.5rem;margin-bottom:0.75rem;color:var(--navy-950)}
+.article-body p{font-size:1.0625rem;line-height:1.75;margin-bottom:1.25rem;color:rgba(10,10,20,0.8)}
+.article-body ul,.article-body ol{margin-bottom:1.25rem;padding-left:1.5rem}
+.article-body li{font-size:1.0625rem;line-height:1.75;margin-bottom:0.5rem;color:rgba(10,10,20,0.8)}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--accent-dim)}
+.article-body strong{color:var(--navy-950);font-weight:600}
+.article-body blockquote{border-left:3px solid var(--accent);padding:1rem 1.5rem;margin:1.5rem 0;background:rgba(74,144,217,0.04);border-radius:0 2px 2px 0}
+.article-body blockquote p{margin-bottom:0;font-style:italic;color:rgba(10,10,20,0.7)}
+
+.stat-callout{background:#fff;border:1px solid rgba(10,10,20,0.07);border-radius:2px;padding:1.5rem 2rem;margin:2rem 0;text-align:center}
+.stat-callout .stat-number{font-family:Georgia,'Times New Roman',serif;font-size:2.5rem;font-weight:700;color:var(--accent);line-height:1.1}
+.stat-callout .stat-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(10,10,20,0.5);margin-top:0.5rem}
+
+.data-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9375rem}
+.data-table th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:rgba(10,10,20,0.5);text-align:left;padding:0.75rem 1rem;border-bottom:2px solid rgba(10,10,20,0.1);background:#fff}
+.data-table td{padding:0.75rem 1rem;border-bottom:1px solid rgba(10,10,20,0.06);color:rgba(10,10,20,0.8)}
+.data-table tr:nth-child(even) td{background:rgba(255,255,255,0.5)}
+
+.toc{background:#fff;border:1px solid rgba(10,10,20,0.07);border-radius:2px;padding:2rem;margin-bottom:3rem}
+.toc-title{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;color:rgba(10,10,20,0.4);margin-bottom:1rem}
+.toc a{display:block;color:rgba(10,10,20,0.6);text-decoration:none;font-size:0.9375rem;padding:0.375rem 0;transition:color 0.2s}
+.toc a:hover{color:var(--accent)}
+
+.cta-section{background:var(--navy-950);border-radius:2px;padding:3rem 2rem;text-align:center;margin-top:4rem}
+.cta-section h2{color:#edeae4;font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;margin-bottom:1rem}
+.cta-section p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem;font-size:1.0625rem}
+
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#edeae4}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#fff1e0}
+::-webkit-scrollbar-thumb{background:#c4c0b8;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link label">Solutions</a>
+      <a href="/#process" class="nav-link label">Process</a>
+      <a href="/about.html" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Field Notes</a>
+      <a href="/contact.html" class="btn-accent">Book a Call <span>&rarr;</span></a>
+      <span style="margin-left:0.75rem;font-size:16px;opacity:0.6" title="Made in the USA">&#127482;&#127480;</span>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link label">Solutions</a>
+    <a href="/#process" class="nav-link label">Process</a>
+    <a href="/about.html" class="nav-link label">About</a>
+    <a href="/blog/" class="nav-link label">Field Notes</a>
+    <a href="/contact.html" class="btn-accent" style="text-align:center;justify-content:center">Book a Call &rarr;</a>
+  </div>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="article-hero">
+  <div class="container" style="position:relative;z-index:10;max-width:48rem">
+    <p class="label" style="color:var(--accent);margin-bottom:1.5rem">Guide</p>
+    <h1 class="font-head" style="color:#edeae4;font-size:clamp(28px,3.5vw,44px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:1.5rem">AI and ERP in Manufacturing: How They Work Together</h1>
+    <p style="color:rgba(237,234,228,0.7);font-size:1.0625rem;line-height:1.7;max-width:40rem">Your ERP holds years of operational data that nobody can access fast enough. AI connects to that data without replacing the system. This guide covers integration approaches for every major manufacturing ERP, the data layer architecture, and what AI actually adds on top of what you already run.</p>
+    <div style="margin-top:1.5rem;display:flex;align-items:center;gap:1rem">
+      <p class="label" style="color:rgba(237,234,228,0.5)">The Bloomfield Team</p>
+      <span style="color:rgba(237,234,228,0.2)">&bull;</span>
+      <p class="label" style="color:rgba(237,234,228,0.5)">March 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+
+<nav class="toc" aria-label="Table of contents">
+  <p class="toc-title">Contents</p>
+  <a href="#erp-not-enough">1. Why ERP Alone Is No Longer Enough</a>
+  <a href="#what-ai-adds">2. What AI Adds on Top of Your ERP</a>
+  <a href="#data-layer">3. The Data Layer Architecture</a>
+  <a href="#integration-approaches">4. Three Integration Approaches</a>
+  <a href="#erp-by-erp">5. ERP-by-ERP Integration Guide</a>
+  <a href="#real-examples">6. Real Examples: AI + ERP in Action</a>
+  <a href="#what-goes-wrong">7. What Goes Wrong (and How to Prevent It)</a>
+  <a href="#timeline-cost">8. Timeline and Cost</a>
+  <a href="#faq">9. Frequently Asked Questions</a>
+</nav>
+
+<h2 id="erp-not-enough">Why ERP Alone Is No Longer Enough</h2>
+
+<p>Your ERP does what it was designed to do. It tracks orders, manages job costing, handles scheduling, runs invoicing, and maintains the transactional record of every job that passes through your shop. JobBOSS, Epicor, ProShop, E2, Global Shop Solutions, NetSuite, SAP. They all serve this function well enough to keep the business running.</p>
+
+<p>The problem is what ERP was never designed to do. Your ERP cannot search 12,000 historical jobs and find the five most similar to the RFQ sitting on your estimator's desk right now. It cannot tell you which of your 200 active jobs will ship late before your customer calls to ask. It cannot answer a second-shift machinist's question about what feed rate worked best on a specific material with a specific tool on a specific machine last March.</p>
+
+<p>ERP is a record-keeping system. A very good one. It records what happened. AI is a decision-support system. It reads what happened and helps the next decision happen faster. The two work together because AI needs the data that ERP has been collecting for the last 5, 10, or 15 years. Without ERP, the AI has nothing to learn from. Without AI, the ERP data sits in tables that nobody queries, in reports that nobody has time to build, holding patterns and insights that could change how the business operates if anyone could get to them fast enough.</p>
+
+<div class="stat-callout">
+  <div class="stat-number">5-15 years</div>
+  <div class="stat-label">Of operational data sitting in your ERP that AI can put to work</div>
+</div>
+
+<p>SAP and NetSuite are building AI features into their platforms. Epicor announced its Epicor AI suite in 2025. These additions help if you run their latest version, are willing to pay the premium, and if the AI features happen to address the specific bottleneck that costs your operation the most money. For most small and mid-size manufacturers, the AI features baked into ERP platforms solve generic problems at premium prices while ignoring the specific operational challenges that differ from shop to shop.</p>
+
+<div style="margin:2rem 0">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/Yx1UEdDii5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:2px"></iframe>
+  <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(26,26,46,0.5);margin-top:0.5rem">Artificial Intelligence Strategies and Examples for Manufacturing Companies</p>
+</div>
+
+<h2 id="what-ai-adds">What AI Adds on Top of Your ERP</h2>
+
+<p>AI does not replace your ERP. The ERP stays as the system of record. AI sits on top and connects ERP data to the decisions that drive revenue, quality, and on-time delivery.</p>
+
+<h3>Cross-system visibility</h3>
+
+<p>Your ERP holds job records. Your shared drive holds setup sheets and process specs. Your email holds customer conversations and supplier discussions. Your spreadsheets hold the estimator's pricing logic and the production manager's capacity model. AI reads all of these simultaneously and presents a unified view that no single system provides on its own. When the estimator opens a new RFQ, the AI surfaces similar past jobs from the ERP, relevant process notes from the shared drive, customer preferences from email history, and margin benchmarks from the estimator's own spreadsheets. One screen. Ten seconds.</p>
+
+<h3>Pattern recognition across thousands of records</h3>
+
+<p>Your ERP contains the data. AI finds the patterns in it. Which material types consistently produce margin erosion below 18%. Which customers reorder within 90 days of first order at a rate above 60%. Which machine-operator-material combinations produce the lowest scrap rates. Which jobs estimated at 40 hours actually took 55 hours, and why. These patterns exist in your data. No human can scan 12,000 job records to find them. AI can do it before the estimator finishes their morning coffee.</p>
+
+<h3>Natural language access to structured data</h3>
+
+<p>Nobody builds custom SQL queries at 6 AM on a Monday to answer a production question. AI lets your team ask questions in plain English and get answers drawn from ERP data, documents, and operational records. "What was our average margin on titanium jobs for Collins Aerospace in Q4?" becomes a 10-second query instead of a 45-minute report-building exercise.</p>
+
+<h3>Predictive capability</h3>
+
+<p>ERP tells you what happened. AI tells you what is about to happen. Which jobs are falling behind their estimated completion date based on current production progress. Which quotes are likely to convert based on historical win patterns. Which machines are trending toward maintenance events based on cycle time and power consumption data. The ERP captured the historical data that makes these predictions possible. AI does the math.</p>
+
+<h2 id="data-layer">The Data Layer Architecture</h2>
+
+<p>Between your ERP and the AI application sits a data layer. This is the infrastructure that extracts data from the ERP (and other sources), normalizes it, stores it in a format AI can process, and keeps it current as new jobs, quotes, and records flow through your operation.</p>
+
+<p>The data layer has three components:</p>
+
+<p><strong>Extraction.</strong> Data comes out of the ERP through one of three methods: direct database read, API call, or scheduled file export. The extraction layer handles the connection, manages authentication, and runs on a schedule that keeps the AI system's data current. For quoting applications, nightly extraction is usually sufficient. For production visibility, the extraction may run every 15 to 60 minutes.</p>
+
+<p><strong>Normalization.</strong> Manufacturing ERPs store data in different formats, with different field names, different units, and different levels of completeness. JobBOSS stores material types one way. Epicor stores them another. The normalization layer maps ERP-specific data fields to a common schema that the AI system understands. It also handles data cleaning: deduplication, unit conversion, missing field detection, and inconsistency flagging.</p>
+
+<p><strong>Storage and indexing.</strong> Normalized data goes into a purpose-built data store optimized for the AI application. For quoting systems, this is typically a vector database that indexes job records by similarity across multiple dimensions (material, geometry, tolerances, volume, customer). For knowledge systems, it is a document store with semantic search capabilities. For production visibility, it is a time-series store that tracks job progress against milestones.</p>
+
+<p>The data layer is invisible to the end user. The estimator, production manager, or operator interacts with the AI application directly. The data layer keeps the AI system fed with current, clean, queryable data without requiring anyone on your team to maintain it after initial setup.</p>
+
+<h2 id="integration-approaches">Three Integration Approaches</h2>
+
+<h3>Direct Database Connection</h3>
+
+<p>Most manufacturing ERPs store data in SQL Server or PostgreSQL databases. A direct read-only connection to the ERP database gives the AI system access to every table: jobs, quotes, customers, materials, operations, shipping, quality records. This is the most comprehensive integration method and provides real-time data access.</p>
+
+<p><strong>Works best with:</strong> JobBOSS (SQL Server), E2 Shop System (SQL Server), Global Shop Solutions (Progress / SQL). These systems use accessible database structures with well-documented schemas.</p>
+
+<p><strong>Advantages:</strong> Real-time data. Full access to every record. No dependency on vendor-built export features. Minimal ongoing maintenance.</p>
+
+<p><strong>Requirements:</strong> Database credentials (read-only user account). Network access to the database server. Understanding of the ERP's table structure.</p>
+
+<p><strong>Risk:</strong> None to the ERP if the connection is read-only. The AI system reads data. It never writes to the ERP database.</p>
+
+<h3>API Integration</h3>
+
+<p>Modern ERPs expose data through REST APIs that allow external applications to query and retrieve records through documented endpoints. API integration provides a cleaner, more stable interface than direct database access because the API layer abstracts away the underlying database structure.</p>
+
+<p><strong>Works best with:</strong> Epicor Kinetic (REST API with comprehensive endpoint coverage), ProShop ERP (modern API architecture), NetSuite (SuiteScript / REST API), SAP Business One (Service Layer).</p>
+
+<p><strong>Advantages:</strong> Documented and version-stable. Survives ERP upgrades without breaking. Can support bi-directional data flow when needed (writing AI recommendations back to the ERP). Rate limiting and authentication built into the API layer.</p>
+
+<p><strong>Requirements:</strong> API credentials and access provisioning. Development time to map API endpoints to the AI system's data model. Understanding of the API's rate limits and pagination behavior.</p>
+
+<p><strong>Timeline:</strong> Typically 2 to 4 weeks of integration development.</p>
+
+<h3>Scheduled Data Exports</h3>
+
+<p>For ERPs that lack API access, for shops where IT policy restricts direct database connections, or for legacy systems running on proprietary platforms, scheduled file exports provide a reliable path. The ERP exports CSV, Excel, or XML files on a recurring schedule. The AI system ingests each export automatically.</p>
+
+<p><strong>Works with:</strong> Every ERP on the market, including legacy systems running on AS/400, Foxbase, or proprietary databases that pre-date SQL Server.</p>
+
+<p><strong>Advantages:</strong> Universal compatibility. Minimal IT involvement after initial setup. No risk of any interaction with the live ERP database.</p>
+
+<p><strong>Limitations:</strong> Data is only as fresh as the last export. For quoting applications where historical depth matters more than real-time access, this approach delivers 90% of the value at 10% of the integration complexity.</p>
+
+<h2 id="erp-by-erp">ERP-by-ERP Integration Guide</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>ERP System</th>
+      <th>Database</th>
+      <th>Best Approach</th>
+      <th>Timeline</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>JobBOSS / JobBOSS2</strong></td>
+      <td>SQL Server</td>
+      <td>Direct database</td>
+      <td>1-2 weeks</td>
+      <td>Well-documented schema. Most common ERP in small job shops.</td>
+    </tr>
+    <tr>
+      <td><strong>Epicor Kinetic</strong></td>
+      <td>SQL Server</td>
+      <td>REST API</td>
+      <td>2-4 weeks</td>
+      <td>Comprehensive API. BAQ (Business Activity Query) layer provides flexible data access.</td>
+    </tr>
+    <tr>
+      <td><strong>ProShop ERP</strong></td>
+      <td>Cloud-hosted</td>
+      <td>REST API</td>
+      <td>2-3 weeks</td>
+      <td>Modern architecture. Excellent documentation. Cloud-native, so API is the primary access path.</td>
+    </tr>
+    <tr>
+      <td><strong>E2 Shop System</strong></td>
+      <td>SQL Server</td>
+      <td>Direct database</td>
+      <td>1-2 weeks</td>
+      <td>Straightforward schema. Good historical depth in most installations.</td>
+    </tr>
+    <tr>
+      <td><strong>Global Shop Solutions</strong></td>
+      <td>Progress / SQL</td>
+      <td>Direct database or export</td>
+      <td>1-3 weeks</td>
+      <td>Progress database requires specific tooling. SQL migration available on newer versions.</td>
+    </tr>
+    <tr>
+      <td><strong>NetSuite</strong></td>
+      <td>Oracle (cloud)</td>
+      <td>REST API / SuiteScript</td>
+      <td>3-5 weeks</td>
+      <td>Comprehensive API but complex authentication. SuiteScript provides custom endpoint capability.</td>
+    </tr>
+    <tr>
+      <td><strong>SAP Business One</strong></td>
+      <td>SQL Server / HANA</td>
+      <td>Service Layer API</td>
+      <td>3-6 weeks</td>
+      <td>Well-documented but complex. Service Layer provides REST access. Longer timeline reflects schema complexity.</td>
+    </tr>
+    <tr>
+      <td><strong>IQMS (DELMIAWorks)</strong></td>
+      <td>SQL Server</td>
+      <td>Direct database</td>
+      <td>2-3 weeks</td>
+      <td>SQL Server backend. Good data model for production-focused AI applications.</td>
+    </tr>
+    <tr>
+      <td><strong>Legacy / Custom</strong></td>
+      <td>Varies</td>
+      <td>Scheduled export</td>
+      <td>1-2 weeks</td>
+      <td>CSV/Excel export works regardless of underlying technology. Universal fallback.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>JobBOSS: The Most Common Small Shop ERP</h3>
+
+<p>JobBOSS runs on SQL Server and stores job records, quotes, customer information, material data, and production operations in a well-structured relational database. The schema is mature and consistent across installations, which means integration patterns developed for one JobBOSS shop transfer directly to the next.</p>
+
+<p>Key tables for AI integration: Job Master (job headers and summary data), Job Operation (routing and operation details), Quote Master (historical quotes), Material (material specifications and costs), Customer (customer records and shipping history). A read-only SQL user with SELECT permissions on these tables provides everything an AI quoting or knowledge system needs.</p>
+
+<p>The typical JobBOSS AI integration takes 5 to 10 days from database access to working data pipeline. Most of that time goes to mapping job descriptions and part classifications, which vary significantly from shop to shop in how they are entered and categorized.</p>
+
+<h3>Epicor Kinetic: The Mid-Market Standard</h3>
+
+<p>Epicor Kinetic provides a REST API with extensive endpoint coverage. The BAQ (Business Activity Query) layer allows custom queries to be defined within Epicor and exposed as API endpoints, which means the integration can retrieve exactly the data fields needed without pulling entire tables.</p>
+
+<p>For AI applications, the most valuable Epicor data surfaces through JobEntry, QuoteEntry, PartDetail, and ShipHead endpoints. BAQs can combine data from multiple tables into single API responses optimized for the AI system's data model.</p>
+
+<p>Epicor API integration typically takes 2 to 4 weeks, with the primary variable being the complexity of the BAQ definitions. Shops that have existing BAQs for reporting can often repurpose them for AI integration with minimal modification.</p>
+
+<h3>ProShop: Cloud-Native, API-First</h3>
+
+<p>ProShop is a cloud-hosted ERP built on a modern technology stack, which makes it one of the simplest manufacturing ERPs to integrate with AI systems. The API is well-documented, follows REST conventions, and provides access to job records, quality data, process documentation, and equipment tracking.</p>
+
+<p>ProShop's built-in document management system is particularly valuable for AI knowledge capture applications because it stores process specs, quality records, and setup documentation in a structured format that AI can index directly. Integration typically takes 2 to 3 weeks.</p>
+
+<h3>NetSuite and SAP: Enterprise Complexity</h3>
+
+<p>NetSuite and SAP Business One serve manufacturers in the 100 to 500 employee range and above. Both provide comprehensive APIs, but the integration complexity is higher due to deeper schema structures, more complex authentication models, and larger data volumes.</p>
+
+<p>NetSuite's SuiteScript framework allows custom server-side scripts that can transform and expose data through RESTlets (custom REST endpoints). This provides flexibility but adds development complexity. SAP Business One's Service Layer provides a REST interface to all business objects, with OData-compatible query support.</p>
+
+<p>Both integrations typically take 3 to 6 weeks. The additional time reflects schema complexity and the need for more thorough data mapping, not fundamental difficulty. Once the integration is built, it operates with the same reliability as simpler ERP connections.</p>
+
+<h2 id="real-examples">Real Examples: AI + ERP in Action</h2>
+
+<h3>Example 1: AI Quoting Connected to JobBOSS</h3>
+
+<p>A 45-person precision machining shop in Michigan runs JobBOSS with 8 years of historical data: 14,000 completed jobs, 32,000 quotes, and material cost records going back to 2018. One estimator handles all incoming RFQs. Average quote turnaround runs 4.2 days.</p>
+
+<p>The AI system connects to the JobBOSS SQL database and indexes every historical job and quote. When a new RFQ arrives, the estimator opens the AI interface and sees: the five most similar past jobs (matched on material, geometry, tolerances, and quantities), actual versus estimated costs for each, the customer's order history and margin performance, and risk flags (tight tolerances, exotic materials, rush delivery requirements).</p>
+
+<p>Quote turnaround drops from 4.2 days to 1.4 days. The estimator quotes the same number of RFQs in less time with better historical context behind every decision. Win rate improves from 17% to 23% over the first six months, representing approximately $280,000 in additional annual revenue on the same quote volume.</p>
+
+<h3>Example 2: Production Visibility Connected to Epicor</h3>
+
+<p>A 120-person contract manufacturer runs Epicor Kinetic with 350 active jobs at any given time. On-time delivery measured against original promise dates hovers at 76%. The production manager spends 90 minutes every morning walking the floor and checking three screens to identify at-risk jobs.</p>
+
+<p>The AI system connects to Epicor through the REST API, pulling job status, operation progress, and scheduling data every 30 minutes. It cross-references production progress against ship dates and customer priority, then ranks every at-risk job in a single dashboard. The system flags problems before the production team discovers them: a job running 20% behind estimated hours with a customer-critical ship date in three days appears at the top of the list with specific recovery recommendations.</p>
+
+<p>On-time delivery improves from 76% to 89% over four months. The production manager's morning floor walk drops from 90 minutes to 15 minutes of reviewing the AI-generated risk dashboard.</p>
+
+<h3>Example 3: Knowledge Capture Connected to E2 and Shared Drive</h3>
+
+<p>A 65-person aerospace job shop runs E2 Shop System alongside a shared network drive holding 6,000 documents: setup sheets, process specs, engineering change orders, and customer quality requirements accumulated over 20 years. Three senior machinists are within five years of retirement, and their collective knowledge about tooling sequences, customer preferences, and material workarounds exists nowhere except in their heads.</p>
+
+<p>The AI system connects to the E2 database for job history and production data, then indexes the entire shared drive and transcripts from structured interviews with the three senior machinists. The knowledge system makes all of this queryable in plain English from shop floor terminals.</p>
+
+<p>Setup time for new operators on unfamiliar jobs drops by 35%. Quality events attributed to "lack of process knowledge" decline from an average of 4.2 per quarter to 1.1 per quarter over six months. When the first senior machinist retires, the knowledge he spent 28 years accumulating remains searchable and accessible to the entire team.</p>
+
+<h2 id="what-goes-wrong">What Goes Wrong (and How to Prevent It)</h2>
+
+<h3>Integration drift</h3>
+
+<p>ERP upgrades, schema changes, and field modifications can break data connections if the integration layer is not designed for resilience. Prevention: build the data extraction layer with validation checks that detect schema changes and alert before the AI system starts operating on incomplete data. Version-pin the integration against a specific ERP release and test compatibility before any upgrade.</p>
+
+<h3>Data quality assumptions</h3>
+
+<p>The AI system is only as good as the data feeding it. If 30% of your job records have blank or inconsistent material fields, the AI's ability to match similar jobs degrades on that dimension. Prevention: run a data quality assessment before building anything. Identify the fields that matter most for the application (material type, machine assignment, and cycle times for quoting) and measure completeness. You do not need 100% clean data. You need to know where the gaps are so the system can handle them.</p>
+
+<h3>Over-engineering the first integration</h3>
+
+<p>The temptation is to build a comprehensive, bi-directional, real-time integration that connects every ERP module to the AI system from day one. This adds weeks of development, increases failure points, and delays the moment the system starts delivering value. Prevention: start with read-only access to the specific ERP data the first AI application requires. Expand the integration as you expand the AI capabilities. A quoting system needs historical jobs, quotes, customers, and materials. It does not need purchasing, AR/AP, or HR data on day one.</p>
+
+<h3>Ignoring the data outside the ERP</h3>
+
+<p>The most valuable context for AI decisions often lives outside the ERP: in spreadsheets, emails, shared drive documents, and the heads of experienced workers. An AI system that only reads ERP data misses the judgment calls, the customer preferences, the material workarounds, and the process adjustments that make the difference between a good quote and a precise one. Prevention: treat the ERP as one data source among several. The data layer architecture should accommodate structured ERP data and unstructured documents with equal capability.</p>
+
+<h2 id="timeline-cost">Timeline and Cost</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Timeline</th>
+      <th>What Happens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ERP data audit</td>
+      <td>1-2 weeks</td>
+      <td>Assess data quality, schema structure, integration method selection</td>
+    </tr>
+    <tr>
+      <td>Data layer build</td>
+      <td>2-4 weeks</td>
+      <td>Build extraction, normalization, and storage infrastructure</td>
+    </tr>
+    <tr>
+      <td>AI application development</td>
+      <td>4-6 weeks</td>
+      <td>Build the AI tool using the connected ERP data</td>
+    </tr>
+    <tr>
+      <td>Testing and refinement</td>
+      <td>2-3 weeks</td>
+      <td>Validate AI outputs against real operational decisions</td>
+    </tr>
+    <tr>
+      <td>Deployment</td>
+      <td>1-2 weeks</td>
+      <td>Roll out to end users with training and monitoring</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Total timeline from ERP connection to working AI tool: 10 to 16 weeks. The ERP integration itself typically represents 2 to 4 weeks of that total. The remainder is AI application development, testing, and deployment.</p>
+
+<p>Cost for the ERP integration layer: typically $15,000 to $40,000, depending on ERP complexity and the number of data sources connected. This is included in the total project cost of $75,000 to $200,000 for most manufacturing AI implementations.</p>
+
+<p>Our <a href="/erp-ai-integration-guide.html">detailed ERP-AI integration guide</a> covers technical specifications, database schemas, and API documentation for each major manufacturing ERP. Our <a href="/ai-in-manufacturing-complete-guide.html">complete guide to AI in manufacturing</a> covers the broader implementation approach.</p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Do I need to replace my ERP to use AI?</h3>
+
+<p>No. AI connects to your existing ERP through database connections, APIs, or file exports. The ERP remains your system of record. Nothing gets ripped out or replaced. Your team keeps using the ERP exactly as they do today.</p>
+
+<h3>Will AI write data back to my ERP?</h3>
+
+<p>Not by default, and not without explicit configuration. Most AI implementations use read-only connections to the ERP. If bi-directional integration is needed (for example, writing AI-generated cost estimates back into the ERP's quoting module), this requires specific development, testing, and approval. The AI system should never modify ERP data without a clear audit trail and human approval step.</p>
+
+<h3>What if I run an older or unsupported ERP?</h3>
+
+<p>Scheduled data exports work with every ERP regardless of age or technology. If your system can produce a CSV or Excel file containing job history, the AI system can ingest it. This covers legacy installations running on AS/400, Foxbase, older versions of Visual Manufacturing, or custom-built systems that predate modern database standards.</p>
+
+<h3>My ERP data is messy. Does that matter?</h3>
+
+<p>Every manufacturer's ERP data is messy. Inconsistent part descriptions, missing material fields, duplicate customer records, jobs entered by different people using different naming conventions over 15 years. AI systems built for manufacturing are designed to work with this reality. The normalization layer handles inconsistencies. The matching algorithms weight reliable fields more heavily and discount fields with known quality issues. Starting with imperfect data and improving over time delivers results faster than waiting for a data cleanup that never finishes.</p>
+
+<h3>How much of my ERP data does AI actually use?</h3>
+
+<p>For a quoting application: job records, quote history, customer information, material specifications, and operation details. Typically 5 to 8 core tables out of the 50 to 200 tables in a manufacturing ERP database. The AI system does not need your AP/AR data, your HR records, or your general ledger to make better quoting decisions. Start with the data the application requires and expand as needed.</p>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Ready to Connect AI to Your ERP?</h2>
+  <p>We start with a data audit. Map your ERP, assess your data quality, and identify the highest-value AI application for your operation.</p>
+  <a href="/contact.html" class="btn-accent">Talk to Our Team <span>&rarr;</span></a>
+</div>
+
+</article>
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(237,234,228,0.6);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste. <span style="opacity:0.7">&#127482;&#127480;</span> Built in USA.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

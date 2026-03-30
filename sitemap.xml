@@ -7,13 +7,49 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/contact.html</loc>
+    <loc>https://getbloomfield.com/about.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/about.html</loc>
+    <loc>https://getbloomfield.com/ai-erp-manufacturing-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-for-aerospace-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-for-hydraulic-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-for-machine-shops.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-for-medical-device-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-in-manufacturing-complete-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-quoting-software-comparison.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -25,79 +61,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/how-much-does-custom-ai-cost.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/can-ai-read-engineering-drawings.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/ai-vs-mes.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/shop-floor-data-into-ai.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-ai-data-security.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/ai-iso-9001-documentation.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/ai-make-to-order-complexity.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/measure-ai-tool-working.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/manufacturer-guide-build-vs-buy.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/the-hidden-cost-of-slow-quotes.html</loc>
+    <loc>https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/how-to-capture-tribal-knowledge.html</loc>
+    <loc>https://getbloomfield.com/blog/ai-already-used-american-factories.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-your-erp-cant-do-this.html</loc>
+    <loc>https://getbloomfield.com/blog/ai-automation-complement-each-other.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-change-manufacturing-hiring.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -109,7 +91,121 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/signs-your-shop-is-ready-for-ai.html</loc>
+    <loc>https://getbloomfield.com/blog/ai-iso-9001-documentation.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-job-shops-vs-production-shops.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-make-to-order-complexity.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-predictive-maintenance-realistic.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-ready-data-50-person-shop.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ai-vs-mes.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/anatomy-of-a-winning-quote.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/apprenticeship-program-that-works.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/before-buying-first-cnc.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/beginners-guide-to-oee.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/benchmark-shop-against-industry.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/best-manufacturing-salespeople.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/best-shops-first-hour-every-shift.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/build-quoting-team-that-wins.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/build-vs-buy-custom-software.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/buy-or-lease-equipment-calculator.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/calculate-true-cost-per-part.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/can-ai-read-engineering-drawings.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/cheapest-ai-project-most-expensive.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/compete-overseas-more-than-price.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -121,13 +217,157 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-aerospace-manufacturing-compliance.html</loc>
+    <loc>https://getbloomfield.com/blog/complete-guide-manufacturing-lead-times.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-job-shops-vs-production-shops.html</loc>
+    <loc>https://getbloomfield.com/blog/complete-guide-shop-floor-metrics.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/connecting-systems-never-meant-to-talk.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/cost-of-one-retiring-engineer.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/culture-where-people-share-knowledge.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/customer-complaints-into-improvements.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/data-literacy-matters-more-than-tools.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/difference-mes-erp-custom-software.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/document-process-one-person-understands.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/documentation-vs-usable-knowledge.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/erp-data-more-valuable-than-you-think.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/estimate-like-your-best-estimator.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/estimators-playbook-20-years.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/evaluating-ai-vendors-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/every-manufacturer-needs-data-strategy.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/gap-between-quoted-and-actual-costs.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/get-more-from-existing-cnc-equipment.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/get-team-to-adopt-new-technology.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/getting-started-with-data-analytics.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/handle-rush-orders-without-wrecking-schedule.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/hidden-factory-wasted-capacity.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/hire-manufacturing-engineer-tight-market.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/hiring-technical-talent-2025.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/how-late-shipments-actually-start.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/how-much-does-custom-ai-cost.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/how-to-capture-tribal-knowledge.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -139,7 +379,241 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getbloomfield.com/blog/job-shop-quoting-strategy.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/lean-without-losing-knowledge.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/lessons-manufacturers-survived-2020s.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/machine-data-without-six-figures.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/machine-shop-owners-guide-margins.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/machine-utilization-numbers-misleading.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/machinist-notebook-to-knowledge-system.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/make-shop-attractive-young-workers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturer-guide-build-vs-buy.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-customer-retention.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-pricing-strategy.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-trade-shows.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturers-that-got-technology-right.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-ai-data-security.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-books-shop-owners.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-capacity-planning-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-conferences-2025.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-cost-accounting-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-dashboard-people-use.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-inventory-management-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-process-documentation.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-sales-pipeline-from-scratch.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/manufacturing-tech-stack-that-makes-sense.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/material-price-volatility-quotes.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/measure-ai-tool-working.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getbloomfield.com/blog/medical-device-manufacturers-ai-validation.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/metrics-that-predict-growth.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/mid-year-manufacturing-check-in.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/multi-generational-workforce-shop-floor.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ninety-minute-morning-ritual.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/obsessed-with-response-time.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/on-time-delivery-number-lying.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/operators-brain-worth-more-than-erp.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/preventive-maintenance-from-scratch.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/production-scheduling-mistakes-otd.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/questions-before-shop-floor-technology.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/quote-cycle-kills-win-rate.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/quote-follow-up-process-better.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/quote-international-work.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -151,194 +625,344 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getbloomfield.com/blog/quoting-process-costing-you-money.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/quoting-workflow-that-scales.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/read-manufacturing-pl-like-operator.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/real-cost-of-manual-data-entry.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/real-cost-of-quality.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/real-cost-running-shop-on-paper.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/reasons-best-machinists-might-leave.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/reduce-customer-complaints.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/reduce-lead-times-30-percent.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/reduce-rework-50-percent.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/scheduling-by-gut-feel.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/setup-time-underestimated-cost.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/shop-floor-data-going-to-waste.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/shop-floor-data-into-ai.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/shop-needs-single-source-of-truth.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/signs-outgrown-your-erp.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/signs-your-shop-is-ready-for-ai.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getbloomfield.com/blog/small-manufacturers-compete-with-ai.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-ready-data-50-person-shop.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://getbloomfield.com/blog/speed-wins-in-manufacturing.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/cheapest-ai-project-most-expensive.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/build-vs-buy-custom-software.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/evaluating-ai-vendors-manufacturers.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/run-ai-pilot-without-disruption.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/scheduling-by-gut-feel.html</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/what-production-dashboard-should-show.html</loc>
-    <lastmod>2026-03-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/how-late-shipments-actually-start.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/ninety-minute-morning-ritual.html</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/on-time-delivery-number-lying.html</loc>
-    <lastmod>2026-03-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/real-cost-of-manual-data-entry.html</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/connecting-systems-never-meant-to-talk.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/erp-data-more-valuable-than-you-think.html</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/blog/what-manufacturers-get-wrong-about-crm.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <loc>https://getbloomfield.com/blog/spot-bad-erp-implementation.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getbloomfield.com/blog/spreadsheet-that-runs-your-shop.html</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/machinist-notebook-to-knowledge-system.html</loc>
-    <lastmod>2026-02-24</lastmod>
+    <loc>https://getbloomfield.com/blog/standard-work-instructions-people-follow.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/documentation-vs-usable-knowledge.html</loc>
-    <lastmod>2026-02-17</lastmod>
+    <loc>https://getbloomfield.com/blog/steal-from-software-industry.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/step-by-step-value-stream-mapping.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/stop-losing-money-on-requotes.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/supply-chain-risks-small-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/ten-commandments-manufacturing-quoting.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/the-hidden-cost-of-slow-quotes.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/things-shop-floor-supervisor-wants-you-to-know.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/things-to-automate-at-every-shop.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getbloomfield.com/blog/three-retirements-same-year.html</loc>
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-training-manuals-fail.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://getbloomfield.com/blog/top-mistakes-manufacturing-sales.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/cost-of-one-retiring-engineer.html</loc>
-    <lastmod>2026-01-27</lastmod>
+    <loc>https://getbloomfield.com/blog/top-quality-systems-small-manufacturers.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/anatomy-of-a-winning-quote.html</loc>
-    <lastmod>2026-01-20</lastmod>
+    <loc>https://getbloomfield.com/blog/train-next-generation-machinists.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/use-historical-job-data-quote-faster.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/what-best-machine-shops-have-in-common.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getbloomfield.com/blog/what-estimators-wish-front-office-knew.html</loc>
-    <lastmod>2026-01-13</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/quote-cycle-kills-win-rate.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <loc>https://getbloomfield.com/blog/what-manufacturers-get-wrong-about-crm.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/ai-for-machine-shops.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://getbloomfield.com/blog/what-manufacturers-should-know-reshoring.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/ai-for-aerospace-manufacturers.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://getbloomfield.com/blog/what-manufacturing-learns-from-spacex.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/ai-for-medical-device-manufacturers.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://getbloomfield.com/blog/what-production-dashboard-should-show.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/ai-for-hydraulic-manufacturers.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://getbloomfield.com/blog/what-toyota-gets-right-erp-doesnt.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-competitors-quote-faster.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-delivery-dates-are-wrong.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-manufacturing-dashboards-fail.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-shops-still-run-on-spreadsheets.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-training-manuals-fail.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/why-your-erp-cant-do-this.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/win-back-customer-lost-to-faster-competitor.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/blog/winning-government-contracts.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/contact.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/erp-ai-integration-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://getbloomfield.com/manufacturing-ai-consulting.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/ai-quoting-software-comparison.html</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://getbloomfield.com/erp-ai-integration-guide.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://getbloomfield.com/manufacturing-ai-roi.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/manufacturing-ai-solutions.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/manufacturing-ai-use-cases.html</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -349,609 +973,639 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://getbloomfield.com/smart-manufacturing-guide.html</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getbloomfield.com/terms.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-automation-complement-each-other.html</loc>
-    <lastmod>2025-06-30</lastmod>
+    <loc>https://getbloomfield.com/blog/10-manufacturing-trends-every-owner-should-watch.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-inventory-management-guide.html</loc>
-    <lastmod>2025-06-27</lastmod>
+    <loc>https://getbloomfield.com/blog/10-things-job-shop-should-track-daily.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/things-shop-floor-supervisor-wants-you-to-know.html</loc>
-    <lastmod>2025-06-25</lastmod>
+    <loc>https://getbloomfield.com/blog/10-things-retiring-machinists-wish-they-could-pass-on.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/mid-year-manufacturing-check-in.html</loc>
-    <lastmod>2025-06-24</lastmod>
+    <loc>https://getbloomfield.com/blog/10-ways-cut-lead-times.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/hire-manufacturing-engineer-tight-market.html</loc>
-    <lastmod>2025-06-23</lastmod>
+    <loc>https://getbloomfield.com/blog/10-ways-reduce-scrap-rework.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-competitors-quote-faster.html</loc>
-    <lastmod>2025-06-20</lastmod>
+    <loc>https://getbloomfield.com/blog/12-manufacturing-kpis-that-matter.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturers-guide-trade-shows.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <loc>https://getbloomfield.com/blog/5-lessons-manufacturers-modernized.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-sales-pipeline-from-scratch.html</loc>
-    <lastmod>2025-06-16</lastmod>
+    <loc>https://getbloomfield.com/blog/5-things-machine-shop-automate-first.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-already-used-american-factories.html</loc>
-    <lastmod>2025-06-13</lastmod>
+    <loc>https://getbloomfield.com/blog/5-ways-speed-up-rfq-without-hiring.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/spot-bad-erp-implementation.html</loc>
-    <lastmod>2025-06-11</lastmod>
+    <loc>https://getbloomfield.com/blog/6-biggest-bottlenecks-job-shop-quoting.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/buy-or-lease-equipment-calculator.html</loc>
-    <lastmod>2025-06-10</lastmod>
+    <loc>https://getbloomfield.com/blog/6-types-data-manufacturer-has-doesnt-use.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-capacity-planning-guide.html</loc>
-    <lastmod>2025-06-09</lastmod>
+    <loc>https://getbloomfield.com/blog/6-ways-ai-help-50-person-shop.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/multi-generational-workforce-shop-floor.html</loc>
-    <lastmod>2025-06-06</lastmod>
+    <loc>https://getbloomfield.com/blog/7-manufacturing-podcasts-worth-your-time.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/metrics-that-predict-growth.html</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://getbloomfield.com/blog/7-most-common-erp-workarounds.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/what-best-machine-shops-have-in-common.html</loc>
-    <lastmod>2025-06-03</lastmod>
+    <loc>https://getbloomfield.com/blog/7-questions-before-buying-software.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/speed-wins-in-manufacturing.html</loc>
-    <lastmod>2025-06-02</lastmod>
+    <loc>https://getbloomfield.com/blog/7-signs-need-better-production-visibility.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/quote-follow-up-process-better.html</loc>
-    <lastmod>2025-05-30</lastmod>
+    <loc>https://getbloomfield.com/blog/7-things-customers-wish-you-did-better.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/document-process-one-person-understands.html</loc>
-    <lastmod>2025-05-28</lastmod>
+    <loc>https://getbloomfield.com/blog/7-ways-improve-shop-floor-communication.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturers-guide-pricing-strategy.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <loc>https://getbloomfield.com/blog/8-metrics-cfo-wants-from-shop-floor.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-manufacturing-dashboards-fail.html</loc>
-    <lastmod>2025-05-23</lastmod>
+    <loc>https://getbloomfield.com/blog/8-red-flags-quoting-process.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/get-team-to-adopt-new-technology.html</loc>
-    <lastmod>2025-05-21</lastmod>
+    <loc>https://getbloomfield.com/blog/8-things-erp-will-never-tell-you.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-tech-stack-that-makes-sense.html</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://getbloomfield.com/blog/8-ways-reduce-setup-time-cnc.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/top-mistakes-manufacturing-sales.html</loc>
-    <lastmod>2025-05-19</lastmod>
+    <loc>https://getbloomfield.com/blog/9-questions-when-otd-drops-below-90.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-predictive-maintenance-realistic.html</loc>
-    <lastmod>2025-05-16</lastmod>
+    <loc>https://getbloomfield.com/blog/9-spreadsheets-every-manufacturer-keeps.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/steal-from-software-industry.html</loc>
-    <lastmod>2025-05-14</lastmod>
+    <loc>https://getbloomfield.com/blog/9-things-before-next-erp-upgrade.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/real-cost-of-quality.html</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://getbloomfield.com/blog/ai-already-changing-job-shops-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/reduce-lead-times-30-percent.html</loc>
-    <lastmod>2025-05-12</lastmod>
+    <loc>https://getbloomfield.com/blog/ai-changes-estimators-job.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-cost-accounting-guide.html</loc>
-    <lastmod>2025-05-09</lastmod>
+    <loc>https://getbloomfield.com/blog/ai-complex-quoting-precision-machining.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/shop-needs-single-source-of-truth.html</loc>
-    <lastmod>2025-05-07</lastmod>
+    <loc>https://getbloomfield.com/blog/ai-reads-shop-floor-data-what-it-cant-do.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/compete-overseas-more-than-price.html</loc>
-    <lastmod>2025-05-06</lastmod>
+    <loc>https://getbloomfield.com/blog/as9100-compliance-what-suppliers-need-to-know.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/apprenticeship-program-that-works.html</loc>
-    <lastmod>2025-05-05</lastmod>
+    <loc>https://getbloomfield.com/blog/audit-quoting-process-one-week.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ten-commandments-manufacturing-quoting.html</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://getbloomfield.com/blog/best-employees-biggest-risk.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/job-shop-quoting-strategy.html</loc>
-    <lastmod>2025-04-30</lastmod>
+    <loc>https://getbloomfield.com/blog/build-business-case-technology-investment.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/best-shops-first-hour-every-shift.html</loc>
-    <lastmod>2025-04-29</lastmod>
+    <loc>https://getbloomfield.com/blog/build-knowledge-base-shop-floor.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/win-back-customer-lost-to-faster-competitor.html</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://getbloomfield.com/blog/calculate-roi-process-improvements.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/difference-mes-erp-custom-software.html</loc>
-    <lastmod>2025-04-25</lastmod>
+    <loc>https://getbloomfield.com/blog/choose-right-erp-small-manufacturer.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/lessons-manufacturers-survived-2020s.html</loc>
-    <lastmod>2025-04-23</lastmod>
+    <loc>https://getbloomfield.com/blog/cnc-programmers-checklist-handoff-documentation.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/customer-complaints-into-improvements.html</loc>
-    <lastmod>2025-04-22</lastmod>
+    <loc>https://getbloomfield.com/blog/complete-guide-first-article-inspection.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/reduce-rework-50-percent.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <loc>https://getbloomfield.com/blog/complete-guide-manufacturing-data.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/operators-brain-worth-more-than-erp.html</loc>
-    <lastmod>2025-04-18</lastmod>
+    <loc>https://getbloomfield.com/blog/complete-guide-workforce-planning.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-process-documentation.html</loc>
-    <lastmod>2025-04-16</lastmod>
+    <loc>https://getbloomfield.com/blog/consulting-industry-failed-manufacturing.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/hiring-technical-talent-2025.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <loc>https://getbloomfield.com/blog/continuous-improvement-program-that-sticks.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/ai-change-manufacturing-hiring.html</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://getbloomfield.com/blog/cost-of-knowledge-loss-what-data-shows.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/supply-chain-risks-small-manufacturers.html</loc>
-    <lastmod>2025-04-11</lastmod>
+    <loc>https://getbloomfield.com/blog/crm-and-erp-need-to-talk.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/estimators-playbook-20-years.html</loc>
-    <lastmod>2025-04-09</lastmod>
+    <loc>https://getbloomfield.com/blog/difference-dashboard-and-visibility.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/machine-data-without-six-figures.html</loc>
-    <lastmod>2025-04-08</lastmod>
+    <loc>https://getbloomfield.com/blog/erp-vendor-doesnt-care-about-shop-floor.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-dashboard-people-use.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <loc>https://getbloomfield.com/blog/first-90-days-new-plant-manager.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/stop-losing-money-on-requotes.html</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://getbloomfield.com/blog/first-principles-manufacturing-operations.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/before-buying-first-cnc.html</loc>
-    <lastmod>2025-04-03</lastmod>
+    <loc>https://getbloomfield.com/blog/fluid-power-manufacturers-solving-knowledge-gap.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/data-literacy-matters-more-than-tools.html</loc>
-    <lastmod>2025-04-01</lastmod>
+    <loc>https://getbloomfield.com/blog/ford-walton-toyota-modern-manufacturers.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/culture-where-people-share-knowledge.html</loc>
-    <lastmod>2025-03-31</lastmod>
+    <loc>https://getbloomfield.com/blog/get-engineers-to-document.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/top-quality-systems-small-manufacturers.html</loc>
-    <lastmod>2025-03-28</lastmod>
+    <loc>https://getbloomfield.com/blog/get-value-erp-data-without-replacing-erp.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/handle-rush-orders-without-wrecking-schedule.html</loc>
-    <lastmod>2025-03-26</lastmod>
+    <loc>https://getbloomfield.com/blog/how-american-machine-shops-using-ai.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/material-price-volatility-quotes.html</loc>
-    <lastmod>2025-03-25</lastmod>
+    <loc>https://getbloomfield.com/blog/how-american-manufacturers-compete-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/make-shop-attractive-young-workers.html</loc>
-    <lastmod>2025-03-24</lastmod>
+    <loc>https://getbloomfield.com/blog/iso-13485-small-manufacturers-practical.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/machine-utilization-numbers-misleading.html</loc>
-    <lastmod>2025-03-21</lastmod>
+    <loc>https://getbloomfield.com/blog/keep-institutional-knowledge-when-people-leave.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/gap-between-quoted-and-actual-costs.html</loc>
-    <lastmod>2025-03-19</lastmod>
+    <loc>https://getbloomfield.com/blog/lean-manufacturing-cant-solve-data-problem.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/quote-international-work.html</loc>
-    <lastmod>2025-03-18</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-cybersecurity.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/complete-guide-manufacturing-lead-times.html</loc>
-    <lastmod>2025-03-17</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-data-driven-decisions.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/best-manufacturing-salespeople.html</loc>
-    <lastmod>2025-03-14</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturers-guide-to-ai-no-hype.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/get-more-from-existing-cnc-equipment.html</loc>
-    <lastmod>2025-03-13</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturing-quoting-speed-benchmarks.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/preventive-maintenance-from-scratch.html</loc>
-    <lastmod>2025-03-12</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturing-skills-gap-knowledge-gap.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/what-manufacturers-should-know-reshoring.html</loc>
-    <lastmod>2025-03-11</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturing-technology-adoption-rates-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/setup-time-underestimated-cost.html</loc>
-    <lastmod>2025-03-10</lastmod>
+    <loc>https://getbloomfield.com/blog/manufacturing-workforce-by-the-numbers-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/winning-government-contracts.html</loc>
-    <lastmod>2025-03-07</lastmod>
+    <loc>https://getbloomfield.com/blog/mapping-manufacturing-workflows.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/step-by-step-value-stream-mapping.html</loc>
-    <lastmod>2025-03-06</lastmod>
+    <loc>https://getbloomfield.com/blog/measure-real-cost-manual-processes.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/questions-before-shop-floor-technology.html</loc>
-    <lastmod>2025-03-05</lastmod>
+    <loc>https://getbloomfield.com/blog/medical-device-shops-quality-data-wrong.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/train-next-generation-machinists.html</loc>
-    <lastmod>2025-03-03</lastmod>
+    <loc>https://getbloomfield.com/blog/metal-fabricators-quote-differently.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/every-manufacturer-needs-data-strategy.html</loc>
-    <lastmod>2025-02-28</lastmod>
+    <loc>https://getbloomfield.com/blog/most-smart-factory-marketing-dishonest.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/real-cost-running-shop-on-paper.html</loc>
-    <lastmod>2025-02-27</lastmod>
+    <loc>https://getbloomfield.com/blog/next-generation-manufacturers-software-companies.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/standard-work-instructions-people-follow.html</loc>
-    <lastmod>2025-02-26</lastmod>
+    <loc>https://getbloomfield.com/blog/onboard-new-machinist-without-losing-3-months.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-conferences-2025.html</loc>
-    <lastmod>2025-02-24</lastmod>
+    <loc>https://getbloomfield.com/blog/plan-for-2026-manufacturers-checklist.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/use-historical-job-data-quote-faster.html</loc>
-    <lastmod>2025-02-21</lastmod>
+    <loc>https://getbloomfield.com/blog/plant-managers-guide-evaluating-technology.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/reduce-customer-complaints.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <loc>https://getbloomfield.com/blog/precision-machinists-guide-quoting-complex-geometry.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/production-scheduling-mistakes-otd.html</loc>
-    <lastmod>2025-02-19</lastmod>
+    <loc>https://getbloomfield.com/blog/predictions-manufacturing-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturers-guide-customer-retention.html</loc>
-    <lastmod>2025-02-17</lastmod>
+    <loc>https://getbloomfield.com/blog/prepare-shop-next-wave-retirements.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/build-quoting-team-that-wins.html</loc>
-    <lastmod>2025-02-14</lastmod>
+    <loc>https://getbloomfield.com/blog/production-meeting-that-actually-produces.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/benchmark-shop-against-industry.html</loc>
-    <lastmod>2025-02-13</lastmod>
+    <loc>https://getbloomfield.com/blog/quote-complex-part-under-2-hours.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/signs-outgrown-your-erp.html</loc>
-    <lastmod>2025-02-12</lastmod>
+    <loc>https://getbloomfield.com/blog/reactive-to-proactive-production.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-delivery-dates-are-wrong.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <loc>https://getbloomfield.com/blog/real-cost-employee-turnover-manufacturing.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/complete-guide-shop-floor-metrics.html</loc>
-    <lastmod>2025-02-07</lastmod>
+    <loc>https://getbloomfield.com/blog/reduce-quoting-bottleneck-growing-shop.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/machine-shop-owners-guide-margins.html</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://getbloomfield.com/blog/reduce-quoting-errors-without-slowing-down.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/calculate-true-cost-per-part.html</loc>
-    <lastmod>2025-02-05</lastmod>
+    <loc>https://getbloomfield.com/blog/smart-factory-actually-looks-like-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturing-books-shop-owners.html</loc>
-    <lastmod>2025-02-03</lastmod>
+    <loc>https://getbloomfield.com/blog/state-of-manufacturing-technology-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/read-manufacturing-pl-like-operator.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <loc>https://getbloomfield.com/blog/step-by-step-documenting-tribal-knowledge.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/things-to-automate-at-every-shop.html</loc>
-    <lastmod>2025-01-29</lastmod>
+    <loc>https://getbloomfield.com/blog/step-by-step-improving-quote-win-rates.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/what-toyota-gets-right-erp-doesnt.html</loc>
-    <lastmod>2025-01-28</lastmod>
+    <loc>https://getbloomfield.com/blog/step-by-step-vendor-evaluation-manufacturers.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/obsessed-with-response-time.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://getbloomfield.com/blog/survive-capacity-crunch.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/beginners-guide-to-oee.html</loc>
-    <lastmod>2025-01-24</lastmod>
+    <loc>https://getbloomfield.com/blog/top-10-mistakes-tracking-otd.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/estimate-like-your-best-estimator.html</loc>
-    <lastmod>2025-01-22</lastmod>
+    <loc>https://getbloomfield.com/blog/top-5-causes-scrap-cnc-machining.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/quoting-workflow-that-scales.html</loc>
-    <lastmod>2025-01-21</lastmod>
+    <loc>https://getbloomfield.com/blog/top-5-challenges-hydraulic-manufacturers.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/why-shops-still-run-on-spreadsheets.html</loc>
-    <lastmod>2025-01-20</lastmod>
+    <loc>https://getbloomfield.com/blog/top-5-challenges-small-manufacturers-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/manufacturers-that-got-technology-right.html</loc>
-    <lastmod>2025-01-17</lastmod>
+    <loc>https://getbloomfield.com/blog/top-5-time-wasters-shop-floor.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/lean-without-losing-knowledge.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://getbloomfield.com/blog/top-7-reasons-invest-custom-software.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/hidden-factory-wasted-capacity.html</loc>
-    <lastmod>2025-01-14</lastmod>
+    <loc>https://getbloomfield.com/blog/top-8-reasons-manufacturers-lose-bids.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/reasons-best-machinists-might-leave.html</loc>
-    <lastmod>2025-01-13</lastmod>
+    <loc>https://getbloomfield.com/blog/tribal-knowledge-10-signs.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/getting-started-with-data-analytics.html</loc>
-    <lastmod>2025-01-10</lastmod>
+    <loc>https://getbloomfield.com/blog/true-cost-of-late-shipment.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/quoting-process-costing-you-money.html</loc>
-    <lastmod>2025-01-08</lastmod>
+    <loc>https://getbloomfield.com/blog/what-aerospace-job-shops-get-wrong-quoting.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/shop-floor-data-going-to-waste.html</loc>
-    <lastmod>2025-01-06</lastmod>
+    <loc>https://getbloomfield.com/blog/what-defense-contractors-need-from-supply-chain.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getbloomfield.com/blog/what-manufacturing-learns-from-spacex.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://getbloomfield.com/blog/why-software-implementations-fail.html</loc>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/ai-quoting-manufacturing.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/manufacturing-ai-guide.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/manufacturing-knowledge-management.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbloomfield.com/production-visibility-manufacturing.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
