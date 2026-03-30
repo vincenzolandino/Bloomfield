@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI for Machine Shops | Custom Tools for CNC and Precision Manufacturing</title>
+<meta name="description" content="Custom AI software for machine shops. Reduce quoting time on high-mix jobs, capture setup knowledge before it retires, and schedule 3/4/5-axis machines with real data instead of gut feel.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a14">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/ai-for-machine-shops.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="AI for Machine Shops | Custom Tools for CNC and Precision Manufacturing">
+<meta property="og:description" content="Custom AI software for machine shops. Reduce quoting time on high-mix jobs, capture setup knowledge, and schedule multi-axis machines with real production data.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/ai-for-machine-shops.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bloomfield">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for Machine Shops | Custom Tools for CNC and Precision Manufacturing">
+<meta name="twitter:description" content="Custom AI software for machine shops. Reduce quoting time on high-mix jobs, capture setup knowledge, and schedule multi-axis machines with real production data.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bloomfield",
+  "url": "https://getbloomfield.com",
+  "logo": "https://getbloomfield.com/logo-icon.png",
+  "description": "Bloomfield builds custom AI software for manufacturers. We connect operational data to an intelligence layer to make quoting faster, delivery more reliable, and institutional knowledge accessible."
+}
+</script>
+
+<!-- Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"@type": "ListItem", "position": 2, "name": "AI for Machine Shops", "item": "https://getbloomfield.com/ai-for-machine-shops.html"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@font-face { font-family: 'GT Sectra'; src: url('/fonts/gt-sectra-book.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'GT Sectra'; src: url('/fonts/gt-sectra-bold.woff') format('woff'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Sohne'; src: url('/fonts/sohne-buch.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Sohne'; src: url('/fonts/sohne-kraftig.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;
+  --off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;
+  --slate-50:#f2f0eb;--slate-200:#d4d0c6;
+  --mono:'IBM Plex Mono',monospace;
+  --serif:'GT Sectra',Georgia,'Times New Roman',serif;
+  --sans:'Sohne','Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.7;overflow-x:hidden}
+
+.container{max-width:1120px;margin:0 auto;padding:0 2rem}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{font-family:var(--mono);font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700;color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}
+.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}
+@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}
+.mobile-menu.open{display:flex}
+
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}
+.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+
+.fig-label{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+
+/* Sections */
+.section-dark{background:var(--navy-950);color:var(--off-white);position:relative;padding:5rem 0}
+.section-dark::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(74,144,217,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.04) 1px,transparent 1px);background-size:48px 48px}
+.section-light{background:#fff1e0;color:#1a1a2e;position:relative;padding:5rem 0}
+.section-light::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(74,144,217,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.04) 1px,transparent 1px);background-size:48px 48px}
+
+.hero{background:var(--navy-950);padding:8rem 0 5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(74,144,217,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.05) 1px,transparent 1px);background-size:60px 60px}
+
+h1{font-family:var(--serif);color:var(--off-white);font-size:clamp(28px,3.5vw,44px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:1.5rem}
+h2{font-family:var(--serif);font-size:clamp(24px,2.5vw,36px);line-height:1.2;letter-spacing:-0.02em;margin-bottom:1.5rem}
+h3{font-family:var(--serif);font-size:1.25rem;line-height:1.3;margin-bottom:0.75rem}
+
+.problem-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;margin-top:2rem}
+@media(min-width:768px){.problem-grid{grid-template-columns:1fr 1fr}}
+
+.problem-card{padding:2rem;border:1px solid rgba(26,26,46,0.1);background:rgba(255,255,255,0.5);position:relative;transition:all 0.3s ease;border-radius:2px}
+.problem-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(74,144,217,0.12)}
+.problem-card::before,.problem-card::after{content:'';position:absolute;width:12px;height:12px;border-color:var(--accent);border-style:solid;opacity:0.4}
+.problem-card::before{top:-1px;left:-1px;border-width:1px 0 0 1px}
+.problem-card::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+
+.solution-row{display:flex;flex-direction:column;gap:0.5rem;padding:2rem 0;border-bottom:1px solid rgba(237,234,228,0.08)}
+.solution-row:first-child{border-top:1px solid rgba(237,234,228,0.08)}
+@media(min-width:768px){.solution-row{flex-direction:row;gap:3rem}}
+.solution-label{font-family:var(--mono);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);min-width:180px;flex-shrink:0;padding-top:2px}
+.solution-desc{font-size:16px;line-height:1.8;color:rgba(237,234,228,0.65);max-width:640px}
+.solution-desc a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(74,144,217,0.3);transition:border-color 0.2s}
+.solution-desc a:hover{border-color:var(--accent)}
+
+.process-steps{counter-reset:steps;list-style:none;padding:0}
+.process-steps li{counter-increment:steps;display:flex;gap:1.25rem;padding:1.5rem 0;border-bottom:1px solid rgba(26,26,46,0.08)}
+.process-steps li:first-child{border-top:1px solid rgba(26,26,46,0.08)}
+.process-steps li::before{content:counter(steps,decimal-leading-zero);font-family:var(--mono);font-size:14px;color:var(--accent);font-weight:600;flex-shrink:0;padding-top:2px}
+
+.cta-section{background:var(--navy-950);padding:5rem 0;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(74,144,217,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(74,144,217,0.05) 1px,transparent 1px);background-size:60px 60px}
+
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#edeae4}
+
+.body-link{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(74,144,217,0.3);transition:border-color 0.2s}
+.body-link:hover{border-color:var(--accent)}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#fff1e0}
+::-webkit-scrollbar-thumb{background:#c4c0b8;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link">Solutions</a>
+      <a href="/#process" class="nav-link">Process</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/blog/" class="nav-link">Field Notes</a>
+      <a href="/contact.html" class="btn-accent">Book a Call <span>&rarr;</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link">Solutions</a>
+    <a href="/#process" class="nav-link">Process</a>
+    <a href="/about.html" class="nav-link">About</a>
+    <a href="/blog/" class="nav-link">Field Notes</a>
+    <a href="/contact.html" class="btn-accent" style="text-align:center;justify-content:center">Book a Call &rarr;</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO (Dark) -->
+<section class="hero">
+  <div class="container" style="position:relative;z-index:10;max-width:48rem">
+    <p class="fig-label">Industry // Machine Shops</p>
+    <h1>Your quoting backlog grows every week. Your best estimator is 58.</h1>
+    <p style="color:rgba(237,234,228,0.7);font-size:1.0625rem;line-height:1.7;max-width:40rem">Bloomfield builds custom AI tools for CNC and precision machine shops. Quoting that pulls from every job you have ever run. Setup knowledge that survives retirement. Scheduling that accounts for what your 5-axis machines are actually doing.</p>
+  </div>
+</section>
+
+<!-- PROBLEMS (Light) -->
+<section class="section-light">
+  <div class="container" style="position:relative;z-index:1">
+    <p class="fig-label">The Problem</p>
+    <h2>Four constraints that cost machine shops real money</h2>
+    <p style="font-size:16px;line-height:1.8;color:rgba(26,26,46,0.6);max-width:640px;margin-bottom:1rem">These are the bottlenecks we see in every precision shop we walk into. They compound. A slow quote feeds a missed delivery feeds a lost customer, and the root cause is always the same: critical data trapped in places the team cannot reach when they need it.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <h3>High-mix quoting that depends on one person</h3>
+        <p style="font-size:15px;line-height:1.75;color:rgba(26,26,46,0.6)">A 200-part-number shop running Mazak and Haas across 3 and 5-axis receives 40 RFQs a week. The estimator opens each drawing, checks material stock, references past jobs from memory, calculates cycle times by hand, and builds the quote in Excel. The whole operation bottlenecks at one desk. <a href="/blog/the-hidden-cost-of-slow-quotes.html" class="body-link">Shops that quote in two days win 35% of bids</a>. Shops that take five days win 12%.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Setup knowledge walking out the door</h3>
+        <p style="font-size:15px;line-height:1.75;color:rgba(26,26,46,0.6)">Your senior machinist knows that the Inconel 718 job on the DMG MORI requires a specific fixturing sequence and a feed rate adjustment on the third pass that took six months to dial in. None of that is in the ERP. None of it is in the setup sheet. It lives in a personal notebook and 22 years of muscle memory. When that person retires, <a href="/blog/three-retirements-same-year.html" class="body-link">the replacement starts from scratch on every setup</a>.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Scheduling across machines with no shared data</h3>
+        <p style="font-size:15px;line-height:1.75;color:rgba(26,26,46,0.6)">The production manager tracks jobs on a whiteboard, a spreadsheet, and the ERP. None of them agree. A priority job lands on a 4-axis Okuma that is already 6 hours behind on a different order. Nobody finds out until second shift. <a href="/blog/scheduling-by-gut-feel.html" class="body-link">Scheduling by gut feel</a> works until it costs you a delivery date.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Equipment utilization you cannot measure</h3>
+        <p style="font-size:15px;line-height:1.75;color:rgba(26,26,46,0.6)">A 5-axis Hermle costs $800,000. Most shops have no idea whether it runs at 62% or 78% utilization. They know when it is down because someone calls the floor. They do not know about the 45-minute gaps between jobs that add up to 9 lost hours a week, because that data has never been collected in a way anyone can act on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS (Dark) -->
+<section class="section-dark">
+  <div class="container" style="position:relative;z-index:1">
+    <p class="fig-label">How Bloomfield Solves It</p>
+    <h2 style="color:var(--off-white)">Four tools built for how machine shops actually operate</h2>
+    <p style="font-size:16px;line-height:1.8;color:rgba(237,234,228,0.55);max-width:640px;margin-bottom:2rem">Each tool connects to the systems you already run. JobBOSS, ProShop, E2, Global Shop, your ERP. We pull the data, structure it, and build software your team uses on the floor. No rip-and-replace.</p>
+
+    <div class="solution-row">
+      <div class="solution-label">Quoting Agent</div>
+      <div class="solution-desc">Your estimator describes a new RFQ. The tool searches every similar job you have ever quoted, surfaces the materials used, cycle times recorded, margins achieved, and win/loss outcomes. A quote that took 4 hours of digging now takes 40 minutes with better data behind every line item. Built for the high-mix, low-volume reality where no two jobs are identical. <a href="/ai-quoting-manufacturing.html">Full quoting guide</a>.</div>
+    </div>
+    <div class="solution-row">
+      <div class="solution-label">Knowledge Engine</div>
+      <div class="solution-desc">Every setup note, tooling preference, fixture sequence, and feed rate adjustment your machinists have developed gets captured, structured, and made searchable. When a new operator loads a part on a Doosan that your retiring lead machinist ran for 15 years, they get the exact approach that works, not the generic setup sheet. <a href="/manufacturing-knowledge-management.html">Full knowledge capture guide</a>.</div>
+    </div>
+    <div class="solution-row">
+      <div class="solution-label">Production Dashboard</div>
+      <div class="solution-desc">Job status, machine load, delivery risk, and schedule conflicts visible in one place. Data from ERP, spreadsheets, and the floor merged into a single view your production manager can read in 90 seconds. <a href="/blog/what-production-dashboard-should-show.html">What a production dashboard should actually show</a>. No six-figure MES deployment required.</div>
+    </div>
+    <div class="solution-row">
+      <div class="solution-label">Equipment Intelligence</div>
+      <div class="solution-desc">Utilization rates, idle time patterns, cycle time variance, and maintenance intervals for every machine on the floor. You see which 3-axis machines are overcrowded while a 5-axis sits underloaded. You see the 45-minute changeover gaps that are costing you 9 hours a week. Data that was always there, finally in a form you can act on.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENT (Light) -->
+<section class="section-light">
+  <div class="container" style="position:relative;z-index:1;max-width:48rem">
+    <p class="fig-label">What an Engagement Looks Like</p>
+    <h2>From first call to working software in weeks</h2>
+    <p style="font-size:16px;line-height:1.8;color:rgba(26,26,46,0.6);margin-bottom:1.5rem">Every engagement starts the same way. We learn your operation before we write a line of code. The goal is working software your team evaluates against real jobs, not a slide deck about what AI could do someday.</p>
+
+    <ol class="process-steps">
+      <li><span style="font-size:16px;line-height:1.75;color:rgba(26,26,46,0.7)"><strong style="color:#1a1a2e">Discovery call.</strong> You walk us through how your shop runs. What you quote, how you schedule, where knowledge lives, what breaks when your best people are out. 30 minutes.</span></li>
+      <li><span style="font-size:16px;line-height:1.75;color:rgba(26,26,46,0.7)"><strong style="color:#1a1a2e">Workflow audit.</strong> We map the specific bottleneck: who does what, what systems are involved, where decisions slow down, and where the process breaks under real operating conditions. We come to you.</span></li>
+      <li><span style="font-size:16px;line-height:1.75;color:rgba(26,26,46,0.7)"><strong style="color:#1a1a2e">Data inventory.</strong> We catalog what you have. ERP exports, job travelers, spreadsheets, PDFs, handwritten notes. You do not need to prepare anything. <a href="/blog/ai-ready-data-50-person-shop.html" class="body-link">Most shops have more usable data than they think</a>.</span></li>
+      <li><span style="font-size:16px;line-height:1.75;color:rgba(26,26,46,0.7)"><strong style="color:#1a1a2e">Scoped build.</strong> We deliver working software in 6 to 8 week phases. Your estimator, your production manager, your floor lead tests it against real work. We iterate until the tool fits the way your shop already operates.</span></li>
+    </ol>
+
+    <p style="font-size:16px;line-height:1.8;color:rgba(26,26,46,0.6);margin-top:2rem">Read more about <a href="/blog/run-ai-pilot-without-disruption.html" class="body-link">how to run an AI pilot without disrupting your operation</a> and <a href="/blog/evaluating-ai-vendors-manufacturers.html" class="body-link">what to ask any AI vendor before signing</a>.</p>
+  </div>
+</section>
+
+<!-- CTA (Dark) -->
+<section class="cta-section">
+  <div class="container" style="position:relative;z-index:10;text-align:center;max-width:40rem;margin:0 auto">
+    <h2 style="color:#edeae4;font-size:clamp(24px,3vw,36px);line-height:1.25;letter-spacing:-0.02em;margin-bottom:1rem">Tell us how your shop runs.</h2>
+    <p style="color:rgba(237,234,228,0.7);font-size:1.0625rem;line-height:1.7;margin-bottom:2rem">30 minutes. You describe the bottleneck. We tell you where AI tooling fits, what it would cost to build, and whether your data is ready.</p>
+    <a href="/contact.html" class="btn-accent">Book a Call <span>&rarr;</span></a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(237,234,228,0.3);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste. <span style="opacity:0.5">🇺🇸</span> Built in USA.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

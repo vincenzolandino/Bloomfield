@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Most Manufacturing AI Demos Don't Reflect Reality | Bloomfield</title>
+<meta name="description" content="AI demos use clean data, simple workflows, and ideal conditions. Your shop floor has none of those. Here is how to evaluate what you are actually seeing and what questions to ask.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html">
+
+<meta property="og:title" content="Why Most Manufacturing AI Demos Don't Reflect Reality | Bloomfield">
+<meta property="og:description" content="AI demos use clean data, simple workflows, and ideal conditions. Here is how to evaluate what you are actually seeing.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+<meta property="article:published_time" content="2026-03-29T08:00:00-05:00">
+<meta property="article:author" content="The Bloomfield Team">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Most Manufacturing AI Demos Don't Reflect Reality | Bloomfield">
+<meta name="twitter:description" content="How to see past the demo and evaluate what AI will actually do in your manufacturing operation.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHQQVKFSQ8');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Most Manufacturing AI Demos Don't Reflect Reality",
+  "description": "AI demos use clean data, simple workflows, and ideal conditions. Your shop floor has none of those. Here is how to evaluate what you are actually seeing.",
+  "author": {"@type": "Person", "name": "The Bloomfield Team"},
+  "publisher": {"@type": "Organization", "name": "Bloomfield", "logo": {"@type": "ImageObject", "url": "https://getbloomfield.com/logo-icon.png"}},
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-03-29",
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html"},
+  "url": "https://getbloomfield.com/blog/manufacturing-ai-demos-vs-reality.html"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getbloomfield.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Field Notes", "item": "https://getbloomfield.com/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "Why Most Manufacturing AI Demos Don't Reflect Reality"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;--off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;--slate-50:#f2f0eb;--slate-200:#d4d0c6}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+.font-head{font-family:Georgia,'Times New Roman',serif}
+.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}
+.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}@media(min-width:768px){.container{padding:0 2rem}}
+.grain{position:relative}.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav.scrolled{background:rgba(10,10,20,0.9);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}.nav-link:hover{color:#edeae4}
+.nav-mobile{display:none}@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}
+.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}.mobile-menu.open{display:flex}
+.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}
+footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}footer a:hover{color:#edeae4}
+.article-body{max-width:42rem;margin:0 auto;position:relative;z-index:10}
+.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem;color:#1a1a2e}
+.article-body p{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem}
+.article-body ul,.article-body ol{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem;padding-left:1.5rem}.article-body li{margin-bottom:0.5rem}
+.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}.article-body a:hover{color:#1a1a2e}
+.article-body strong{color:#1a1a2e;font-weight:600}
+.cta-box{border:1px solid rgba(74,144,217,0.3);border-radius:2px;background:#0a0a14;color:#edeae4;padding:2.5rem;margin-top:3rem;text-align:center}.cta-box p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem}
+.article-body .btn-accent{color:#fff;text-decoration:none}.article-body .btn-accent:hover{color:#fff}
+.cta-box h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:1rem;color:#edeae4}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#fff1e0}::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links">
+      <a href="/#solutions" class="nav-link label">Solutions</a>
+      <a href="/#process" class="nav-link label">Process</a>
+      <a href="/about.html" class="nav-link label">About</a>
+      <a href="/blog/" class="nav-link label">Field Notes</a>
+      <a href="/contact.html" class="btn-accent">Book a Call <span>→</span></a>
+    </div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a>
+    <a href="/#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a>
+    <a href="/about.html" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a>
+    <a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Field Notes</a>
+    <a href="/contact.html" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call →</a>
+  </div>
+</nav>
+
+<main>
+<article class="grain" style="padding-top:10rem;padding-bottom:6rem">
+  <div class="article-body">
+
+    <a href="/blog/" class="label" style="color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:2rem">&larr; Back to Field Notes</a>
+
+    <p class="label" style="color:rgba(26,26,46,0.5);margin-bottom:1rem"><time datetime="2026-03-29">March 29, 2026</time> &middot; The Bloomfield Team</p>
+
+    <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">Why Most Manufacturing AI Demos Don't Reflect Reality</h1>
+
+    <figure style="margin:2rem 0 2.5rem">
+      <img src="/images/blog/evaluating-ai-vendors-manufacturers.webp" alt="Manufacturing AI Demos vs Reality" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+    </figure>
+
+    <p>The demo looks perfect. An RFQ arrives, the AI reads the drawing, pulls historical data, and generates a quote in 30 seconds. The scheduling dashboard shows every machine color-coded by status, jobs flowing smoothly from operation to operation, and a delivery prediction accurate to the hour. The vendor clicks through the screens with practiced confidence.</p>
+
+    <p>Then you buy it. And nothing works like the demo.</p>
+
+    <p>This is not because the vendor lied. It is because every AI demo operates under conditions your shop floor will never replicate, and understanding those conditions is the difference between a productive evaluation and an expensive mistake.</p>
+
+    <h2>The Clean Data Problem</h2>
+
+    <p>Every demo runs on curated data. The part numbers are consistent. The job records are complete. The historical cost data is accurate and neatly organized. The customer records have no duplicates. The material specifications match a clean lookup table.</p>
+
+    <p>Your data does not look like this. Your ERP has 12 years of records entered by 9 different people with 9 different naming conventions. Job 4872 lists "6061 Aluminum" and Job 4873 lists "AL 6061-T6" and Job 4874 lists "Alum 6061" for the same material. Your quoting spreadsheet has columns that nobody remembers creating and formulas that reference deleted cells.</p>
+
+    <p>The gap between demo data and your data is where 30 to 50% of the implementation work lives. Any vendor who skips over this during the demo is hiding the hardest part of the project. Ask them: "What does the data preparation phase look like for a shop with our systems?" If the answer is vague, the timeline and cost will be understated.</p>
+
+    <h2>The Simple Workflow Problem</h2>
+
+    <p>Demos show one workflow, executed linearly. An RFQ arrives. The AI processes it. The estimator reviews. The quote goes out. Clean, sequential, photogenic.</p>
+
+    <p>Your quoting process involves an RFQ that arrives by email with a drawing in a format your system cannot parse, a note from the buyer asking to match pricing from 2024, a material specification that changed since the last order, and a delivery requirement that conflicts with three other jobs on the floor. The estimator has to call the customer for clarification, check with purchasing on material lead times, and ask the shop foreman whether the 5-axis machine will be available in four weeks.</p>
+
+    <p>AI tools that work in production environments handle this messiness. AI tools built for demos do not. During evaluation, ask to see the tool handle an exception. Ask what happens when the drawing is blurry, when the material is not in the database, when the historical comparable has incomplete data. The answer reveals whether the system was built for your world or for a slide deck.</p>
+
+    <h2>The Integration Problem</h2>
+
+    <p>The demo shows data flowing seamlessly from the AI system to the ERP and back. What the demo does not show is the six to ten weeks of integration work required to make that happen with your specific ERP version, your specific database configuration, and your specific data schema.</p>
+
+    <p>JobBOSS 2020 does not export data the same way as JobBOSS 2024. Epicor on-premise does not connect the same way as Epicor in the cloud. Global Shop Solutions has different API capabilities depending on your license tier. <a href="/blog/connecting-systems-never-meant-to-talk.html">Connecting systems that were never meant to talk</a> is real engineering work, and the demo hand-waves over all of it.</p>
+
+    <p>Ask specifically: "Have you integrated with our ERP version before? Can I speak with that customer?" A reference call with a manufacturer running the same ERP on the same version is worth more than any demo.</p>
+
+    <h2>The Scale Problem</h2>
+
+    <p>Demos process one query at a time with immediate results. Your operation needs the AI to handle 40 quotes per month, pull from 8,000 historical jobs, cross-reference 300 active customer records, and respond within a system that multiple people use simultaneously.</p>
+
+    <p>Performance at demo scale and performance at production scale are different engineering problems. Ask about response times under load. Ask how many concurrent users the system supports. Ask what happens when the database grows by 2,000 jobs per year for five years. If the vendor has production deployments in shops of your size, they can answer these questions with specific numbers.</p>
+
+    <h2>How to Run a Real Evaluation</h2>
+
+    <p>The alternative to trusting a demo is running a controlled test on your data. The best <a href="/blog/evaluating-ai-vendors-manufacturers.html">vendor evaluation process</a> looks like this:</p>
+
+    <ol>
+      <li>Provide the vendor with a sample of your actual data: 50 to 100 historical jobs, your ERP export format, and 5 to 10 real RFQs.</li>
+      <li>Ask them to process those RFQs through their system and return results.</li>
+      <li>Have your estimator compare the AI output to what they would have produced manually.</li>
+      <li>Measure accuracy on the specific fields that matter: material identification, operation sequence, cost estimate accuracy, time estimate accuracy.</li>
+      <li>Ask for a detailed implementation timeline and cost breakdown, including data preparation, integration, testing, and training.</li>
+    </ol>
+
+    <p>A vendor confident in their product will welcome this evaluation. A vendor who resists it and pushes you toward a contract based on the demo alone is telling you something about how their tool performs on real data.</p>
+
+    <p>The demo is a starting point for conversation. The evaluation on your data is where the conversation gets honest.</p>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/evaluating-ai-vendors-manufacturers.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">The Manufacturer's Guide to Evaluating AI Vendors</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/cheapest-ai-project-most-expensive.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Why the Cheapest AI Project Is Usually the Most Expensive</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/run-ai-pilot-without-disruption.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">How to Run an AI Pilot Without Disrupting Your Operation</a></li>
+      </ul>
+    </div>
+
+    <div class="cta-box">
+      <h3>See what AI looks like on your actual data</h3>
+      <p>No curated demos. Send us your data and we will show you what the AI produces. Good and bad.</p>
+      <a href="/contact.html" class="btn-accent">Talk to Our Team <span>→</span></a>
+    </div>
+
+  </div>
+</article>
+</main>
+
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(237,234,228,0.3);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste. <span style="opacity:0.5">🇺🇸</span> Built in USA.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center">
+      <p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2026 Bloomfield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>
