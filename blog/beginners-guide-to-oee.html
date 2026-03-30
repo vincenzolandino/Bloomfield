@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Beginner's Guide to OEE in Manufacturing | Bloomfield</title>
+<meta name="description" content="OEE measures Availability, Performance, and Quality in a single metric. World-class is 85%. Most job shops run between 40-60%. Here is how to measure it and what to do with the number.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0a0a14">
+<meta name="author" content="The Bloomfield Team">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://getbloomfield.com/blog/beginners-guide-to-oee.html">
+
+<meta property="og:title" content="A Beginner's Guide to OEE in Manufacturing | Bloomfield">
+<meta property="og:description" content="OEE measures Availability, Performance, and Quality. World-class is 85%. Most job shops run 40-60%.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://getbloomfield.com/blog/beginners-guide-to-oee.html">
+<meta property="og:image" content="https://getbloomfield.com/logo-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Bloomfield">
+<meta property="article:published_time" content="2025-01-24T08:00:00-05:00">
+<meta property="article:author" content="The Bloomfield Team">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Beginner's Guide to OEE | Bloomfield">
+<meta name="twitter:description" content="OEE measures Availability, Performance, and Quality. World-class is 85%. Most job shops run 40-60%.">
+<meta name="twitter:image" content="https://getbloomfield.com/logo-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHQQVKFSQ8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-JHQQVKFSQ8');</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"A Beginner's Guide to OEE in Manufacturing","description":"OEE measures Availability, Performance, and Quality in a single metric. World-class is 85%. Most job shops run between 40-60%.","author":{"@type":"Person","name":"The Bloomfield Team"},"publisher":{"@type":"Organization","name":"Bloomfield","logo":{"@type":"ImageObject","url":"https://getbloomfield.com/logo-icon.png"}},"datePublished":"2025-01-24","dateModified":"2025-01-24","mainEntityOfPage":{"@type":"WebPage","@id":"https://getbloomfield.com/blog/beginners-guide-to-oee.html"},"url":"https://getbloomfield.com/blog/beginners-guide-to-oee.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://getbloomfield.com/"},{"@type":"ListItem","position":2,"name":"Field Notes","item":"https://getbloomfield.com/blog/"},{"@type":"ListItem","position":3,"name":"A Beginner's Guide to OEE in Manufacturing"}]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--navy-950:#0a0a14;--navy-900:#12122a;--navy-800:#1a1a3e;--off-white:#edeae4;--accent:#4A90D9;--accent-dim:#3A78BF;--slate-50:#f2f0eb;--slate-200:#d4d0c6}html{scroll-behavior:smooth}body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}.font-head{font-family:Georgia,'Times New Roman',serif}.font-mono{font-family:'IBM Plex Mono',monospace}.label{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;font-weight:700}.container{max-width:80rem;margin:0 auto;padding:0 1.5rem}@media(min-width:768px){.container{padding:0 2rem}}.grain{position:relative}.grain::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:200px 200px}.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all 0.3s ease;padding:1.25rem 0;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.nav.scrolled{background:rgba(10,10,20,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,46,0.08);padding:0.75rem 0}.nav-inner{display:flex;align-items:center;justify-content:space-between}.nav-links{display:flex;align-items:center;gap:2rem}.nav-link{color:rgba(237,234,228,0.7);text-decoration:none;transition:color 0.2s}.nav-link:hover{color:#edeae4}.nav-mobile{display:none}@media(max-width:767px){.nav-links{display:none}.nav-mobile{display:block}}.mobile-menu{display:none;flex-direction:column;gap:1rem;padding:1.5rem;background:rgba(10,10,20,0.95);backdrop-filter:blur(12px);border-top:1px solid rgba(26,26,46,0.08)}.mobile-menu.open{display:flex}.btn-accent{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;transition:all 0.2s ease;border:none;cursor:pointer}.btn-accent:hover{background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 20px rgba(74,144,217,0.3)}footer a{color:rgba(237,234,228,0.4);text-decoration:none;transition:color 0.2s}footer a:hover{color:#edeae4}.article-body{max-width:42rem;margin:0 auto;position:relative;z-index:10}.article-body h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;line-height:1.3;letter-spacing:-0.025em;margin-top:3rem;margin-bottom:1rem;color:#1a1a2e}.article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.4;margin-top:2.5rem;margin-bottom:0.75rem;color:#1a1a2e}.article-body p{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem}.article-body ul,.article-body ol{color:rgba(26,26,46,0.8);font-size:1.0625rem;line-height:1.8;margin-bottom:1.5rem;padding-left:1.5rem}.article-body li{margin-bottom:0.5rem}.article-body a{color:#2a6cb6;text-decoration:underline;text-underline-offset:2px}.article-body a:hover{color:#1a1a2e}.article-body blockquote{border-left:2px solid var(--accent);padding-left:1.5rem;margin:2rem 0}.article-body blockquote p{color:rgba(26,26,46,0.7);font-style:italic}.article-body strong{color:#1a1a2e;font-weight:600}.cta-box{border:1px solid rgba(74,144,217,0.3);border-radius:2px;background:#0a0a14;color:#edeae4;padding:2.5rem;margin-top:3rem;text-align:center}.cta-box p{color:rgba(237,234,228,0.7);margin-bottom:1.5rem}.article-body .btn-accent{color:#fff;text-decoration:none}.article-body .btn-accent:hover{color:#fff}.cta-box h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:1rem;color:#edeae4}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#fff1e0}::-webkit-scrollbar-thumb{background:#2a2a3e;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield" style="height:44px;width:auto"><img src="/wordmark.png" alt="Bloomfield" style="height:32px;width:auto"></a>
+    <div class="nav-links"><a href="/#solutions" class="nav-link label">Solutions</a><a href="/#process" class="nav-link label">Process</a><a href="/about.html" class="nav-link label">About</a><a href="/blog/" class="nav-link label">Field Notes</a><a href="/contact.html" class="btn-accent">Book a Call <span>&rarr;</span></a></div>
+    <button class="nav-mobile" onclick="document.getElementById('mobile-menu').classList.toggle('open')" style="background:none;border:none;cursor:pointer;color:#edeae4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu"><a href="/#solutions" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Solutions</a><a href="/#process" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Process</a><a href="/about.html" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">About</a><a href="/blog/" class="nav-link label" onclick="document.getElementById('mobile-menu').classList.remove('open')">Field Notes</a><a href="/contact.html" class="btn-accent" style="text-align:center;justify-content:center" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book a Call &rarr;</a></div>
+</nav>
+
+<main>
+<article class="grain" style="padding-top:10rem;padding-bottom:6rem">
+  <div class="article-body">
+
+    <a href="/blog/" class="label" style="color:var(--accent);text-decoration:none;display:inline-block;margin-bottom:2rem">&larr; Back to Field Notes</a>
+    <p class="label" style="color:rgba(26,26,46,0.5);margin-bottom:1rem"><time datetime="2025-01-24">January 24, 2025</time> &middot; The Bloomfield Team</p>
+    <h1 class="font-head" style="font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-0.025em;margin-bottom:2rem">A Beginner's Guide to OEE in Manufacturing</h1>
+
+    <figure style="margin:2rem 0 2.5rem">
+      <img src="/images/blog/on-time-delivery-number-lying.webp" alt="OEE measurement in manufacturing" style="width:100%;height:auto;border-radius:2px" loading="lazy">
+    </figure>
+
+    <p>Overall Equipment Effectiveness is a single number that captures three dimensions of production performance: whether the machine was running when it should have been, whether it ran at the speed it should have, and whether it produced good parts. Seiichi Nakajima developed OEE in the 1960s as part of Total Productive Maintenance at the Japan Institute of Plant Maintenance. It became the standard metric for understanding how much of a machine's potential capacity is actually being used to produce salable output.</p>
+
+    <p>World-class OEE is 85%. Most job shops operate between 40% and 60%. The gap between where most shops operate and what their equipment could theoretically produce represents the largest pool of untapped capacity in American manufacturing.</p>
+
+    <h2>The Three Components</h2>
+
+    <p>OEE is calculated as: Availability x Performance x Quality. Each component isolates a different category of loss.</p>
+
+    <p><strong>Availability</strong> measures the percentage of scheduled production time that the machine was actually running. If a machine is scheduled for 8 hours and was down for 1.5 hours due to setup changes, breakdowns, or material shortages, availability is 81.25%. Every minute of unplanned downtime and every minute of changeover time reduces availability.</p>
+
+    <p><strong>Performance</strong> measures how fast the machine ran compared to its ideal cycle time. If the theoretical cycle time for a part is 45 seconds and the actual average was 55 seconds, performance is 81.8%. Reduced speed can come from suboptimal feeds and speeds, operator hesitancy, worn tooling, or material inconsistencies that require conservative parameters.</p>
+
+    <p><strong>Quality</strong> measures the percentage of parts produced that met specification on the first pass. If the machine produced 200 parts and 8 required rework or were scrapped, quality is 96%. First-pass yield is the purest measure of process capability.</p>
+
+    <div style="background:#0a0a14;border-radius:2px;padding:2rem;margin:2rem 0">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#4A90D9;margin-bottom:1.5rem">OEE Calculation Example</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem">
+        <div style="flex:1;min-width:120px;text-align:center;padding:1rem;border:1px solid rgba(74,144,217,0.3);border-radius:2px">
+          <p style="font-family:'GT Sectra',Georgia,serif;font-size:1.75rem;color:#edeae4;margin-bottom:0.25rem">81%</p>
+          <p style="color:rgba(237,234,228,0.5);font-size:12px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:0.1em">Availability</p>
+        </div>
+        <div style="flex:0 0 auto;display:flex;align-items:center;color:rgba(237,234,228,0.4);font-size:1.5rem">&times;</div>
+        <div style="flex:1;min-width:120px;text-align:center;padding:1rem;border:1px solid rgba(74,144,217,0.3);border-radius:2px">
+          <p style="font-family:'GT Sectra',Georgia,serif;font-size:1.75rem;color:#edeae4;margin-bottom:0.25rem">82%</p>
+          <p style="color:rgba(237,234,228,0.5);font-size:12px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:0.1em">Performance</p>
+        </div>
+        <div style="flex:0 0 auto;display:flex;align-items:center;color:rgba(237,234,228,0.4);font-size:1.5rem">&times;</div>
+        <div style="flex:1;min-width:120px;text-align:center;padding:1rem;border:1px solid rgba(74,144,217,0.3);border-radius:2px">
+          <p style="font-family:'GT Sectra',Georgia,serif;font-size:1.75rem;color:#edeae4;margin-bottom:0.25rem">96%</p>
+          <p style="color:rgba(237,234,228,0.5);font-size:12px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:0.1em">Quality</p>
+        </div>
+      </div>
+      <div style="text-align:center;padding:1rem;background:rgba(74,144,217,0.15);border-radius:2px">
+        <p style="font-family:'GT Sectra',Georgia,serif;font-size:2.5rem;color:#4A90D9;margin-bottom:0.25rem">63.8%</p>
+        <p style="color:rgba(237,234,228,0.7);font-size:14px">Overall Equipment Effectiveness</p>
+      </div>
+    </div>
+
+    <p>The example above shows OEE for a machine that looks healthy on any individual metric. 81% availability seems reasonable. 82% performance is close to target. 96% quality is strong. But when the three multiply together, the machine is converting less than two-thirds of its available time into good parts. That remaining 36.2% is the hidden factory at work.</p>
+
+    <h2>Why OEE Matters More in High-Mix Environments</h2>
+
+    <p>In a production shop running the same part all day, OEE is relatively straightforward to measure and optimize. The variables are stable. Setup happens once. The cycle time is known and consistent.</p>
+
+    <p>In a high-mix, low-volume job shop where the machine changes over multiple times per shift and runs different materials with different programs, OEE measurement is harder and more valuable. Availability takes a larger hit from frequent changeovers. Performance varies with material and geometry. Quality challenges shift with every new setup. Tracking OEE across this variation reveals which types of work produce the best equipment utilization and which types consume disproportionate capacity.</p>
+
+    <p>That visibility directly informs which work the shop should pursue. A job shop that knows its OEE drops to 35% on short-run inconel work but reaches 72% on medium-run aluminum can factor that into quoting decisions, pricing the inconel work to reflect its true capacity cost and preferentially pursuing the aluminum work that uses the equipment more efficiently.</p>
+
+    <h2>How to Start Measuring</h2>
+
+    <p>Start with one machine for one week. You do not need a machine monitoring system to begin. A paper log at the machine, filled out by the operator at the end of each shift, is sufficient for the first measurement.</p>
+
+    <p>Track four things: total scheduled time, total run time (spindle turning, chips flying), number of parts produced, and number of good parts. From those four numbers, you can calculate all three OEE components.</p>
+
+    <p>The first week's number will be lower than you expect. That is the point. The number itself is less important than the breakdown of where time goes. If availability is the biggest loss, the problem is changeover time and downtime. If performance is the biggest loss, the problem is running below ideal cycle times. If quality is the biggest loss, the problem is in the process or the setup. Each category points to a different set of improvements.</p>
+
+    <p>For a deeper look at tracking and improving production performance, see our <a href="/production-visibility-manufacturing.html">guide to production visibility in manufacturing</a>.</p>
+
+    <h2>Common Pitfalls</h2>
+
+    <p>The most common mistake is treating OEE as a goal to maximize rather than a diagnostic tool. An OEE of 85% achieved by running only the easiest jobs and avoiding complex work does not make the shop more profitable. It makes the shop less capable. OEE is a measurement of how effectively equipment is used on the work the shop chooses to run. The strategic decision about what work to pursue comes first.</p>
+
+    <p>The second common mistake is measuring OEE without acting on the breakdown. Knowing that a machine runs at 55% OEE is useful only if the team digs into the availability, performance, and quality components to identify which specific losses are largest and most addressable. A machine with 60% availability and 95% quality has a completely different improvement path than a machine with 90% availability and 75% quality.</p>
+
+    <p>Start with one machine. Measure for one week. Read the breakdown. Act on the largest loss. That is OEE at its most useful, as a flashlight pointed at the specific place where capacity disappears.</p>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(26,26,46,0.1)">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#4A90D9;margin-bottom:1rem">Related Field Notes</p>
+      <ul style="list-style:none;padding:0">
+        <li style="margin-bottom:0.75rem"><a href="/blog/on-time-delivery-number-lying.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Your On-Time Delivery Number Is Lying</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/what-production-dashboard-should-show.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">What Your Production Dashboard Should Show</a></li>
+        <li style="margin-bottom:0.75rem"><a href="/blog/scheduling-by-gut-feel.html" style="color:#2a6cb6;text-decoration:underline;text-underline-offset:2px">Scheduling by Gut Feel</a></li>
+      </ul>
+    </div>
+
+    <div class="cta-box">
+      <h3>See where your capacity actually goes</h3>
+      <p>We help manufacturers build visibility into production performance so you can measure, track, and improve OEE across your operation.</p>
+      <a href="/contact.html" class="btn-accent">Book a Call <span>&rarr;</span></a>
+    </div>
+
+  </div>
+</article>
+</main>
+
+<footer style="background:#0a0a14;color:#edeae4;border-top:1px solid rgba(26,26,46,0.15);padding:3rem 0">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.5rem"><img src="/logo-icon.png" alt="Bloomfield logo" style="height:38px;width:auto" loading="lazy"><img src="/wordmark.png" alt="Bloomfield wordmark" style="height:28px;width:auto" loading="lazy"></div>
+        <p style="color:rgba(237,234,228,0.6);font-size:0.875rem;margin-top:0.5rem">Your operation runs on expertise. We make sure none of it goes to waste. <span style="opacity:0.5">&#127482;&#127480;</span> Built in USA.</p>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.875rem"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
+    </div>
+    <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(26,26,46,0.08);text-align:center"><p style="color:rgba(237,234,228,0.2);font-size:0.875rem">&copy; 2025 Bloomfield. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script>window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40)});</script>
+</body>
+</html>
