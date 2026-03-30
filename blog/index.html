@@ -108,7 +108,17 @@ body{font-family:'Inter',system-ui,sans-serif;background:#fff1e0;color:#1a1a2e;-
 .all-notes-label::before{content:'';display:block;height:1px;background:rgba(26,26,46,0.15);margin-bottom:1.5rem}
 .all-notes-label span{font-family:'GT Sectra',Georgia,'Times New Roman',serif;font-size:1.5rem;letter-spacing:-0.01em;font-weight:700;color:#1a1a2e}
 
-.article-list{border-top:1px solid rgba(26,26,46,0.15);margin-top:1.5rem}
+/* Filter bar */
+.filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem;margin-top:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(26,26,46,0.15)}
+.filter-btn{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;padding:0.5rem 1rem;border:1px solid rgba(26,26,46,0.15);border-radius:2px;background:transparent;color:rgba(26,26,46,0.5);cursor:pointer;transition:all 0.2s}
+.filter-btn:hover{border-color:rgba(26,26,46,0.3);color:#1a1a2e}
+.filter-btn.active{background:#4A90D9;border-color:#4A90D9;color:#fff}
+.sort-toggle{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;padding:0.5rem 1rem;border:1px solid rgba(26,26,46,0.15);border-radius:2px;background:transparent;color:rgba(26,26,46,0.5);cursor:pointer;transition:all 0.2s}
+.sort-toggle:hover{border-color:rgba(26,26,46,0.3);color:#1a1a2e}
+.article-item.hidden{display:none}
+.article-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(26,26,46,0.4);margin-top:0.75rem}
+
+.article-list{border-top:1px solid rgba(26,26,46,0.15);margin-top:0}
 .article-item{border-bottom:1px solid rgba(26,26,46,0.15);padding:2rem 0;display:block;text-decoration:none;color:inherit;transition:background 0.2s}
 .article-item:hover{background:rgba(26,26,46,0.03)}
 .article-item:hover .article-title{color:#4A90D9}
@@ -259,7 +269,20 @@ footer a:hover{color:#edeae4}
         <span>All Field Notes</span>
       </div>
 
-      <div class="article-list">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all" onclick="filterArticles('all')">All</button>
+        <button class="filter-btn" data-filter="Quoting" onclick="filterArticles('Quoting')">Quoting</button>
+        <button class="filter-btn" data-filter="Knowledge" onclick="filterArticles('Knowledge')">Knowledge</button>
+        <button class="filter-btn" data-filter="Operations" onclick="filterArticles('Operations')">Operations</button>
+        <button class="filter-btn" data-filter="Systems" onclick="filterArticles('Systems')">Systems</button>
+        <button class="filter-btn" data-filter="Strategy" onclick="filterArticles('Strategy')">Strategy</button>
+        <button class="filter-btn" data-filter="Industry" onclick="filterArticles('Industry')">Industry</button>
+        <button class="filter-btn" data-filter="Getting Started" onclick="filterArticles('Getting Started')">Getting Started</button>
+        <button class="sort-toggle" id="sortToggle" onclick="toggleSort()">Oldest First ↑</button>
+      </div>
+      <p class="article-count" id="articleCount"></p>
+
+      <div class="article-list" id="articleList">
 
         <!-- 2026-03-29 -->
 
@@ -660,6 +683,52 @@ const observer = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+// Filter and sort
+var currentFilter = 'all';
+var sortNewest = true;
+
+function filterArticles(category) {
+  currentFilter = category;
+  var items = document.querySelectorAll('#articleList .article-item');
+  var count = 0;
+  items.forEach(function(item) {
+    var tag = item.querySelector('.article-tag');
+    if (!tag) return;
+    var cat = tag.textContent.trim();
+    if (category === 'all' || cat === category) {
+      item.classList.remove('hidden');
+      count++;
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+  // Update active button
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-filter') === category) btn.classList.add('active');
+  });
+  // Update count
+  var total = items.length;
+  document.getElementById('articleCount').textContent = category === 'all'
+    ? 'Showing all ' + total + ' articles'
+    : 'Showing ' + count + ' of ' + total + ' articles';
+}
+
+function toggleSort() {
+  sortNewest = !sortNewest;
+  var list = document.getElementById('articleList');
+  var items = Array.from(list.querySelectorAll('.article-item'));
+  items.reverse();
+  items.forEach(function(item) { list.appendChild(item); });
+  document.getElementById('sortToggle').textContent = sortNewest ? 'Oldest First ↑' : 'Newest First ↓';
+}
+
+// Init count
+(function() {
+  var total = document.querySelectorAll('#articleList .article-item').length;
+  document.getElementById('articleCount').textContent = 'Showing all ' + total + ' articles';
+})();
 </script>
 </body>
 </html>
