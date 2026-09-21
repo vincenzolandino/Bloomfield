@@ -181,7 +181,10 @@ a {
   font-style: italic;
   letter-spacing: -0.03em;
   line-height: 0.94;
-  max-width: 12ch;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .lede,
@@ -250,9 +253,12 @@ a {
   margin: 0;
   overflow: hidden;
   background: var(--ink);
+  position: relative;
 }
 
 .media img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -260,7 +266,12 @@ a {
 }
 
 .media-hero {
-  min-height: min(78vh, 46rem);
+  aspect-ratio: 3 / 4;
+  max-height: min(78vh, 46rem);
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .discipline-rail {
@@ -329,7 +340,7 @@ a {
 }
 
 .media-band {
-  height: min(42vw, 28rem);
+  aspect-ratio: 4 / 3;
 }
 
 .capability-list {
@@ -427,6 +438,7 @@ a {
 
 .media-focus {
   min-height: 100%;
+  aspect-ratio: 16 / 9;
   opacity: 0.78;
 }
 
@@ -461,7 +473,7 @@ a {
 }
 
 .media-strip {
-  height: min(28vw, 18rem);
+  aspect-ratio: 2.4 / 1;
 }
 
 .contact {
@@ -509,7 +521,7 @@ a {
 }
 
 .media-contact {
-  min-height: min(52vw, 32rem);
+  aspect-ratio: 4 / 3;
 }
 
 .site-footer {
@@ -612,8 +624,9 @@ a {
   .media-focus,
   .media-strip,
   .media-contact {
+    max-height: none;
     min-height: 0;
-    height: min(62vw, 22rem);
+    width: 100%;
   }
 
   .header-cta {
