@@ -1,5 +1,3 @@
 ._*
-
-# Local Netlify folder
+.DS_Store
 .netlify
-._*

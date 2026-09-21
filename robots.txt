@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /410.html
 
 Sitemap: https://getbloomfield.com/sitemap.xml
