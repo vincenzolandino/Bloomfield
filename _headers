@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-IrLNP3A/gdCAsDAYCST+iZvDpy8tGhgvYI1Cmcm4noY='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-AQZhPjtpp6XTIdFGPy9RktcClnSXL79M/iVyZbW455o=' 'sha256-z0iSdHx4xu9FMQxsoPh7PBU7hN6VXY5/AkM1SH1AYEo=' 'sha256-FYrFnKqUy9hDNqVsj3e11bJn0F1KV1a1Mq7arBSBdCs=' 'sha256-+qrlEKlUXY1x46e/DB5q2VbbW7InvAz38cSrbdBO2RU=' 'sha256-m1yis2XoFo4BDOdcPe0jOM3+6EkwqAQtB0rzQtuvHaI='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
@@ -16,3 +16,6 @@
 
 /410.html
   Cache-Control: public, max-age=300
+
+/talent/*
+  Cache-Control: public, max-age=0, must-revalidate
