@@ -2,9 +2,9 @@
   <title id="title">Bloomfield | Speaking, Moderation and Brand Partnerships</title>
   <desc id="desc">Talent representation for events, media and brand partnerships.</desc>
   <rect width="1200" height="630" fill="#F1ECE2"/>
-  <text x="64" y="94" fill="#0A0A0A" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-2">Bloomfield<tspan fill="#FF4A2D">.</tspan></text>
-  <path d="M64 132H1136" stroke="#0A0A0A" stroke-opacity=".3"/>
-  <text x="62" y="300" fill="#0A0A0A" font-family="Georgia, serif" font-size="72" letter-spacing="-2">Speaking, moderation</text>
-  <text x="62" y="410" fill="#0A0A0A" font-family="Georgia, serif" font-size="72" letter-spacing="-2">and brand partnerships.</text>
-  <text x="64" y="548" fill="#0A0A0A" font-family="Arial, sans-serif" font-size="22">Talent representation · getbloomfield.com</text>
+  <text x="64" y="94" fill="#004225" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-2">Bloomfield<tspan fill="#004225">.</tspan></text>
+  <path d="M64 132H1136" stroke="#004225" stroke-opacity=".3"/>
+  <text x="62" y="300" fill="#004225" font-family="Arial, sans-serif" font-weight="600" font-size="66" letter-spacing="-2">Speaking, moderation</text>
+  <text x="62" y="410" fill="#004225" font-family="Arial, sans-serif" font-weight="600" font-size="66" letter-spacing="-2">and brand partnerships.</text>
+  <text x="64" y="548" fill="#004225" font-family="Arial, sans-serif" font-size="22">Talent representation · getbloomfield.com</text>
 </svg>

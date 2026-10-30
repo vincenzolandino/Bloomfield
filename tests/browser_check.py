@@ -54,7 +54,7 @@ def assert_text_contrast(page, label):
             }
             return [255,255,255];
         };
-        return [...document.querySelectorAll('h1,h2,h3,p,a,.portrait-note,.site-footer>span')]
+        return [...document.querySelectorAll('h1,h2,h3,p,a,li,.site-footer>span')]
             .filter(n => n.getClientRects().length && n.textContent.trim()
                 && !n.closest('[aria-hidden="true"],.visually-hidden')
                 && !n.classList.contains('skip-link'))
