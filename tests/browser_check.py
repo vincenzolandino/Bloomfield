@@ -24,6 +24,8 @@ SIZES = [(320, 800), (360, 800), (390, 844), (768, 1024),
 
 def visit(page, path):
     response = page.goto(BASE_URL + path, wait_until="load")
+    # The browser fetches the favicon after load; finish it before rapid test navigation.
+    page.wait_for_load_state("networkidle")
     assert response.status == 200, (path, response.status)
     assert "default-src 'self'" in response.headers.get("content-security-policy", ""), \
         "run checks against Netlify dev so the actual header policy is exercised"
@@ -111,16 +113,16 @@ with sync_playwright() as playwright:
         visit(page, "/")
         assert page.get_by_role("link", name=name, exact=True).count() == 0
         page.get_by_role("link", name="Meet the talent", exact=False).click()
-        page.wait_for_load_state("load")
+        page.wait_for_load_state("networkidle")
         assert urlparse(page.url).path == "/talent/"
         page.get_by_role("link", name=name, exact=True).click()
-        page.wait_for_load_state("load")
+        page.wait_for_load_state("networkidle")
         assert urlparse(page.url).path == f"/talent/{slug}/"
         assert page.get_by_role("heading", name=name, exact=True).is_visible()
         assert_inquiry(page.get_by_role("link", name=f"Inquire about {short}", exact=False).last.get_attribute("href"), name)
         assert_inquiry(page.get_by_role("link", name="Email Bloomfield", exact=False).get_attribute("href"), name)
         page.get_by_role("link", name="All talent", exact=False).click()
-        page.wait_for_load_state("load")
+        page.wait_for_load_state("networkidle")
         assert urlparse(page.url).path == "/talent/"
     print("Buyer navigation: 3 profiles and person-specific inquiry subjects passed.", flush=True)
 
