@@ -7,7 +7,10 @@ from urllib.parse import parse_qs, urlparse
 from playwright.sync_api import sync_playwright
 
 BASE_URL = os.environ.get("BLOOMFIELD_PREVIEW_URL", "http://127.0.0.1:4173")
-ARTIFACT_DIR = Path(__file__).resolve().parents[2] / "preview-artifacts"
+ARTIFACT_DIR = Path(os.environ.get(
+    "BLOOMFIELD_ARTIFACT_DIR",
+    Path(__file__).resolve().parents[2] / "preview-artifacts",
+))
 ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
 PROFILES = [
     ("amy-landino", "Amy Landino", "Amy"),
